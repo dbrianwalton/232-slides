@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="ch4_algebraic_functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 4.1: Algebraic Functions</title>
+
+  <slide>
+    <title>Learning Goals</title>
+
+    <ul>
+      <li>
+        <p>
+          Know and use meaning, shape, and properties of rational powers <m>x^{p/q}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Know and apply relationship between roots and factors of polynomials, including root multiplicity.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use synthetic division to determine factorization for polynomials when some exact roots are known.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use polynomial long division rewrite an improper rational function as a polynomial plus a simplified proper rational function using the remainder.
+        </p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Summary of Properties for Rational Powers</title>
+
+    <ul>
+      <li>
+        <p>
+          Recall that for <m>n \gt 0</m> (integer), <m>x^{1/n} = \sqrt[n]{x}</m> (roots are powers).
+        </p>
+        <p>
+          For integers <m>p,q</m> with <m>q \gt 0</m>,
+          we <em>define</em> <m>x^{p/q} = (\sqrt[q]{x})^p</m> (first root, then power)
+        </p>
+      </li>
+      <li>
+        <p>
+          Domain and symmetry:
+        </p>
+        <p>
+          For <m>q \gt 0</m> even, <m>\sqrt[q]{x}</m> is defined on <m>[0,\infty)</m>.
+        </p>
+
+        <p>
+          For <m>q \gt 0</m> odd, <m>\sqrt[q]{x}</m> is defined on <m>(-\infty,\infty)</m>.
+          In this case, if <m>p</m> is <em>even</em>, then <m>x^{p/q}</m> is an even function (left/right symmetry). 
+          If <m>p</m> is <em>odd</em>, then <m>x^{p/q}</m> is an odd function (left/right opposite). 
+        </p>
+      </li>
+    </ul>
+  </slide>
+  <slide>
+    <title>Exploration of Simple Rational Powers</title>
+    <p>
+      Link to Desmos activity: <url qr="yes">https://www.desmos.com/calculator/thbilpya5l</url>.
+    </p>
+    <image source="qr-desmos-exploring-rational-powers.png" width="33%" align="center">
+      <shortdescription>QR code to the desmos URL</shortdescription>
+    </image>
+    <p>
+      Explore what changes about the graph as you modify the root <m>q</m> and the power <m>p</m>. Be sure to try both positive and negative values of <m>p</m>. What happens when <m>p</m> is greater than or less than <m>q</m>?
+    </p>
+  </slide>
+  <slide>
+    <title>Polynomials: Root and Factor Relation</title>
+    
+    <ul>
+      <li>
+        <p>
+          For any polynomial <m>p(x)</m>, knowing <m>x=a</m> is a <em>root</em> of <m>p(x)</m>
+          is equivalent to knowing <m>(x-a)</m> is a <em>factor</em> of <m>p(x)</m>.
+        </p>
+        <p>
+          That is, <m>p(a)=0</m> is equivalent to <m>p(x) = (x-a) \cdot q(x)</m> for some other polynomial <m>q(x)</m>.
+        </p>
+      </li>
+    </ul>
+
+    <image width="50%" align="center">
+      <shortdescription>graph of a polynomial showing clear roots at x=-2 and x=1</shortdescription>
+      <latex-image>
+\begin{tikzpicture}
+  \begin{axis}[
+    axis lines = middle,
+    grid = both,
+    xmin = -3,
+    xmax = 3,
+    ymin = -5,
+    ymax = 10,
+    width=10cm,
+    height=8cm,
+    xlabel={$x$},
+    ylabel={$y$}
+  ]
+    \addplot[
+      domain=-3:3,
+      blue,
+      samples=200,
+      line width=2pt
+    ]
+    {(x+2)*(x-1)*(x^2-3)};
+  \end{axis}
+\end{tikzpicture}
+      </latex-image>
+    </image>
+  </slide>
+
+  <slide>
+    <title>Synthetic Division</title>
+    
+    <p>
+      We can find the <em>other polynomial factor</em> using synthetic division.
+      Let <m>x=a</m> be a root so that <m>x-a</m> is the factor. Complete a synthetic division table with three rows.
+    </p>
+    <ol>
+      <li>
+        <p>
+          First row: All coefficients in descending powers (include 0 terms). To left, write value of <m>a</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Second row: Below leading coefficient, write 0. All other terms will be found by <em>multiplying</em> the previous value in 3rd row times <m>a</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Third row: <em>Add</em> the values in the first and second rows.
+        </p>
+      </li>
+    </ol>
+    <p>
+      Interpret: The last value in 3rd row will be a remainder, and should be 0 for roots. All other values become coefficients of the polynomial <m>q(x)</m>. The degree of this polynomial has gone down by 1.
+    </p>
+  </slide>
+  <slide>
+    <title>Example of Synthetic Division</title>
+    <p>The polynomial <m>p(x)=x^4+x^3-5x^2-3x+6</m> appears to have roots at <m>x=1</m> and <m>x=-2</m>. Complete the factorization.</p>
+  </slide>
+
+  <slide>
+    <title>Motivating Polynomial Division</title>
+    
+    <p>Recall that division <m>A \div B</m> is trying to find a value <m>C</m> so that 
+      <md>A = B \cdot C</md>.
+      If <m>A</m> and <m>B</m> are integers, there may or may not be an integer <m>C</m> that makes this true, which is why we have remainders <m>R</m>. We find the <em>closest</em> value for <m>C</m> and then use <m>R</m> so that
+      <md>A = B \cdot C + R</md>
+    </p>
+      
+    <p>
+      The same thing happens with polynomials. Dividing a polynomial <m>p(x)</m> by another <m>d(x)</m> is trying to find a <em>quotient</em> polynomial <m>q(x)</m> and a <em>remainder</em> polynomial <m>r(x)</m> so that
+      <md>
+        p(x) = d(x) \cdot q(x) + r(x)
+      </md>
+      The degree for <m>r(x)</m> must be smaller than that for <m>d(x)</m>.
+    </p>
+  </slide>
+  <slide>
+    <title>Polynomial Multiplication by Table</title>
+    <p>
+      To generalize the FOIL method of multiplication for two polynomials <m>A(x)</m> and <m>B(x)</m>, make a table.
+      <ol>
+        <li>
+          <p>
+            Write each term (with sign) of <m>A(x)</m> as row headers.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write each term (with sign) of <m>B(x)</m> as column headers.
+          </p>
+        </li>
+        <li>
+          <p>
+            In each cell of table, multiply the row and column headers to find the value.
+          </p>
+        </li>
+        <li>
+          <p>
+            The product is found by adding all terms together.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>Example: Multiply <m>(x^2-3x+4)(x^3-x+5)</m>.</p>
+  </slide>
+  <slide>
+    <title>Polynomial Division</title>
+    <p>
+      One approach to polynomial division is to think about the table multiplication process where one polynomial is know, the other isn't, but the final answer is known.
+      You can reverse solve for the missing terms one at a time starting with the highest power.
+      <ol>
+        <li>
+          <p>
+            Only one term contributes to the leading term, so you can quickly find the first term of the quotient. Once that is known, you can fill out the rest of the column/row.
+          </p>
+        </li>
+        <li>
+          <p>
+            The next term of the answer will be missing only one additional term coming from the first value in the next column/row. So you can again quickly find that next term of the quotient and then complete the column/row by multiplying.
+          </p>
+        </li>
+        <li>
+          <p>
+            Repeat this until all terms are identified.
+          </p>
+        </li>
+        <li>
+          <p>
+            There may still be some terms that don't match. The <em>remainder</em> is whatever still needs to be added to the product to give the final result.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+  <slide>
+    <title>Polynomial Division Example</title>
+    <p>
+      <m> \displaystyle \frac{2x^4+5x^3-16x^2-9x+27}{x^2+3x-4} </m>
+    </p>
+  </slide>
+</section>

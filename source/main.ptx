@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--********************************************************************
+Copyright 2019 Robert A. Beezer
+This file is part of PreTeXt.
+PreTeXt is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+PreTeXt is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <docinfo>
+        <macros>
+        \newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4}
+        </macros>
+      <latex-image-preamble> \usepackage{tikz, pgfplots} \usetikzlibrary{positioning,matrix,arrows} \usetikzlibrary{shapes,decorations,shadows,fadings,patterns} \usetikzlibrary{decorations.markings} </latex-image-preamble>
+    </docinfo>
+
+    <slideshow>
+        <title>Math 232: Calculus with Functions II </title>
+        <subtitle>Course Slides</subtitle>
+
+        <frontmatter>
+            <titlepage>
+                <author>
+                    <personname>Dr. Brian Walton</personname>
+                    <institution>James Madison University</institution>
+                </author>
+                <date>as of <today/></date>
+            </titlepage>
+        </frontmatter>
+
+        <section xml:id="introduction">
+            <title>Introductory Examples</title>
+            
+            <slide>
+                <title>Graph Analysis 1 (Begin Day 2)</title>
+                
+                <p><m>\displaystyle f(x) = \frac{x}{x^2+4}</m> and <m>\displaystyle f'(x) = \frac{-x^2+4}{(x^2+4)^2}</m></p>
+            </slide>
+
+            <slide>
+                <title>Graph Analysis 2</title>
+                
+                <p><m>f(x) = x \cdot (x^2-9)^{1/3}</m></p>
+            </slide>
+        </section>
+            
+        <xi:include href="./ch4-algebraic-functions.ptx" />
+
+    </slideshow>
+</pretext>
