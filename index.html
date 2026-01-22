@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2026-01-21T23:02:59-05:00       *-->
+<!--*   A recent stable commit (2022-07-01):   *-->
+<!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 232: Calculus with Functions II</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/solarized.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.js"></script><link href="_static/pretext/css/pretext-reveal.css" rel="stylesheet">
+<style></style>
+<link rel="stylesheet" type="text/css" href="external/css/custom.css">
+</head>
+<body><div class="reveal ptx-content">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="slides">
+<section><section><h1>Math 232: Calculus with Functions II</h1>
+<h2>Course Slides</h2>
+<table>
+<tr><th align="center" style="border-bottom: 0px;">Dr. Brian Walton</th></tr>
+<tr><td align="center" style="border-bottom: 0px;">James Madison University</td></tr>
+<tr><td align="center"></td></tr>
+</table>
+<h4><div class="date">as of January 21, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
+<div align="left"><p><span class="process-math">\(\displaystyle f(x) = \frac{x}{x^2+4}\)</span> and <span class="process-math">\(\displaystyle f'(x) = \frac{-x^2+4}{(x^2+4)^2}\)</span></p></div></section><section><h3>Graph Analysis 2</h3>
+<div align="left"><p><span class="process-math">\(f(x) = x \cdot (x^2-9)^{1/3}\)</span></p></div></section></section><section><section><h1>Section 4.1: Algebraic Functions</h1></section><section><h3>Learning Goals</h3>
+<div align="left"><ul class="disc" id="ch4_algebraic_functions-2-2">
+<li><p>Know and use meaning, shape, and properties of rational powers <span class="process-math">\(x^{p/q}\text{.}\)</span></p></li>
+<li><p>Know and apply relationship between roots and factors of polynomials, including root multiplicity.</p></li>
+<li><p>Use synthetic division to determine factorization for polynomials when some exact roots are known.</p></li>
+<li><p>Use polynomial long division rewrite an improper rational function as a polynomial plus a simplified proper rational function using the remainder.</p></li>
+</ul></div></section><section><h3>Summary of Properties for Rational Powers</h3>
+<div align="left"><ul class="disc" id="ch4_algebraic_functions-3-2">
+<li>
+<p>Recall that for <span class="process-math">\(n \gt 0\)</span> (integer), <span class="process-math">\(x^{1/n} = \sqrt[n]{x}\)</span> (roots are powers).</p>
+<p>For integers <span class="process-math">\(p,q\)</span> with <span class="process-math">\(q \gt 0\text{,}\)</span> we <em class="emphasis">define</em> <span class="process-math">\(x^{p/q} = (\sqrt[q]{x})^p\)</span> (first root, then power)</p>
+</li>
+<li>
+<p>Domain and symmetry:</p>
+<p>For <span class="process-math">\(q \gt 0\)</span> even, <span class="process-math">\(\sqrt[q]{x}\)</span> is defined on <span class="process-math">\([0,\infty)\text{.}\)</span></p>
+<p>For <span class="process-math">\(q \gt 0\)</span> odd, <span class="process-math">\(\sqrt[q]{x}\)</span> is defined on <span class="process-math">\((-\infty,\infty)\text{.}\)</span> In this case, if <span class="process-math">\(p\)</span> is <em class="emphasis">even</em>, then <span class="process-math">\(x^{p/q}\)</span> is an even function (left/right symmetry). If <span class="process-math">\(p\)</span> is <em class="emphasis">odd</em>, then <span class="process-math">\(x^{p/q}\)</span> is an odd function (left/right opposite).</p>
+</li>
+</ul></div></section><section><h3>Exploration of Simple Rational Powers</h3>
+<div align="left">
+<p>Link to Desmos activity: <a class="external" href="" target="_blank">https://www.desmos.com/calculator/thbilpya5l</a>.</p>
+<div class="image-box" style="width: 33%; margin-left: 33.5%; margin-right: 33.5%;"><img src="external/qr-desmos-exploring-rational-powers.png" class="contained" alt="QR code to the desmos URL"></div>
+<p>Explore what changes about the graph as you modify the root <span class="process-math">\(q\)</span> and the power <span class="process-math">\(p\text{.}\)</span> Be sure to try both positive and negative values of <span class="process-math">\(p\text{.}\)</span> What happens when <span class="process-math">\(p\)</span> is greater than or less than <span class="process-math">\(q\text{?}\)</span></p>
+</div></section><section><h3>Polynomials: Root and Factor Relation</h3>
+<div align="left">
+<ul class="disc" id="ch4_algebraic_functions-5-2"><li>
+<p>For any polynomial <span class="process-math">\(p(x)\text{,}\)</span> knowing <span class="process-math">\(x=a\)</span> is a <em class="emphasis">root</em> of <span class="process-math">\(p(x)\)</span> is equivalent to knowing <span class="process-math">\((x-a)\)</span> is a <em class="emphasis">factor</em> of <span class="process-math">\(p(x)\text{.}\)</span></p>
+<p>That is, <span class="process-math">\(p(a)=0\)</span> is equivalent to <span class="process-math">\(p(x) = (x-a) \cdot q(x)\)</span> for some other polynomial <span class="process-math">\(q(x)\text{.}\)</span></p>
+</li></ul>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/ch4_algebraic_functions-5-3.svg" role="img" class="contained" alt="graph of a polynomial showing clear roots at x=-2 and x=1"></div>
+</div></section><section><h3>Synthetic Division</h3>
+<div align="left">
+<p>We can find the <em class="emphasis">other polynomial factor</em> using synthetic division. Let <span class="process-math">\(x=a\)</span> be a root so that <span class="process-math">\(x-a\)</span> is the factor. Complete a synthetic division table with three rows.</p>
+<ol class="decimal" id="ch4_algebraic_functions-6-3">
+<li><p>First row: All coefficients in descending powers (include 0 terms). To left, write value of <span class="process-math">\(a\text{.}\)</span></p></li>
+<li><p>Second row: Below leading coefficient, write 0. All other terms will be found by <em class="emphasis">multiplying</em> the previous value in 3rd row times <span class="process-math">\(a\text{.}\)</span></p></li>
+<li><p>Third row: <em class="emphasis">Add</em> the values in the first and second rows.</p></li>
+</ol>
+<p>Interpret: The last value in 3rd row will be a remainder, and should be 0 for roots. All other values become coefficients of the polynomial <span class="process-math">\(q(x)\text{.}\)</span> The degree of this polynomial has gone down by 1.</p>
+</div></section><section><h3>Example of Synthetic Division</h3>
+<div align="left"><p>The polynomial <span class="process-math">\(p(x)=x^4+x^3-5x^2-3x+6\)</span> appears to have roots at <span class="process-math">\(x=1\)</span> and <span class="process-math">\(x=-2\text{.}\)</span> Complete the factorization.</p></div></section><section><h3>Motivating Polynomial Division</h3>
+<div align="left">
+<p>Recall that division <span class="process-math">\(A \div B\)</span> is trying to find a value <span class="process-math">\(C\)</span> so that<div class="displaymath process-math" id="ch4_algebraic_functions-8-2-3">
+\begin{equation*}
+A = B \cdot C\text{.}
+\end{equation*}
+</div>If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are integers, there may or may not be an integer <span class="process-math">\(C\)</span> that makes this true, which is why we have remainders <span class="process-math">\(R\text{.}\)</span> We find the <em class="emphasis">closest</em> value for <span class="process-math">\(C\)</span> and then use <span class="process-math">\(R\)</span> so that<div class="displaymath process-math" id="ch4_algebraic_functions-8-2-11">
+\begin{equation*}
+A = B \cdot C + R
+\end{equation*}
+</div></p>
+<p>The same thing happens with polynomials. Dividing a polynomial <span class="process-math">\(p(x)\)</span> by another <span class="process-math">\(d(x)\)</span> is trying to find a <em class="emphasis">quotient</em> polynomial <span class="process-math">\(q(x)\)</span> and a <em class="emphasis">remainder</em> polynomial <span class="process-math">\(r(x)\)</span> so that<div class="displaymath process-math" id="ch4_algebraic_functions-8-3-7">
+\begin{equation*}
+p(x) = d(x) \cdot q(x) + r(x)
+\end{equation*}
+</div>The degree for <span class="process-math">\(r(x)\)</span> must be smaller than that for <span class="process-math">\(d(x)\text{.}\)</span></p>
+</div></section><section><h3>Polynomial Multiplication by Table</h3>
+<div align="left">
+<p>To generalize the FOIL method of multiplication for two polynomials <span class="process-math">\(A(x)\)</span> and <span class="process-math">\(B(x)\text{,}\)</span> make a table.<ol class="decimal" id="ch4_algebraic_functions-9-2-3">
+<li><p>Write each term (with sign) of <span class="process-math">\(A(x)\)</span> as row headers.</p></li>
+<li><p>Write each term (with sign) of <span class="process-math">\(B(x)\)</span> as column headers.</p></li>
+<li><p>In each cell of table, multiply the row and column headers to find the value.</p></li>
+<li><p>The product is found by adding all terms together.</p></li>
+</ol></p>
+<p>Example: Multiply <span class="process-math">\((x^2-3x+4)(x^3-x+5)\text{.}\)</span></p>
+</div></section><section><h3>Polynomial Division</h3>
+<div align="left"><p>One approach to polynomial division is to think about the table multiplication process where one polynomial is know, the other isn’t, but the final answer is known. You can reverse solve for the missing terms one at a time starting with the highest power.<ol class="decimal" id="ch4_algebraic_functions-10-2-1">
+<li><p>Only one term contributes to the leading term, so you can quickly find the first term of the quotient. Once that is known, you can fill out the rest of the column/row.</p></li>
+<li><p>The next term of the answer will be missing only one additional term coming from the first value in the next column/row. So you can again quickly find that next term of the quotient and then complete the column/row by multiplying.</p></li>
+<li><p>Repeat this until all terms are identified.</p></li>
+<li><p>There may still be some terms that don’t match. The <em class="emphasis">remainder</em> is whatever still needs to be added to the product to give the final result.</p></li>
+</ol></p></div></section><section><h3>Polynomial Division Example</h3>
+<div align="left"><p><span class="process-math">\(\displaystyle \frac{2x^4+5x^3-16x^2-9x+27}{x^2+3x-4} \)</span></p></div></section></section>
+</div>
+</div></body>
+<script>
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  navigationMode: 'default',
+  progress: false,
+  center: false,
+  hash: true,
+  transition: 'fade',
+  width: "100%",
+  height: "100%",
+  margin: "0.025",
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
+    // other options are passed into MathJax.Hub.Config()
+    tex2jax: {
+      inlineMath:  [['\\(','\\)']],
+      displayMath: [],
+    }
+  },
+  plugins: [ RevealMath ]
+});
+</script>
+</html>
