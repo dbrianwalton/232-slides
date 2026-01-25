@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<section xml:id="ch4_algebraic_functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec_4-1_algebraic_functions" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <title>Section 4.1: Algebraic Functions</title>
 
@@ -149,7 +149,7 @@
   </slide>
 
   <slide>
-    <title>Motivating Polynomial Division</title>
+    <title>Motivating Polynomial Division (Begin Day 3)</title>
     
     <p>Recall that division <m>A \div B</m> is trying to find a value <m>C</m> so that 
       <md>A = B \cdot C</md>.

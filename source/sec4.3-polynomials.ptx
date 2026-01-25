@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_4-3_polynomials" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 4.3: Polynomials</title>
+
+  <slide>
+    <title>Learning Goals</title>
+
+    <ul>
+      <li>
+        <p>
+          Understand the relation between factorization of a polynomial and its graph, including roots and their multiplicity, turning points, and irreducible quadratic factors.
+        </p>
+      </li>
+      <li>
+        <p>
+          Role of leading term for end behavior and limits as <m>x \to \pm \infty</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use information about roots and function values to create polynomial models of a function.
+        </p>
+      </li>
+    </ul>
+  </slide>
+
+</section>

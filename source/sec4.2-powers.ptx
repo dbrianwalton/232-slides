@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_4-2_algebraic_functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 4.2: Power Functions</title>
+
+  <slide>
+    <title>Learning Goals</title>
+
+    <ul>
+      <li>
+        <p>
+          Determine limits of power functions for <m>x \to \pm \infty</m> and <m>x \to 0</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use implicit differentiation to show power rule works for all rational powers.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use graph analysis to describe graphs of power functions.
+        </p>
+      </li>
+      <li>
+        <p>
+          Model data using a power function.
+        </p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>End Behavior and Limits</title>
+
+    <p>Summary of Behaviors</p>
+    <ul>
+      <li>
+        <p>
+          Even and odd powers have same behavior as <m>x \to +\infty</m> and <em>opposite</em> behavior as <m>x \to -\infty</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Positive powers are <em>unbounded</em> as <m>x \to \pm \infty</m>.
+          Since <m>x^{-k} = \frac{1}{x^k}</m>, negative powers have <m>y \to 0</m> as <m>x \to \pm \infty</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          Negative powers have a vertical asymptote <m>x=0</m>.
+        </p>
+      </li>
+    </ul>
+    <p>
+      Describe the limits associated with <m>f(x) = 2x^{4/3}</m> and <m>g(x) = -3x^{-3/5}</m>.
+    </p>
+  </slide>
+  <slide>
+    <title>Derivatives (Power Rule)</title>
+    <p>
+      If <m>y=x^{p/q}</m>, then <m>y^q = x^p</m> and we can differentiate using implicit differentiation and the chain rule.
+    </p>
+  </slide>
+  <slide>
+    <title>Graph Analysis</title>
+    
+    <p>
+      Use graph analysis to describe and then sketch the graph of the functions.
+    </p>
+    <ul>
+      <li><p><m>f(x)=x^{3/5}</m></p></li>
+      <li><p><m>g(x)=x^{5/2}</m></p></li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Models Using Power Functions</title>
+    
+    <p>
+      A <em>power function</em> is a constant multiple times <m>x</m> to a rational power with a model equation: <md>f(x) = A x^p</md>.
+      Your task is to find <m>A</m> and <m>p</m> based on given data.
+    </p>
+    <p>
+      Until we learn about logarithms, we will need to work with examples where we can <em>recognize</em> common powers of simple numbers: <m>(2, 4, 8, 16, 32 \ldots)</m>, <m>(3, 9, 27, 81, 243, \ldots)</m> and <m>(5, 25, 125, 625, \ldots)</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Find the Model</title>
+    
+    <p>
+      Find a power function that passes through <m>(1, 18)</m> and <m>(3,\frac{2}{3})</m>.
+    </p>
+  </slide>
+</section>
