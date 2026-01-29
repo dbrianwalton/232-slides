@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<section xml:id="sec_4-1_algebraic_functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="ch4_algebraic_functions" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <title>Section 4.1: Algebraic Functions</title>
 
@@ -149,7 +149,7 @@
   </slide>
 
   <slide>
-    <title>Motivating Polynomial Division (Begin Day 3)</title>
+    <title>Motivating Polynomial Division</title>
     
     <p>Recall that division <m>A \div B</m> is trying to find a value <m>C</m> so that 
       <md>A = B \cdot C</md>.
@@ -195,7 +195,7 @@
     <p>Example: Multiply <m>(x^2-3x+4)(x^3-x+5)</m>.</p>
   </slide>
   <slide>
-    <title>Polynomial Division</title>
+    <title>Polynomial Division (Begin Day 3)</title>
     <p>
       One approach to polynomial division is to think about the table multiplication process where one polynomial is know, the other isn't, but the final answer is known.
       You can reverse solve for the missing terms one at a time starting with the highest power.
@@ -229,9 +229,9 @@
       <m> \displaystyle \frac{2x^4+5x^3-16x^2-9x+27}{x^2+3x-4} </m>
     </p>
     <p>
-      We are seeking a quotient polynomial <m>q(x)</m> and a remainder polynomial <m>r(x)</m>
-      (which must have degree smaller than 2) so that
-      <md>2x^4+5x^3-16x^2-9x+27 = (x^2+3x-4) \cdot q(x) + r(x)</md>.
-    </p>      
+      We are looking for a quotient polynomial <m>q(x)</m>
+      and a remainder polynomial <m>r(x)</m> (degree 1 or lower)
+      so that <md>2x^4+5x^3-16x^2-9x+27 = (x^2+3x-4) \cdot q(x) + r(x)</md>.
+    </p>
   </slide>
 </section>

@@ -24,5 +24,181 @@
       </li>
     </ul>
   </slide>
-
+  <slide>
+    <title>Multiplicity of Roots and Factors</title>
+    <p>
+      When a polynomial has a factor <m>x-a</m> associated with a root <m>x=a</m>, 
+      the number of times the factor appears is called the <term>multiplicity</term>.
+    </p>
+    <p>
+      For example, <m>p(x) = 2(x+3)(x+1)^2(x-2)^3(x-4)</m>:
+      <sidebyside widths="45% 45%">
+        <ul>
+          <li>
+            <p><m>x=-3</m> is a root with multiplicity 1</p>
+          </li>
+          <li>
+            <p><m>x=-1</m> is a root with multiplicity 2</p>
+          </li>
+          <li>
+            <p><m>x=2</m> is a root with multiplicity 3</p>
+          </li>
+          <li>
+            <p><m>x=4</m> is a root with multiplicity 1</p>
+          </li>
+        </ul>
+        <image width="100%">
+          <shortdescription>Graph of the polynomial p(x) showing roots and multiplicity</shortdescription>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                axis lines = middle,
+                grid = both,
+                xmin = -5,
+                xmax = 5,
+                ymin = -1000,
+                ymax = 1500,
+                width=10cm,
+                height=8cm,
+                xlabel={$x$},
+                ylabel={$y$}
+              ]
+                \addplot[
+                  domain=-3.5:4.5,
+                  blue,
+                  samples=200,
+                  line width=2pt
+                ]
+                {2*(x+3)*(x+1)^2*(x-2)^3*(x-4)};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </sidebyside>
+    </p>
+  </slide>
+  <slide>
+    <title>Shape of Multiplicity</title>
+    <p>
+      <em>Locally</em> (if you zoom in), the behavior of a graph near a root behaves like <m>x^m</m>
+      where <m>m</m> is the multiplicity of the root.
+      <ul>
+        <li>
+          <p><m>m=1</m>: Graph locally looks like a line passing through axis</p>
+        </li>
+        <li>
+          <p><m>m=2</m>: Graph locally looks like a parabola touching axis</p>
+        </li>
+        <li>
+          <p><m>m=3</m>: Graph locally looks like a cubic passing through axis</p>
+        </li>
+        <li>
+          <p><m>m=4,6,8,\ldots</m>: Higher even roots look like very flat parabola</p>
+        </li>
+        <li>
+          <p><m>m=5,7,9,\ldots</m>: Higher odd roots look like very flat cubic</p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+  <slide>
+    <title>Roots and Multiplicity to Formula</title>
+    
+    <p>
+      Knowing the roots and their multiplicity allows us to write down the <em>factored</em> representation of a polynomial <em>except</em> for the leading coefficient:
+      <md>
+        p(x) = A(x-a_1)^{m_1} (x-a_2)^{m_2} \cdots (x-a_k)^{m_k}
+      </md>
+    </p>
+    <image align="center" width="50%">
+      <shortdescription>Graph of a polynomial with roots at x=-4 (looks like parabola), x=-2 (looks like parabola), x=0 (looks cubic), and x=2 (looks like parabola)</shortdescription>
+      <latex-image>
+        \begin{tikzpicture}
+          \begin{axis}[
+            axis lines = middle,
+            grid = both,
+            xmin = -5,
+            xmax = 5,
+            ymin = -600,
+            ymax = 1000,
+            width=10cm,
+            height=8cm,
+            xlabel={$x$},
+            ylabel={$y$}
+          ]
+            \addplot[
+              domain=-4.5:2.5,
+              blue,
+              samples=200,
+              line width=2pt
+            ]
+            {-1*(x+4)^2*(x+2)^2*x^3*(x-2)^2};
+          \end{axis}
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </slide>
+  <slide>
+    <title>End Behavior from Leading Term</title>
+    
+    <p>
+      Limits of a polynomial as <m>x \to \pm \infty</m> behave like just the leading term.
+      <ul>
+        <li>
+          <p>The sign of the leading coefficient always matches the sign as <m>x \to +\infty</m>.</p>
+        </li>
+        <li>
+          <p>For even degree, limits are the same for <m>x \to \pm \infty</m>.</p>
+        </li>
+        <li>
+          <p>For odd degree, limits for <m>x \to -\infty</m> is the opposite of the limit for <m>x \to +\infty</m>.</p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <m>\displaystyle \lim_{x \to +\infty} -3x^3+2x^2 + 5x - 8</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\displaystyle \lim_{x \to -\infty} -3x^3+2x^2 + 5x - 8</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\displaystyle \lim_{x \to +\infty} 2x^4 - 5x^2 + 7</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\displaystyle \lim_{x \to -\infty} 2x^4 - 5x^2 + 7</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+  <slide>
+    <title>Irreducible Factors</title>
+    
+    <p>
+      There can be polynomial factors that don't have any roots, always made up from <term>irreducible quadratic</term>, which are polynomials <m>ax^2+bx+c</m> of degree 2 that have <em>complex roots</em>. The discriminant <m>b^2-4ac</m> that appears in the quadratic formula will be negative. These complex roots come in conjugate pairs.
+    </p>
+    <p>
+      Polynomials always have at least one turning point between any two roots. Any extra turning points must come from irreducible quadratic factors.
+      <ul>
+        <li>
+          <p>A polynomial of degree <m>n</m> can have <em>at most</em> <m>n</m> real roots (counting multiplicity). (Count number of roots; degree must be that value or bigger)</p>
+        </li>
+        <li>
+          <p>The difference between the number of real roots (counting multiplicity) and the degree must be a multiple of 2.</p>
+        </li>
+        <li>
+          <p>A polynomial of degree <m>n</m> can have <em>at most</em> <m>n-1</m> turning points. (Count number of turning points; degree must be at least one bigger)</p>
+        </li>
+      </ul>
+    </p>
+  </slide>
 </section>

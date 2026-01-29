@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2026-01-25T05:04:58Z       *-->
+<!--*       on 2026-01-29T03:52:53Z       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -36,7 +36,7 @@
 <tr><td align="center" style="border-bottom: 0px;">James Madison University</td></tr>
 <tr><td align="center"></td></tr>
 </table>
-<h4><div class="date">as of January 25, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
+<h4><div class="date">as of January 29, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
 <div align="left"><p><span class="process-math">\(\displaystyle f(x) = \frac{x}{x^2+4}\)</span> and <span class="process-math">\(\displaystyle f'(x) = \frac{-x^2+4}{(x^2+4)^2}\)</span></p></div></section><section><h3>Graph Analysis 2</h3>
 <div align="left"><p><span class="process-math">\(f(x) = x \cdot (x^2-9)^{1/3}\)</span></p></div></section></section><section><section><h1>Section 4.1: Algebraic Functions</h1></section><section><h3>Learning Goals</h3>
 <div align="left"><ul class="disc" id="sec_4-1_algebraic_functions-2-2">
@@ -109,7 +109,14 @@ p(x) = d(x) \cdot q(x) + r(x)
 <li><p>Repeat this until all terms are identified.</p></li>
 <li><p>There may still be some terms that don’t match. The <em class="emphasis">remainder</em> is whatever still needs to be added to the product to give the final result.</p></li>
 </ol></p></div></section><section><h3>Polynomial Division Example</h3>
-<div align="left"><p><span class="process-math">\(\displaystyle \frac{2x^4+5x^3-16x^2-9x+27}{x^2+3x-4} \)</span></p></div></section></section><section><section><h1>Section 4.2: Power Functions</h1></section><section><h3>Learning Goals</h3>
+<div align="left">
+<p><span class="process-math">\(\displaystyle \frac{2x^4+5x^3-16x^2-9x+27}{x^2+3x-4} \)</span></p>
+<p>We are seeking a quotient polynomial <span class="process-math">\(q(x)\)</span> and a remainder polynomial <span class="process-math">\(r(x)\)</span> (which must have degree smaller than 2) so that<div class="displaymath process-math" id="sec_4-1_algebraic_functions-11-3-3">
+\begin{equation*}
+2x^4+5x^3-16x^2-9x+27 = (x^2+3x-4) \cdot q(x) + r(x)\text{.}
+\end{equation*}
+</div></p>
+</div></section></section><section><section><h1>Section 4.2: Power Functions</h1></section><section><h3>Learning Goals</h3>
 <div align="left"><ul class="disc" id="sec_4-2_algebraic_functions-2-2">
 <li><p>Determine limits of power functions for <span class="process-math">\(x \to \pm \infty\)</span> and <span class="process-math">\(x \to 0\text{.}\)</span></p></li>
 <li><p>Use implicit differentiation to show power rule works for all rational powers.</p></li>
@@ -146,7 +153,55 @@ f(x) = A x^p\text{.}
 <li><p>Understand the relation between factorization of a polynomial and its graph, including roots and their multiplicity, turning points, and irreducible quadratic factors.</p></li>
 <li><p>Role of leading term for end behavior and limits as <span class="process-math">\(x \to \pm \infty\text{.}\)</span></p></li>
 <li><p>Use information about roots and function values to create polynomial models of a function.</p></li>
-</ul></div></section></section>
+</ul></div></section><section><h3>Multiplicity of Roots and Factors</h3>
+<div align="left">
+<p>When a polynomial has a factor <span class="process-math">\(x-a\)</span> associated with a root <span class="process-math">\(x=a\text{,}\)</span> the number of times the factor appears is called the <dfn class="terminology">multiplicity</dfn>.</p>
+<p>For example, <span class="process-math">\(p(x) = 2(x+3)(x+1)^2(x-2)^3(x-4)\text{:}\)</span> <div style="display:table;margin-left:2.5%;margin-right:2.5%;" class="sidebyside">
+<div style="display:table-cell;width:47.3684210526316%;vertical-align:top;"><ul class="disc" id="sec_4-3_polynomials-3-3-2-1">
+<li><p><span class="process-math">\(x=-3\)</span> is a root with multiplicity 1</p></li>
+<li><p><span class="process-math">\(x=-1\)</span> is a root with multiplicity 2</p></li>
+<li><p><span class="process-math">\(x=2\)</span> is a root with multiplicity 3</p></li>
+<li><p><span class="process-math">\(x=4\)</span> is a root with multiplicity 1</p></li>
+</ul></div>
+<div style="display:table-cell;width:47.3684210526316%;vertical-align:top;"><img src="generated/latex-image/sec_4-3_polynomials-3-3-2-2.svg" role="img" class="contained" alt="Graph of the polynomial p(x) showing roots and multiplicity"></div>
+</div></p>
+</div></section><section><h3>Shape of Multiplicity</h3>
+<div align="left"><p><em class="emphasis">Locally</em> (if you zoom in), the behavior of a graph near a root behaves like <span class="process-math">\(x^m\)</span> where <span class="process-math">\(m\)</span> is the multiplicity of the root.<ul class="disc" id="sec_4-3_polynomials-4-2-4">
+<li><p><span class="process-math">\(m=1\text{:}\)</span> Graph locally looks like a line passing through axis</p></li>
+<li><p><span class="process-math">\(m=2\text{:}\)</span> Graph locally looks like a parabola touching axis</p></li>
+<li><p><span class="process-math">\(m=3\text{:}\)</span> Graph locally looks like a cubic passing through axis</p></li>
+<li><p><span class="process-math">\(m=4,6,8,\ldots\text{:}\)</span> Higher even roots look like very flat parabola</p></li>
+<li><p><span class="process-math">\(m=5,7,9,\ldots\text{:}\)</span> Higher odd roots look like very flat cubic</p></li>
+</ul></p></div></section><section><h3>Roots and Multiplicity to Formula</h3>
+<div align="left">
+<p>Knowing the roots and their multiplicity allows us to write down the <em class="emphasis">factored</em> representation of a polynomial <em class="emphasis">except</em> for the leading coefficient:<div class="displaymath process-math" id="sec_4-3_polynomials-5-2-3">
+\begin{equation*}
+p(x) = A(x-a_1)^{m_1} (x-a_2)^{m_2} \cdots (x-a_k)^{m_k}
+\end{equation*}
+</div></p>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sec_4-3_polynomials-5-3.svg" role="img" class="contained" alt="Graph of a polynomial with roots at x=-4 (looks like parabola), x=-2 (looks like parabola), x=0 (looks cubic), and x=2 (looks like parabola)"></div>
+</div></section><section><h3>End Behavior from Leading Term</h3>
+<div align="left">
+<p>Limits of a polynomial as <span class="process-math">\(x \to \pm \infty\)</span> behave like just the leading term.<ul class="disc" id="sec_4-3_polynomials-6-2-2">
+<li><p>The sign of the leading coefficient always matches the sign as <span class="process-math">\(x \to +\infty\text{.}\)</span></p></li>
+<li><p>For even degree, limits are the same for <span class="process-math">\(x \to \pm \infty\text{.}\)</span></p></li>
+<li><p>For odd degree, limits for <span class="process-math">\(x \to -\infty\)</span> is the opposite of the limit for <span class="process-math">\(x \to +\infty\text{.}\)</span></p></li>
+</ul></p>
+<p><ol class="decimal" id="sec_4-3_polynomials-6-3-1">
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to +\infty} -3x^3+2x^2 + 5x - 8\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to -\infty} -3x^3+2x^2 + 5x - 8\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to +\infty} 2x^4 - 5x^2 + 7\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to -\infty} 2x^4 - 5x^2 + 7\)</span></p></li>
+</ol></p>
+</div></section><section><h3>Irreducible Factors</h3>
+<div align="left">
+<p>There can be polynomial factors that don’t have any roots, always made up from <dfn class="terminology">irreducible quadratic</dfn>, which are polynomials <span class="process-math">\(ax^2+bx+c\)</span> of degree 2 that have <em class="emphasis">complex roots</em>. The discriminant <span class="process-math">\(b^2-4ac\)</span> that appears in the quadratic formula will be negative. These complex roots come in conjugate pairs.</p>
+<p>Polynomials always have at least one turning point between any two roots. Any extra turning points must come from irreducible quadratic factors.<ul class="disc" id="sec_4-3_polynomials-7-3-1">
+<li><p>A polynomial of degree <span class="process-math">\(n\)</span> can have <em class="emphasis">at most</em> <span class="process-math">\(n\)</span> real roots (counting multiplicity). (Count number of roots; degree must be that value or bigger)</p></li>
+<li><p>The difference between the number of real roots (counting multiplicity) and the degree must be a multiple of 2.</p></li>
+<li><p>A polynomial of degree <span class="process-math">\(n\)</span> can have <em class="emphasis">at most</em> <span class="process-math">\(n-1\)</span> turning points. (Count number of turning points; degree must be at least one bigger)</p></li>
+</ul></p>
+</div></section></section>
 </div>
 </div></body>
 <script>
