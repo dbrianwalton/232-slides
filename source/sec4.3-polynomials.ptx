@@ -201,4 +201,30 @@
       </ul>
     </p>
   </slide>
+
+  <slide>
+    <title>Equations for Coefficients</title>
+    
+    <p>
+      Another common modeling problem relating to polynomials is
+      to find a polynomial of a given degree with certain known function or derivative values.
+      <ul>
+        <li>
+          <p>Write a model formula, such as <m>f(x)=a x^3 + b x^2 + c x + d</m>, that matches degree.</p>
+        </li>
+        <li>
+          <p>For each known function value or derivative, use the model formula with the given <m>x</m> value to create an equation about the coefficients.</p>
+        </li>
+        <li>
+          <p>Once the number of coefficient equations matches the number of coefficients, solve the system of equations to find the coefficients.</p>
+        </li>
+        <li>
+          <p>Write down the final model using the calculated coefficients.</p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Example: Find a quadratic polynomial with <m>f(1)=2</m>, <m>f(4)=3</m>, and <m>f'(2)=0</m>.
+    </p>
+  </slide>
 </section>

@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_4-4_rational" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 4.4: Rational Functions</title>
+
+  <slide>
+    <title>Learning Goals</title>
+
+    <ul>
+      <li>
+        <p>
+          Be able to define a rational function as a quotient of two polynomials.
+          That is, if <m>f(x) = \frac{p(x)}{q(x)}</m> where <m>p(x), q(x)</m> are polynomials, 
+          then <m>f(x)</m> is a <term>rational function</term>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Determine the domain of a rational function, interpreting discontinuities as vertical asymptotes or holes.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use polynomial division to find slant and curve asymptotes.
+        </p>
+      </li>
+      <li>
+        <p>
+          Analyze the graph of a rational function.
+        </p>
+      </li>
+    </ul>
+  </slide>
+  <slide>
+    <title>Domain, Holes, and Vertical Asymptotes</title>
+    <p>
+      Starting with a rational function <m>f(x) = p(x) / q(x)</m>, completely factor <m>p(x)</m> and <m>q(x)</m>.
+    </p>
+    <p>
+      Then <m>f(x)</m> is <term>continuous</term> everywhere <em>except</em> at the roots of <m>q(x)</m>.
+      Suppose <m>x=a</m> is a <term>root</term> of <m>q(x)</m> so that <m>q(a) = 0</m>.
+      If <m>p(a)=0</m> also, then cancel as many common factors as possible.
+      <ul>
+        <li>
+          <p>If the simplified polynomials still have a factor <m>(x-a)</m> in the denominator,
+            then <m>x=a</m> is a <term>vertical asymptote</term> or the location of a <term>hole</term>, 
+            `also called a <term>removable discontinuity</term></p>
+        </li>
+        <li>
+          <p>If <m>(x-a)</m> completely canceled out from the denominator,
+            then <m>f(x)</m> has a <term>hole</term> at <m>x=a</m> (removable discontinuity).</p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+  <slide>
+    <title>Shape and Multiplicity</title>
+    <p>
+      If we cancel all common factors of the numerator and denominator polynomials to get <m>f(x) = \tilde{p}(x) / \tilde{q}(x)</m>
+      and these simplified polynomials are factored, then
+      <ul>
+        <li>
+          <p>
+            The multiplicity of factors of <m>\tilde{p}(x)</m> (numerator) will match 
+            the shape of <m>f(x)</m> with the shape of polynomials at roots.
+          </p>
+        </li>
+        <li>
+          <p>
+            The multiplicity of factors of <m>\tilde{q}(x)</m> (denominator) result in vertical asymptotes
+            with <em>opposite</em> infinite limits when the factor has <em>odd</em> multiplicity and
+            with the <em>same</em> infinite limits when the factor has <em>even</em> multiplicity.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Describe the discontinuities and roots of <m>\displaystyle f(x) = \frac{(x+2)(x-1)^3(x-3)^2}{3(x+2)^2(x-1)(x-4)^2}</m>.
+    </p>
+  </slide>
+  <slide>
+    <title>Polynomial Division and Horizontal, Slant and Curve Asymptotes</title>
+    
+    <p>
+      For a rational function <m>f(x) = p(x)/q(x)</m> with polynomials <m>p(x),q(x)</m>, compare the degrees of the polynomials.
+      <ul>
+        <li>
+          <p>If <m>\deg(p) \lt \deg(q)</m> (higher degree in denominator), then <m>f(x)</m> has a horizontal asymptote <m>y=0</m>.</p>
+        </li>
+        <li>
+          <p>If <m>\deg(p) = \deg(q)</m> (same degree), then <m>f(x)</m> has a horizontal asymptote <m>y=A/B</m> given by the ratio of leading coefficients.</p>
+        </li>
+        <li>
+          <p>
+            If <m>\deg(p) \gt \deg(q)</m> (higher degree in numerator), 
+            then <m>f(x)</m> has a slant or curve asymptote <m>y=Q(x)</m> 
+            given by the quotient when doing polynomial division <m>p(x) \div q(x)</m>.
+            If <m>Q(x)</m> is linear (degree 1), it is a slant asymptote.
+            Any higher degree is called a curve asymptote.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      <ol>
+        <li>
+          <p><m>\displaystyle \frac{2x^3-3x+5}{x^4+7x^2-8}</m></p>
+        </li>
+        <li>
+          <p><m>\displaystyle \frac{2x^3-3x+5}{x^3+7x^2-8}</m></p>
+        </li>
+        <li>
+          <p><m>\displaystyle \frac{2x^4-3x^2+5}{x^2+x-2}</m></p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+  <slide>
+    <title>Shape Analysis</title>
+    
+    <p>
+      Find where <m>\displaystyle f(x) = \frac{x^3-3x-7}{x-3}</m> is increasing and decreasing.
+    </p>
+  </slide>
+</section>

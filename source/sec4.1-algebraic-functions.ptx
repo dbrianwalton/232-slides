@@ -149,7 +149,7 @@
   </slide>
 
   <slide>
-    <title>Motivating Polynomial Division (Begin Day 3)</title>
+    <title>Motivating Polynomial Division (Begin Day 3/Day 4)</title>
     
     <p>Recall that division <m>A \div B</m> is trying to find a value <m>C</m> so that 
       <md>A = B \cdot C</md>.

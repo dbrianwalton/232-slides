@@ -56,6 +56,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <xi:include href="./sec4.1-algebraic-functions.ptx" />
         <xi:include href="./sec4.2-powers.ptx" />
         <xi:include href="./sec4.3-polynomials.ptx" />
+        <xi:include href="./sec4.4-rational.ptx" />
 
     </slideshow>
 </pretext>
