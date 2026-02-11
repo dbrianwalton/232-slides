@@ -58,5 +58,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <xi:include href="./sec4.3-polynomials.ptx" />
         <xi:include href="./sec4.4-rational.ptx" />
 
+        <xi:include href="./sec5.1-exponential-logarithm-functions.ptx" />
+
     </slideshow>
 </pretext>

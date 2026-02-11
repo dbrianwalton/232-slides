@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_5-1_exponential-logarithm-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 5.1: Exponential and Logarithmic Functions</title>
+
+  <slide>
+    <title>Learning Goals</title>
+
+    <ul>
+      <li>
+        <p>
+          Know the definition of an exponential function <m>f(x) = A b^x</m> where <m>b \gt 0</m> and <m>b \ne 1</m>
+          and the alternate definition in terms of the natural base <m>e</m>, <m>f(x) = A e^{k x}</m>, where <m>A</m> and <m>k</m> can be any real numbers.
+        </p>
+      </li>
+      <li>
+        <p>
+          Distinguish between exponential growth <m>b \gt 1</m> (<m>k \gt 0</m>) and exponential decay <m>b \lt 1</m> (<m>k \lt 0</m>).
+        </p>
+      </li>
+      <li>
+        <p>
+          Understand and apply the inverse property of elementary exponentials <m>\exp_b(x) = b^x</m> and logarithms <m>\log_b(x)</m>,
+          such that you can move between the equivalence of <m>y = \exp_b(x) = b^x</m> and <m>x = \log_b(y)</m>
+          as well as the cancellation <m>b^{\log_b(y)} = y</m> for any <m>y \gt 0</m> and <m>\log_b(b^x) = x</m> for any <m>x</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Know and apply the algebraic rules of exponents and logarithms, particular for products, quotients, and powers.
+        </p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Exponential Functions</title>
+
+    <ul>
+      <li>
+        <p>
+          An <term>elementary exponential function</term> can be defined for any <em>positive</em> base <m>b</m> as
+          <md>\exp_b(x) = b^x</md>.
+          The properties of the functions follow from the properties of exponents.
+          <ul>
+            <li>
+              <p><m>b^{0} = 1</m> and <m>\displaystyle b^{-x} = \frac{1}{b^x}</m></p>
+            </li>
+            <li>
+              <p><m>b^{x+y} = b^x \cdot b^y</m> and <m>b^{x-y} = \displaystyle \frac{b^x}{b^y}</m></p>
+            </li>
+            <li>
+              <p><m>b^{ax} = (b^x)^{a} = (b^a)^{x}</m></p>
+            </li>
+            <li>
+              <p><m>(bc)^x = b^x \cdot c^x</m> and <m>\displaystyle \left(\frac{b}{c}\right)^x = \frac{b^x}{c^x}</m></p>
+            </li>
+          </ul>
+        </p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Exponential Models</title>
+    
+    <p>
+      A more general exponential function has a constant multiple or amplitude factor,
+      <md>f(x) = A \cdot b^x</md>.
+      We will later learn about the natural base <m>e</m> and discover that every exponential function can alternatively be written
+      <md>f(x) = A e^{kx}</md>,
+      where the value of <m>k</m> and the base <m>b</m> are related by <m>k = \ln(b)</m>.
+    </p>
+    <ul>
+      <li>
+        <p>When the base <m>b</m> is greater than 1 (or <m>k &gt; 0</m>), we say we have <term>exponential growth</term>.</p>
+      </li>
+      <li>
+        <p>When the base <m>b</m> is less than 1 (or <m>k &gt; 0</m>), we say that we have <term>exponential decay</term>.</p>
+      </li>
+    </ul>
+    <p>
+      An example of fitting data to an exponential model was given in the Snow Day Makeup Video.
+    </p>
+  </slide>
+  <slide>
+    <title>Logarithms as Inverses</title>
+    
+    <p>
+      Recall that an inverse function allows us to solve for the <m>x</m> that makes <m>f(x) = c</m> true, 
+      <md>x = f^{-1}(c)</md>.
+      When we want to solve for an <term>exponent</term>, <m>b^x = c</m>, we want the <term>inverse</term> of the elementary exponential function.
+    </p>
+    <p>
+      For every positive base <m>b &gt; 0</m> with <m>b \ne 1</m> and <m>c &gt; 0</m>, the equation <md>b^x = c</md> has a <term>unique</term> solution. 
+      (That is, the elementary exponential functions are <term>one-to-one</term>.) 
+      The inverse function finds this solution and is called the <term>logarithm</term> with base <m>b</m>,
+      <md>x = \log_b(c)</md>.
+    </p>
+    <p>
+      Because <m>b^x &gt; 0</m> for all <m>x</m>, the domain of <m>\log_b(x)</m> requires <m>x &gt; 0</m>. (The logarithm is undefined for zero and negative values.)
+    </p>
+  </slide>
+
+  <slide>
+    <title>Exponential and Logarithm Equivalent Equations</title>
+    
+    <p>
+      Every equation about elementary exponentials can be rewritten in an equivalent equation about logarithms.
+      The key is to recognize that the <term>logarithm</term> is talking about the value of the exponent while the exponential is actually talking about the final power of the base.
+    </p>
+    <ol>
+      <li>
+        <p>
+          <m>2^4 = 16</m> has a base <m>b=2</m>, and exponent <m>x=4</m> and a final power <m>16</m> (4th power of 2).
+        </p>
+        <p>
+          As a logarithm statement, we have an equivalent equation <m>\log_2(16) = 4</m>, which says that the input 16 can be identified as a power of the base 2. What power? 4.
+        </p>
+      </li>
+      <li>
+        <p>
+          What is <m>\log_{3}(243)</m>?
+        </p>
+      </li>
+      <li>
+        <p>
+          If we know <m>\log_{10}(x) = 3</m>, what is <m>x</m>?
+        </p>
+      </li>
+    </ol>
+  </slide>
+
+  <slide>
+    <title>Properties of Logarithms</title>
+    
+    <p>
+      Logarithms inherit their properties from the properties of powers.
+      <ul>
+        <li>
+          <p><m>\log_b(1) = 0</m> is from <m>b^0 = 1</m> and <m>\log_b\left(\frac{1}{x}\right) = - \log_b(x)</m></p>
+        </li>
+        <li>
+          <p><m>\log_b(b^x) = x</m> for all <m>x</m>, and <m>b^{\log_b(x)} = x</m> for all <m>x &gt; 0</m> (<term>Inverse Property</term>).</p>
+        </li>
+        <li>
+          <p><m>\log_b(u \cdot w) = \log_b(u) + \log_b(w)</m> (<term>Product Rule</term>).</p>
+        </li>
+        <li>
+          <p><m>\displaystyle \log_b\left(\frac{u}{w}\right) = \log_b(u) - \log_b(w)</m> (<term>Quotient Rule</term>).</p>
+        </li>
+        <li>
+          <p><m>\log_b(u^p) = p \cdot \log_b(u)</m> (<term>Power Rule</term>).</p>
+        </li>
+        <li>
+          <p><m>\log_b(x) = \frac{\log_a(x)}{\log_a(b)}</m> (<term>Change of Base</term>).</p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Solving Equations</title>
+    
+    <p>
+      When the unknown is inside of an exponent, we first need to isolate the exponential term and then use a logarithm.
+    </p>
+    <ol>
+      <li>
+        <p><m>3 \cdot 2^{2x} = 24</m></p>
+      </li>
+      <li>
+        <p><m>5 \cdot 3^{x+4} = 75</m></p>
+      </li>
+    </ol>
+  </slide>
+
+
+  <slide>
+    <title>Simplifying Formulas</title>
+    
+    <p>
+      There will be multiple circumstances where we need to apply properties of logarithms to rewrite an expression.
+      The most relevant in calculus is to take a logarithm that involves products, quotients, or powers, and <term>expand</term> the expression using the corresponding rules.
+    </p>
+    <ol>
+      <li>
+        <p><m>\log_4\left(2x^3(x^2+1)^4\right)</m></p>
+      </li>
+      <li>
+        <p><m>\log_{10}\left(\frac{200(x^2+4)^3}{(2x+1)^5}\right)</m></p>
+      </li>
+    </ol>
+  </slide>
+</section>
