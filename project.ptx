@@ -7,5 +7,11 @@
         format="revealjs"
         output-filename="index.html"
         />
+    <target
+        name="slides_adv"
+        format="html"
+        deploy-dir="slides-adv"
+        xsl="custom-slides.xsl"
+        />
   </targets>
 </project>
