@@ -5,6 +5,7 @@
     <target
         name="slides"
         format="revealjs"
+        deploy-dir="slides"
         output-filename="index.html"
         />
     <target
