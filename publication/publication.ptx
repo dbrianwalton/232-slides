@@ -22,6 +22,11 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <directories external="../assets" generated="../generated-assets"/>
     </source>
 
+    <common>
+        <chunking level="2"/>
+        <tableofcontents level="0"/>
+    </common>
+
     <revealjs>
         <appearance theme="solarized" custom-css="external/css/custom.css"/>
         <!-- these are "resources" defaults, but best for a sample -->

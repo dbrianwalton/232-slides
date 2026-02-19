@@ -1,3 +1,11 @@
 img.contained {
     /*width: 100%;*/
 }
+
+header {
+    display: hidden;
+}
+
+h1 {
+    display: none;
+}

@@ -13,6 +13,8 @@
         format="html"
         deploy-dir="slides-adv"
         xsl="custom-slides.xsl"
-        />
+    >
+      <stringparams html.css.extra="external/css/custom.css" />
+    </target>
   </targets>
 </project>
