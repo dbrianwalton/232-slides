@@ -14,7 +14,7 @@
         deploy-dir="slides-adv"
         xsl="custom-slides.xsl"
     >
-      <stringparams html.css.extra="external/css/custom.css" />
+      <stringparams html.css.extra="external/css/custom-alt-slides.css" />
     </target>
   </targets>
 </project>

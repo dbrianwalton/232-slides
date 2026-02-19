@@ -23,7 +23,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     </source>
 
     <common>
-        <chunking level="2"/>
+        <chunking level="1"/>
         <tableofcontents level="0"/>
     </common>
 
@@ -45,7 +45,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     </revealjs>
 
   <html>
-    <split-level>subsection</split-level>
+    <split-level>section</split-level>
   </html>
 
 </publication>
