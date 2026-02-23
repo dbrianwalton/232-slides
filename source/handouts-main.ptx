@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--********************************************************************
+Copyright 2019 Robert A. Beezer
+This file is part of PreTeXt.
+PreTeXt is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+PreTeXt is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <docinfo>
+        <macros>
+        \newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4}
+        </macros>
+      <latex-image-preamble> \usepackage{tikz, pgfplots} \usetikzlibrary{positioning,matrix,arrows} \usetikzlibrary{shapes,decorations,shadows,fadings,patterns} \usetikzlibrary{decorations.markings} </latex-image-preamble>
+    </docinfo>
+
+    <book>
+        <title>Math 232: Calculus with Functions II </title>
+        <subtitle>Handouts</subtitle>
+
+        <frontmatter>
+            <titlepage>
+                <author>
+                    <personname>Dr. Brian Walton</personname>
+                    <institution>James Madison University</institution>
+                </author>
+                <date>as of <today/></date>
+            </titlepage>
+        </frontmatter>
+
+        <chapter xml:id="quiz-solutions">
+            <title>Weekly Quiz Solutions</title>
+            
+            <handout xml:id="week-3-quiz">
+                <title>Week 3 Quiz</title>
+                
+                <paragraphs>
+                    <title>Question</title>
+
+                    <p>
+                        The function <m>f(x) = x^4-4x^3-20x^2+96x</m> has one local minimum at <m>x=-3</m>. Use this information, synthetic division and factoring, and sign analysis of derivatives to determine intervals on which <m>f(x)</m> is increasing or decreasing.
+                    </p>
+                    <p>You should be able to do this without looking at a graph.</p>
+                </paragraphs>
+                <paragraphs>
+                    <title>Solution</title>
+                    
+                    <p>
+                        We find intervals on which a function is increasing or decreasing by doing <term>sign analysis</term> on the first derivative. If we needed to find intervals on which the function is concave up or down, then we would do sign analysis on the second derivative. Our basic steps are:
+                        <ol>
+                            <li>
+                                <p>
+                                    Find <m>f'(x)</m> and factor it completely. For this step, we will use the fact <m>f(x)</m> has a minimum at <m>x=-3</m>.
+                                    We know <m>f'(x)=0</m> at an extreme value (minimum), so <m>x+3</m> will be one factor. We can use synthetic division to find the other factors.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Find all <term>roots</term> of <m>f'(x)</m> by solving <m>f'(x)=0</m> and also points where <m>f'(x)</m> does not exist. These are called the <term>critical points</term> of <m>f(x)</m>.</p>
+                            </li>
+                            <li>
+                                <p>Make a sign chart number line for <m>f'(x)</m> by marking all of critical points of <m>f(x)</m>.</p>
+                            </li>
+                            <li>
+                                <p>Determine the sign of <m>f'(x)</m> by testing points inside each interval. Or find the sign on one interval and then use multiplicity of roots to determine the remaining signs.</p>
+                            </li>
+                            <li>
+                                <p>Interpret the sign chart. For each positive sign, we say <m>f(x)</m> is <term>increasing on</term> the corresponding interval. For each negative sign, we say <m>f(x)</m> is <term>decreasing on</term> the corresponding interval.</p>
+                            </li>
+                        </ol>
+                        Now let's do the work.
+                    </p>
+                    <p>
+                        Calculate the derivative:
+                        <md>
+                            <mrow>f(x) \amp = x^4-4x^3-20x^2+96x</mrow>
+                            <mrow> f'(x) \amp = 4x^3-12x^2-40x+96 </mrow>
+                            <mrow> \amp = 4(x^3-3x^2-10x+24) </mrow>
+                        </md>
+                        Use the minimum at <m>x=-3</m> to know <m>f'(-3)=0</m> and synthetic division.
+                    </p>
+                    <tabular>
+                        <row>
+                            <cell>-3</cell>
+                            <cell left="medium"> 1 </cell><cell> -3 </cell><cell> -10 </cell><cell> 24 </cell>
+                        </row>
+                        <row>
+                            <cell></cell>
+                            <cell left="medium"> 0 </cell><cell> -3 </cell><cell> 18 </cell><cell> -24 </cell>
+                        </row>
+                        <row>
+                            <cell></cell>
+                            <cell top="medium"> 1 </cell><cell top="medium"> -6 </cell><cell top="medium"> 8 </cell><cell top="medium"> 0 </cell>
+                        </row>
+                    </tabular>
+                    <p>
+                        So <m>f'(x) = 4(x+3)(x^2-6x+8) = 4(x+3)(x-2)(x-4)</m>.
+                        Our sign chart number line will have marks at three roots: <m>x=-3</m>, <m>x=2</m>, and <m>x=4</m>.
+                        Each of these roots has multiplicity 1, so <m>f'(x)</m> changes sign at each point.
+                        Choose <m>x &gt; 4</m>, such as <m>x=5</m> and discover <m>f'(x) = +</m>.
+                        Using multiplicity or testing each interval, we soon complete our sign chart.
+                    </p>
+                    <image xml:id="wk-3-quiz-sign-chart" width="50%">
+                        <shortdescription>Sign chart number line showing f prime has signs that are negative to the left of -3, positive between -3 and 2, negative between 2 and 4, and positive to the right of 4.</shortdescription>
+                        <latex-image>
+                        \begin{tikzpicture}[x=0.5cm]
+                        \draw (-5,0) -- (6,0);
+                        \draw (-3,-0.25) -- (-3,+0.25) node [pos=0, below] {-3} node [pos=1, above] {0};
+                        \draw (2,-0.25) -- (2,+0.25) node [pos=0, below] {2} node [pos=1, above] {0};
+                        \draw (4,-0.25) -- (4,+0.25) node [pos=0, below] {4} node [pos=1, above] {0};
+                        \node [above] at (-4,0.25) {$-$};
+                        \node [above] at (-0.5,0.25) {$+$};
+                        \node [above] at (3,0.25) {$-$};
+                        \node [above] at (5,0.25) {$+$};
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                    <p>
+                        We are now ready to interpret the sign chart.
+                        <ul>
+                            <li>
+                                <p><m>f(x)</m> is <term>increasing on</term> the intervals <m>[-3,2]</m> and <m>[4,\infty)</m>.</p>
+                            </li>
+                            <li>
+                                <p><m>f(x)</m> is <term>decreasing on</term> the intervals <m>(-\infty,-3]</m> and <m>[2,4]</m>.</p>
+                            </li>
+                        </ul>
+                        It is common to just talk about the open intervals, so that the endpoints are not included on either side, and that is what I would accept. However, the most correct interpretation is to include every endpoint at which the original function <m>f(x)</m> is continuous.
+                    </p>
+                </paragraphs>
+            </handout>
+
+            <handout>
+                <title>Week 4 Quiz</title>
+                
+                <paragraphs>
+                    <title>Question</title>
+                    <p>
+                        The function <m>f(x)</m> is a <term>power function</term> that passes through the points <m>(1,12)</m> and <m>(8,3)</m>.
+                        <ol>
+                            <li><p>Find <m>f(x)</m></p></li>
+                            <li><p>Use derivative sign analysis to determine intervals on which <m>f(x)</m> is increasing or decreasing</p></li>
+                            <li><p>Use derivative sign analysis to determine intervals on which <m>f(x)</m> is concave up or concave down</p></li>
+                            <li><p>Sketch a graph of <m>f(x)</m>.</p></li>
+                        </ol>
+                    </p>
+                </paragraphs>
+                <paragraphs>
+                    <title>Solution</title>
+                    <p>
+                        <ol>
+                            <li>
+                                <p>
+                                    Because <m>f(x)</m> is a <term>power function</term>, we know <m>f(x) = A \cdot x^p</m> for constants <m>A</m> and <m>p</m>. We use the points to create equations for <m>A</m> and <m>p</m>.
+                                    <md>
+                                        <mrow> (x,y) = (1, 12) \quad \Rightarrow \quad \amp 12 = A \cdot 1^p </mrow>
+                                        <mrow> \amp 12 = A </mrow>
+                                        <mrow> (x,y) = (8, 3) \quad \Rightarrow \quad \amp 3 = A \cdot 8^p </mrow>
+                                    </md>
+                                    Since we know <m>A=12</m>, we substitute into the second equation
+                                    <md> 3 = 12 \cdot 8^p </md>
+                                    and then isolate <m>8^p</m> to get
+                                    <md> 8^p = \frac{1}{4} </md>
+                                    We now recognize that 8 and 4 are both powers of 2, <m>8=2^3</m> and <m>4 = 2^2</m> so that we can reach an equation where the exponents must match:
+                                    <md> 
+                                        <mrow> (2^3)^p = \frac{1}{2^2} </mrow>
+                                        <mrow> 2^{3p} = 2^{-2} </mrow>
+                                        <mrow> 3p = -2 </mrow>
+                                        <mrow> p = \frac{-2}{3}</mrow>
+                                    </md>
+                                </p>
+                                <p>We have found <m>f(x) = 12 x^{-2/3}</m>.</p>
+                            </li>
+                            <li>
+                                <p>
+                                    Now that we know <m>f(x) = 12 x^{-2/3}</m>, we can find <m>f'(x)</m>:
+                                    <md> f'(x) = 12 \cdot (\frac{-2}{3}) x^{-5/3} = -8 x^{-5/3} </md>
+                                    The exponent is <term>negative</term>, so <m>f'(x)</m> is <term>undefined</term> at <m>x=0</m>.
+                                    The root (cube root) is odd, so the domain includes both negative and positive values.
+                                    The power is also odd, so the sign changes at <m>x=0</m>.
+                                    We have
+                                    <ul>
+                                        <li><p>For <m>x &gt; 0</m>, we have <m>f'(x) &lt; 0</m> (negative)</p></li>
+                                        <li><p>For <m>x &lt; 0</m>, we have <m>f'(x) &gt; 0</m> (positive)</p></li>
+                                    </ul>
+                                    So <m>f(x)</m> is <term>increasing</term> on <m>(-\infty, 0)</m> and <term>decreasing</term> on <m>(0,\infty)</m>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    From <m>f'(x) = -8 x^{-5/3}</m>, we can compute <m>f''(x)</m>:
+                                    <md> f''(x) = -8(\frac{-5}{3}) x^{-8/3} = \frac{40}{3} x^{-8/3} </md>
+                                    We are still working with odd (cube) roots, and this time there is an even power, so the sign of <m>f''(x)</m> is the same on both intervals.
+                                    For <m>x \ne 0</m> we have <m>f''(x) &gt; 0</m> (positive).
+                                    So <m>f(x)</m> is <term>concave up</term> on <m>(-\infty, 0)</m> and on <m>(0,\infty)</m>. (It is not valid to combine these intervals because <m>f(x)</m> is not continuous at <m>x=0</m>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Key features you need in your graph:
+                                    <ul>
+                                        <li><p><m>f(x)</m> has a negative power, so there will be a <term>vertical asymptote</term> at <m>x=0</m> and a <term>horizontal asymptote</term> <m>y=0</m></p></li>
+                                        <li><p>The left side of the graph on the interval <m>(-\infty,0)</m> is increasing and concave up, which has the shape of the bottom right quadrant of a circle</p></li>
+                                        <li><p>The right side of the graph on the interval <m>(0, \infty)</m> is decreasing and concave up, which has the shape of the bottom left quadrant of a circle</p></li>
+                                    </ul>
+                                </p>
+                                <image width="50%">
+                                    <shortdescription>Graph of f(x) showing increasing and concave up on the left to a vertical asymptote and then decreasing and concave up on the right coming back down to a horizontal asymptote</shortdescription>
+                                    <latex-image>
+                                    \begin{tikzpicture}
+                                    \begin{axis}[
+                                    domain=-8:8,
+                                    samples=200,
+                                    ymin=0,
+                                    ymax=3,
+                                    axis lines=middle,
+                                    xlabel={$x$},
+                                    ylabel={$y$},
+                                    restrict y to domain=0:5,
+                                    ]
+                                    \addplot[
+                                    thick,
+                                    ] {1/((x^2)^(1/3))};
+                                    \end{axis}
+                                    \end{tikzpicture}
+                                    </latex-image>
+                                </image>
+                            </li>
+                        </ol>
+                    </p>
+                </paragraphs>
+            </handout>
+
+            <handout>
+                <title>Week 5 Quiz</title>
+
+                <paragraphs>
+                    <title>Question</title>
+                    
+                    <p>
+                        The function <m>f(x)</m> is a rational function that when completely factored can be written
+                        <md>f(x) = \frac{3(x+2)^2(x-1)(x-3)}{2(x-1)^3(x-3)}</md>
+                        <ol>
+                            <li><p>Find the domain of <m>f(x)</m> and describe all discontinuities.</p></li>
+                            <li><p>Compute the limit at each discontinuity. For any infinite limits, justify left- and right-sided limits clearly.</p></li>
+                            <li><p>Determine <m>\displaystyle \lim_{x \to -\infty} f(x)</m>.</p></li>
+                        </ol>
+                    </p>
+                </paragraphs>
+                <paragraphs>
+                    <title>Solution</title>
+                    <p>
+                        <ol>
+                            <li>
+                                <p>
+                                    A rational function's domain is all real numbers except for the roots of the denominator's polynomial. The factors of the denominator include <m>x-1</m> and <m>x-3</m>, so <m>f(x)</m> is undefined at <m>x=1</m> and <m>x=3</m>. Written in interval notation, the domain is <m>(-\infty, 1) \cup (1,3) \cup (3,\infty)</m>.
+                                </p>
+                                <p>
+                                    There are discontinuities at <m>x=1</m> and <m>x=3</m>. We simplify the factors by cancelling any common factors:
+                                    <md>f(x) = \frac{3(x+2)^2(x-1)(x-3)}{2(x-1)^3(x-3)} = \frac{3(x+2)^2}{2(x-1)^2}</md>
+                                    In the simplified formula, only <m>x-1</m> remains as a denominator's factor. So <m>x=3</m> is a <term>removable discontinuity</term> while <m>x=1</m> is an infinite discontinuity (vertical asymptote).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    We need to find limits for each discontinuity.
+                                </p>
+                                <p>
+                                    At the removable discontinuity, we just use the simplified formula. The new formula is continuous so that we can just evaluate using the x-value.
+                                    <md>
+                                        \lim_{x \to 3} f(x) = \lim_{x \to 3} \frac{3(x+2)^2}{2(x-1)^2} = \frac{3(5)^2}{2(2)^2} = \frac{75}{8}
+                                    </md>
+                                </p>
+                                <p>
+                                    At the infinite discontinuity, the one-sided limits are infinite. We use sign analysis to determine whether the limits are <m>+\infty</m> or <m>-\infty</m>. Because the simplified formulas has multiplicity 2 for each formula factor, the function never changes signs and is positive on each interval.
+                                    <md>
+                                        <mrow> \lim_{x \to 1^-} f(x) = +\infty </mrow>
+                                        <mrow> \lim_{x \to 1^+} f(x) = +\infty </mrow>
+                                    </md>
+                                    Because the one-sided limits are the same, we write
+                                    <md>\lim_{x \to 1^-} f(x) = +\infty </md>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    To find the limit at infinity, we need to know the highest power terms from the numerator and denominator. We don't actually need to multiply out all of the terms. Each factor will contribute a single power of <m>x</m>, so the numerator's leading term using the simplified formula will be <m>3x^2</m> and the denominator's leading term will be <m>2x^2</m>. Thus, for limits at infinity, we have:
+                                    <md>
+                                        <mrow>\lim_{x \to -\infty} f(x) \amp = \lim_{x \to -\infty} \frac{3x^2}{2x^2}</mrow>
+                                        <mrow> \amp = \lim_{x \to -\infty} \frac{3}{2}</mrow>
+                                        <mrow> \amp = \frac{3}{2}</mrow>
+                                    </md>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </paragraphs>
+            </handout>
+        </chapter>
+    </book>
+</pretext>

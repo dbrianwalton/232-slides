@@ -16,5 +16,12 @@
     >
       <stringparams html.css.extra="external/css/custom.css" />
     </target>
+    <target
+        name="handouts"
+        format="html"
+        source="handouts-main.ptx"
+        deploy-dir="handouts"
+    >
+    </target>
   </targets>
 </project>
