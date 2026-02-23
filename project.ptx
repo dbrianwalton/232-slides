@@ -7,7 +7,9 @@
         format="revealjs"
         deploy-dir="slides"
         output-filename="index.html"
-        />
+        >
+      <stringparams html.css.extra="external/css/custom-slides.css" />
+    </target>
     <target
         name="slides_adv"
         format="html"
