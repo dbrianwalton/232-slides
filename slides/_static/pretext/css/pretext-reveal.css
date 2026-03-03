@@ -43,9 +43,6 @@ ul {
   float: left;
   padding-right: 2em;
 }
-.sidebyside {
-  width: 100%;
-}
 .definition-like,
 .theorem-like,
 .proof,
