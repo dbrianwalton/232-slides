@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_5-5_LHopital-Rule" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 5.5: L'Hopital's Rule</title>
+
+  <slide>
+    <title>Learning Goals</title>
+
+    <ul>
+      <li>
+        <p>Only indeterminate limits that have the form <m>0/0</m> or <m>\infty/\infty</m> apply to L'Hopital's Rule</p>
+      </li>
+      <li>
+        <p>Evaluate limits using L'Hopital's rule</p>
+      </li>
+      <li>
+        <p>Be able to rewrite other indeterminate limits in the L'Hopital-style indeterminate form, including those involving powers</p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Indeterminate Limit Forms</title>
+    
+    <p>
+      A <term>limit form</term> refers to evaluating the individual terms of a limit and combining the resulting limits.
+      The limit form is <term>indeterminate</term> if there are different limit answers possible for the same limit form, 
+      usually coming from cancellation involving infinity or zero.
+      <ul>
+        <li>
+          <p><m>\infty - \infty</m></p>
+        </li>
+        <li>
+          <p><m>\frac{\infty}{\infty}</m></p>
+        </li>
+        <li>
+          <p><m>\frac{0}{0}</m></p>
+        </li>
+        <li>
+          <p><m>0 \cdot \infty</m></p>
+        </li>
+        <li>
+          <p><m>0^0</m></p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+
+  <slide>
+    <title>L'Hopital's Rule</title>
+    
+    <p>
+      When a function <m>f(x)</m> is a <em>quotient</em> of two functions <m>\displaystyle f(x) = \frac{u(x)}{w(x)}</m> and we have:
+      <ul>
+        <li>
+          <p>either <m>u(x) \to 0</m> and <m>w(x) \to 0</m> as <m>x \to a</m></p>
+        </li>
+        <li>
+          <p>or <m>u(x) \to \infty</m> and <m>w(x) \to \infty</m> as <m>x \to a</m></p>
+        </li>
+      </ul>
+      If <m>\displaystyle \lim_{x \to a} \frac{u'(x)}{w'(x)} = L</m> exists, then <m>\displaystyle \lim_{x \to a} \frac{u(x)}{w(x)} = L</m>.
+    </p>
+    <p>
+      You must verify that the limit form is either <m>0/0</m> or <m>\infty/\infty</m> <em>and</em> show that the limit of <m>u'(x)/w'(x)</m> itself has a limit. If both are true, then the limit of <m>u(x)/w(x)</m> will have the same limit.
+    </p>
+    <p>
+      We can repeat using the rule if it is still indeterminate.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Examples of L'Hopital's Rule</title>
+    
+    <ol>
+      <li>
+        <p><m>\displaystyle \lim_{x \to 3} \frac{2x-6}{x^2-9}</m></p>
+      </li>
+      <li>
+        <p><m>\displaystyle \lim_{x \to 0} \frac{e^{2x}-1}{x}</m></p>
+      </li>
+      <li>
+        <p><m>\displaystyle \lim_{x \to \infty} \frac{e^x}{x^2}</m></p>
+      </li>
+    </ol>
+  </slide>
+
+  <slide>
+    <title>Rewriting Indeterminate Forms</title>
+    
+    <p>
+      A function with indeterminate form <m>\infty - \infty</m> should be rewritten by <em>factoring</em> out the dominant term.
+    </p>
+    <p>
+      A function with indeterminate form <m>0 \cdot \infty</m> should be rewritten by <em>rewriting</em> one of the factors as <em>division</em> by the reciprocal.
+    </p>
+    <p>
+      A function with indeterminate form involving power should be rewritten as <m>e^u</m>.
+    </p>
+  </slide>
+</section>

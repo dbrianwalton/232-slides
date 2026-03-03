@@ -60,6 +60,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 
         <xi:include href="./sec5.1-exponential-logarithm-functions.ptx" />
         <xi:include href="./sec5.2+3-exponential-limits-derivatives.ptx" />
+        <xi:include href="./sec5.4-exponential-models.ptx" />
 
     </slideshow>
 </pretext>

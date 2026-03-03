@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_5-4_exponential-models" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 5.4: Exponential Models</title>
+
+  <slide>
+    <title>Learning Goals</title>
+
+    <ul>
+      <li>
+        <p>
+          All exponentials and even powers can be written in terms of the natural exponential.
+        </p>
+      </li>
+      <li>
+        <p>
+          After rewriting in terms of base <m>e</m>, we can compute derivatives using the chain rule.
+        </p>
+      </li>
+      <li>
+        <p>
+          Recognize cues for exponential growth and decay applications.
+        </p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Change of Base</title>
+    
+    <p>
+      Any <em>positive</em> value <m>u</m> can be rewritten <m>u = e^{\ln(u)}</m>.
+    </p>
+    <p>
+      Rewrite the following in terms of <m>e</m> to a power.
+      <ol>
+        <li>
+          <p><m>2^{-x/3}</m></p>
+        </li>
+        <li>
+          <p><m>x^4</m> for <m>x &gt; 0</m></p>
+        </li>
+        <li>
+          <p><m>(1+2x)^{x}</m></p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Derivatives with Other Bases</title>
+    
+    <p>
+      Change the base to the natural base <m>e</m> and then find the derivative.
+      <ol>
+        <li>
+          <p><m>f(x) = 2^x</m></p>
+        </li>
+        <li>
+          <p><m>g(x) = 3^{-x^2}</m></p>
+        </li>
+        <li>
+          <p><m>p(x) = x^4</m></p>
+        </li>
+        <li>
+          <p><m>h(x) = x^x</m></p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Exponential Growth and Decay</title>
+    
+    <p>
+      We know that <m>f(x) = b^x</m> has a derivative <m>f'(x) = b^x \cdot \ln(b)</m>. Rewriting <m>f(x) = e^{\ln(b) \cdot x}</m> as <m>f(x) = e^{kx}</m> where <m>k = \ln(b)</m> shows that <m>f'(x) = k \cdot f(x)</m>.
+    </p>
+    <p>
+      That is, every simple exponential model has the property <em>the derivative (or rate of change) is proportional to the function value</em>.
+      <ul>
+        <li>
+          <p>Radioactive decay: The number of atoms that decay during a short interval is <em>proportional</em> to the total number of atoms.</p>
+        </li>
+        <li>
+          <p>Population growth: The number of births or deaths during a short interval is <em>proportional</em> to the total population.</p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Example: A population grows at a rate that is proportional to the current population. At <m>t=0</m>, there are 400 individuals and at <m>t=10</m>, there are 600 individuals. Find a model for the population.
+    </p>
+    <p>
+      Example: Carbon-14 has a half-life of 5730 years. If a sample now has 40% of the amount of Carbon-14 that it started with, find the time when the sample began.
+    </p>
+  </slide>
+</section>
