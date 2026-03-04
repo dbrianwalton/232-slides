@@ -303,6 +303,54 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
                     </p>
                 </paragraphs>
             </handout>
+
+            <handout>
+                <title>Week 6 Quiz</title>
+
+                <paragraphs>
+                    <title>Question</title>
+                    
+                    <p>
+                        Use the natural logarithm <m>\ln(\cdot)</m> to solve the equation
+                        <md>
+                            5 \cdot 2^{2x-1} = 25
+                        </md>.
+                    </p>
+                </paragraphs>
+                <paragraphs>
+                    <title>Solution</title>
+
+                    <p>
+                        We start by isolating the exponential term <m>2^{2x-1}</m>, dividing both sides of the equation by 5.
+                        <md>
+                            <mrow>5 \cdot 2^{2x-1} \amp = 25 </mrow>
+                            <mrow>2^{2x-1} \amp = 5 </mrow>
+                        </md>
+                        We now apply the logarithm to both sides of the equation, so that we can use the power rule for logarithms:
+                        <md>
+                            <mrow>\ln(2^{2x-1}) \amp = \ln(5) </mrow>
+                            <mrow>(2x-1) \cdot \ln(2) \amp = \ln(5) </mrow>
+                        </md>
+                        We then proceed to isolate the <m>x</m>, first by dividing by <m>\ln(2)</m>, then adding 1, and finally dividing by 2:
+                        <md>
+                            <mrow>2x-1 \amp = \frac{\ln(5)}{\ln(2)} </mrow>
+                            <mrow>2x \amp = \frac{\ln(5)}{\ln(2)} + 1 </mrow>
+                            <mrow>x \amp = \frac{\frac{\ln(5)}{\ln(2)} + 1}{2} </mrow>
+                        </md>
+                    </p>
+                </paragraphs>
+            </handout>
+            <handout>
+                <title>Week 7 Quiz</title>
+                
+                <paragraphs>
+                    <title>Question</title>
+                    
+                    <p>
+                        For <m>\displaystyle f(x) = \frac{x^2}{e^{x^2}}</m>, solve for all values <m>x</m> where <m>f'(x) = 0</m>.
+                    </p>
+                </paragraphs>
+            </handout>
         </chapter>
     </book>
 </pretext>
