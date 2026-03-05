@@ -206,6 +206,24 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "Section 5.4: Exponential Models",
   "body": " Section 5.4: Exponential Models   Learning Goals    All exponentials and even powers can be written in terms of the natural exponential.    After rewriting in terms of base , we can compute derivatives using the chain rule.    Recognize cues for exponential growth and decay applications.   >   Change of Base  Any positive value can be rewritten .  Rewrite the following in terms of to a power.      for       >   Derivatives with Other Bases  Change the base to the natural base and then find the derivative.               >   Exponential Growth and Decay  We know that has a derivative . Rewriting as where shows that .  That is, every simple exponential model has the property the derivative (or rate of change) is proportional to the function value .   Radioactive decay: The number of atoms that decay during a short interval is proportional to the total number of atoms.    Population growth: The number of births or deaths during a short interval is proportional to the total population.     Example: A population grows at a rate that is proportional to the current population. At , there are 400 individuals and at , there are 600 individuals. Find a model for the population.  Example: Carbon-14 has a half-life of 5730 years. If a sample now has 40% of the amount of Carbon-14 that it started with, find the time when the sample began. >  "
+},
+{
+  "id": "sec_5-5_LHopital-Rule",
+  "level": "1",
+  "url": "sec_5-5_LHopital-Rule.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 5.5: L’Hopital’s Rule",
+  "body": " Section 5.5: L'Hopital's Rule   Learning Goals    Only indeterminate limits that have the form or apply to L'Hopital's Rule    Evaluate limits using L'Hopital's rule    Be able to rewrite other indeterminate limits in the L'Hopital-style indeterminate form, including those involving powers   >   Indeterminate Limit Forms  A limit form refers to evaluating the individual terms of a limit and combining the resulting limits. The limit form is indeterminate if there are different limit answers possible for the same limit form, usually coming from cancellation involving infinity or zero.               , ,    >   L'Hopital's Rule  When a function is a quotient of two functions and we have:   either and as (limit form )    or and as (limit form )   If exists, then .  You must verify that the limit form is either or  and show that the limit of itself has a limit. If both are true, then the limit of will have the same limit.  We can repeat using the rule on the new formula if it is still indeterminate. >   Examples of L'Hopital's Rule               >   Rewriting Indeterminate Forms  A function with indeterminate form should be rewritten by rewriting one of the factors as division by the reciprocal.              A function with indeterminate form involving a power should be rewritten as using logarithms, find and then use as the final limit.             >  "
+},
+{
+  "id": "sec_5-5_LHopital-Rule-3-2",
+  "level": "2",
+  "url": "sec_5-5_LHopital-Rule.html#sec_5-5_LHopital-Rule-3-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "limit form indeterminate "
 }
 ]
 

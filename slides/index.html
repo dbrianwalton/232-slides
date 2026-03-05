@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2026-03-03T06:28:19Z       *-->
+<!--*       on 2026-03-05T04:33:11Z       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -36,7 +36,7 @@
 <tr><td align="center" style="border-bottom: 0px;">James Madison University</td></tr>
 <tr><td align="center"></td></tr>
 </table>
-<h4><div class="date">as of March 3, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
+<h4><div class="date">as of March 5, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
 <div align="left"><p><span class="process-math">\(\displaystyle f(x) = \frac{x}{x^2+4}\)</span> and <span class="process-math">\(\displaystyle f'(x) = \frac{-x^2+4}{(x^2+4)^2}\)</span></p></div></section><section><h3>Graph Analysis 2</h3>
 <div align="left"><p><span class="process-math">\(f(x) = x \cdot (x^2-9)^{1/3}\)</span></p></div></section></section><section><section><h1>Section 4.1: Algebraic Functions</h1></section><section><h3>Learning Goals</h3>
 <div align="left"><ul class="disc" id="sec_4-1_algebraic_functions-2-2">
@@ -483,6 +483,42 @@ f(x) = \ln(|x|) = \begin{cases} \ln(x), &amp; x &gt; 0, \\ \ln(-x), &amp; x &lt;
 </ul></p>
 <p>Example: A population grows at a rate that is proportional to the current population. At <span class="process-math">\(t=0\text{,}\)</span> there are 400 individuals and at <span class="process-math">\(t=10\text{,}\)</span> there are 600 individuals. Find a model for the population.</p>
 <p>Example: Carbon-14 has a half-life of 5730 years. If a sample now has 40% of the amount of Carbon-14 that it started with, find the time when the sample began.</p>
+</div></section></section><section><section><h1>Section 5.5: L’Hopital’s Rule</h1></section><section><h3>Learning Goals</h3>
+<div align="left"><ul class="disc" id="sec_5-5_LHopital-Rule-2-2">
+<li><p>Only indeterminate limits that have the form <span class="process-math">\(0/0\)</span> or <span class="process-math">\(\infty/\infty\)</span> apply to L’Hopital’s Rule</p></li>
+<li><p>Evaluate limits using L’Hopital’s rule</p></li>
+<li><p>Be able to rewrite other indeterminate limits in the L’Hopital-style indeterminate form, including those involving powers</p></li>
+</ul></div></section><section><h3>Indeterminate Limit Forms</h3>
+<div align="left"><p>A <dfn class="terminology">limit form</dfn> refers to evaluating the individual terms of a limit and combining the resulting limits. The limit form is <dfn class="terminology">indeterminate</dfn> if there are different limit answers possible for the same limit form, usually coming from cancellation involving infinity or zero.<ul class="disc" id="sec_5-5_LHopital-Rule-3-2-3">
+<li><p><span class="process-math">\(\displaystyle \infty - \infty\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \frac{\infty}{\infty}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \frac{0}{0}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle 0 \cdot \infty\)</span></p></li>
+<li><p><span class="process-math">\(0^0\text{,}\)</span> <span class="process-math">\(1^\infty\text{,}\)</span> <span class="process-math">\(\infty^0\)</span></p></li>
+</ul></p></div></section><section><h3>L’Hopital’s Rule</h3>
+<div align="left">
+<p>When a function <span class="process-math">\(f(x)\)</span> is a <em class="emphasis">quotient</em> of two functions <span class="process-math">\(\displaystyle f(x) = \frac{u(x)}{w(x)}\)</span> and we have:<ul class="disc" id="sec_5-5_LHopital-Rule-4-2-4">
+<li><p>either <span class="process-math">\(u(x) \to 0\)</span> and <span class="process-math">\(w(x) \to 0\)</span> as <span class="process-math">\(x \to a\)</span> (limit form <span class="process-math">\(0/0\)</span>)</p></li>
+<li><p>or <span class="process-math">\(u(x) \to \pm\infty\)</span> and <span class="process-math">\(w(x) \to \pm\infty\)</span> as <span class="process-math">\(x \to a\)</span> (limit form <span class="process-math">\(\infty/\infty\)</span>)</p></li>
+</ul>If <span class="process-math">\(\displaystyle \lim_{x \to a} \frac{u'(x)}{w'(x)} = L\)</span> exists, then <span class="process-math">\(\displaystyle \lim_{x \to a} \frac{u(x)}{w(x)} = L\text{.}\)</span></p>
+<p>You must verify that the limit form is either <span class="process-math">\(0/0\)</span> or <span class="process-math">\(\infty/\infty\)</span> <em class="emphasis">and</em> show that the limit of <span class="process-math">\(u'(x)/w'(x)\)</span> itself has a limit. If both are true, then the limit of <span class="process-math">\(u(x)/w(x)\)</span> will have the same limit.</p>
+<p>We can repeat using the rule on the new formula if it is still indeterminate.</p>
+</div></section><section><h3>Examples of L’Hopital’s Rule</h3>
+<div align="left"><ol class="decimal" id="sec_5-5_LHopital-Rule-5-2">
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to 3} \frac{2x-6}{x^2-9}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to 2} \frac{2^x-4}{x^2-4}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to 0} \frac{e^{2x}-1-2x}{x^2}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to \infty} \frac{e^x}{x^2}\)</span></p></li>
+</ol></div></section><section><h3>Rewriting Indeterminate Forms</h3>
+<div align="left">
+<p>A function with indeterminate form <span class="process-math">\(0 \cdot \infty\)</span> should be rewritten by <em class="emphasis">rewriting</em> one of the factors as <em class="emphasis">division</em> by the reciprocal.<ul class="disc" id="sec_5-5_LHopital-Rule-6-2-4">
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to \infty} x e^{-x}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to 0^+} x \ln(x)\)</span></p></li>
+</ul></p>
+<p>A function with indeterminate form involving a power should be rewritten as <span class="process-math">\(e^u\)</span> using logarithms, find <span class="process-math">\(\lim u = L\)</span> and then use <span class="process-math">\(e^L\)</span> as the final limit.<ul class="disc" id="sec_5-5_LHopital-Rule-6-3-4">
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to 0} \left(1+x\right)^{2/x}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to 1^+} (\ln(x))^{x-1}\)</span></p></li>
+</ul></p>
 </div></section></section>
 </div>
 </div></body>
