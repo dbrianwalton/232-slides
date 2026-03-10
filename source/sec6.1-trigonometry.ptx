@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_6-1_Trigonometry" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 6.1: Trigonometric Functions</title>
+
+  <slide>
+    <title>Learning Goals</title>
+
+    <ul>
+      <li>
+        <p>Trigonometric functions were first defined for angles of right triangles: SOH CAH TOA</p>
+      </li>
+      <li>
+        <p>Two special triangles: 30-60-90 and 45-45-90</p>
+      </li>
+      <li>
+        <p>Change definition to use unit circle instead of right triangles</p>
+      </li>
+      <li>
+        <p>Measure angles in degrees (360 per circle) and radians (2 pi per circle)</p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Right Triangles</title>
+    
+    <p>
+      Start by introducing some geometric ideas.
+      <ul>
+        <li>
+          <p>
+            An <term>acute</term> angle is an angle smaller than a right angle (90 degrees).
+          </p>
+        </li>
+        <li>
+          <p>
+            Two geometric shapes are <term>similar</term> if corresponding angles are equal and corresponding edges are all proportional.
+          </p>
+        </li>
+        <li>
+          <p>
+            Two right triangles (have 90 degree angle) if one acute angle matches.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Define trigonometric functions (SOH CAH TOA): Given <term>acute angle</term> <m>\theta</m>, take a right triangle with angle <m>\theta</m> and identify the legs that are <term>opposite</term> and <term>adjacent</term> and the <term>hypotenuse</term>.
+    </p>
+    <sidebyside widths="20% 10% 70%">
+      <image>
+        <shortdescription>Right triangle ABC with angle theta at vertex A and right angle at vertex C and the complementary acute angle at vertex B. Leg BC is opposite, leg AC is adjacent, and AB is the hypotenuse.</shortdescription>
+        <latex-image>
+          \begin{tikzpicture}
+            \draw [thick, blue] 
+              (0,0) node[left] {A} -- 
+              (3,4) node[pos=0.5, above left] {hyp} node [right] {B} -- 
+              (3,0) node[pos=0.5, right] {opp} node [right] {C}  -- 
+              (0,0) node[pos=0.5, below] {adj};
+            \node at (0.3,0.3) [right] {$\theta$};
+          \end{tikzpicture}
+
+        </latex-image>
+      </image>
+      <p>
+        
+      </p>
+      <p>
+        <ul>
+          <li>
+            <p><m>\displaystyle \sin(\theta) = \frac{\text{opp}}{\text{hyp}} = \frac{BC}{AB}</m></p>
+          </li>
+          <li>
+            <p><m>\displaystyle \cos(\theta) = \frac{\text{adj}}{\text{hyp}} = \frac{AC}{AB}</m></p>
+          </li>
+          <li>
+            <p><m>\displaystyle \tan(\theta) = \frac{\text{opp}}{\text{adj}} = \frac{BC}{AC}</m></p>
+          </li>
+        </ul>
+      </p>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Geometric Applications</title>
+    
+    <p>
+      The triangle definitions for trigonometric functions allow us to solve for the lengths of various right triangles in applications:
+      <ol>
+        <li>
+          <p>
+            A kite is flying with 100 ft of string and we measure the angle of the string from the ground as <m>40^\circ</m>. How high is the kite?
+          </p>
+        </li>
+        <li>
+          <p>
+            When standing 20 feet away from the base of a tower, we find we need to look up <m>70^\circ</m> to see the top. How tall is the tower?
+          </p>
+        </li>
+        <li>
+          <p>
+            At a stretch where a river flows in a straight line, you look directly across the river and identify a landmark. Then you walk 50 feet upriver and again look at the same landmark. But to see the landmark, you are looking along a line that is now 30˚ away from the bank. How wide is the river?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Two Special Triangles</title>
+    
+    <p>
+      You should be able to reproduce the exact trigonometric values for the following two triangles.
+      Remember the Pythagorean Theorem: <m>a^2 + b^2 = c^2</m> (leg lengths are <m>a</m> and <m>b</m>)
+    </p>
+    <p>
+      <ul>
+        <li>
+          <p>The <term>isosceles</term> right triangle has 45 degree angles.</p>
+        </li>
+        <li>
+          <p>
+            A bisected <term>equilateral</term> triangle is a right triangle with 30 and 60 degree angles.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <sidebyside widths="30% 20% 30% 20%">
+      <image>
+        <shortdescription>45-45-90 right triangle is isosceles with legs having length 1 and a hypotenuse length of square root of 2.</shortdescription>
+        <latex-image>
+          \begin{tikzpicture}
+            \draw (0,0) --
+            (4,4) node[pos=0.5, above left] {$\sqrt{2}$} --
+            (4,0) node[pos=0.5, right] {1} --
+            (0,0) node[pos=0.5, below] {1};
+            \node at (0.4, 0.3) [right] {$45^\circ$};
+            \node at (3.7, 3.5) [below ] {$45^\circ$};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <p> </p>
+      <image>
+        <shortdescription>30-60-90 right triangle is a bisected equilateral triangle with a hypotenuse having length 1, a leg of length 1/2 and another leg of length square root of 3 over 2.</shortdescription>
+        <latex-image>
+          \begin{tikzpicture}
+            \draw (0,0) --
+            (2,3.46) node[pos=0.5, above left] {$1$} --
+            (2,0) node[pos=0.5, right] {$\frac{\sqrt{3}}{2}$} --
+            (0,0) node[pos=0.5, below] {$\frac{1}{2}$};
+            \draw [dashed] (2,3.46) -- (4,0) -- (2,0);
+            \node at (0.2, 0.3) [right] {$60^\circ$};
+            \node at (1.75, 2.6) [below] {$30^\circ$};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <p> </p>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Generalizing Trigonometry: Step 1</title>
+    
+    <p>
+      Only defining the trigonometric values for acute angles is limiting.
+      We want to define it for arbitrary angles.
+    </p>
+    <p>
+      Step 1: Define everything in terms of sine and cosine.
+      <ul>
+        <li>
+          <p>Tangent: <m>\displaystyle \tan(\theta) = \frac{\sin(\theta)}{\cos(\theta)}</m></p>
+        </li>
+        <li>
+          <p>Secant: <m>\displaystyle \cot(\theta) = \frac{1}{\cos(\theta)}</m></p>
+        </li>
+        <li>
+          <p>Cotangent: <m>\displaystyle \cot(\theta) = \frac{\cos(\theta)}{\sin(\theta)}</m></p>
+        </li>
+        <li>
+          <p>Cosecant: <m>\displaystyle \csc(\theta) = \frac{1}{\sin(\theta)}</m></p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Generalizating Trigonometry: Step 2</title>
+    
+    <p>
+      Step 2: Define angles in terms of rotation.
+      <ul>
+        <li>
+          <p>360 degrees = 1 full rotation (circle)</p>
+        </li>
+        <li>
+          <p><m>2\pi</m> radians = 1 full rotation (circle)</p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Draw a <term>unit circle</term> (radius 1) with axes going through the center. Sun rises in the east (right side) and sets in the west (left side)
+      <ul>
+        <li>
+          <p>
+            Angle is measured from the <term>positive</term> <m>x</m> axis to the origin to a ray extending to infinity.
+          </p>
+        </li>
+        <li>
+          <p>
+            1 <term>radian</term> is the angle that travels exactly 1 radius length on the <term>arc</term> (partial circumference).
+          </p>
+        </li>
+      </ul>
+    </p>
+    <video youtube="opQhR1vX1U4" start="69" end="84" width="40%"/>
+  </slide>
+  <slide>
+    <title>Angle Conversions</title>
+    
+    <p>
+      To convert measures of angles between degrees and radians, you just need to know that 360 degrees and <m>2\pi</m> radians both measure the same angle, and all other angles use the same proportionality.
+      <ul>
+        <li>
+          <p>
+            Given an angle in degrees: Divide by 360 to find out the number of rotations, multiply by <m>2 \pi</m> to get the equivalent radians.
+          </p>
+        </li>
+        <li>
+          <p>
+            Given an angle in radians: Divide by <m>2 \pi</m> to find out the number of rotations, multiply by <m>360</m> to get the equivalent degrees.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Practice:
+      <ol>
+        <li>
+          <p>90 degrees to radians</p>
+        </li>
+        <li>
+          <p>-900 degrees to radians</p>
+        </li>
+        <li>
+          <p>0.75 radians to degrees</p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Generalizing Trigonometry: Step 3</title>
+    
+    <p>
+      The critical observation connecting the circle to trigonometry is that for a <term>unit circle</term>, an acute angle with the angle placed at the origin has a hypotenuse of 1.
+      <ul>
+        <li>
+          <p>
+            opposite length: height of the triangle is equal to <m>y</m> coordinate on circle
+          </p>
+        </li>
+        <li>
+          <p>
+            adjacent length: width of the triangle is equal to <m>x</m> coordinate on circle
+          </p>
+        </li>
+      </ul>
+      So we <term>define</term> sine and cosine using the coordinates of the terminal point for <em>any</em> angle.
+      <ul>
+        <li>
+          <p><m>\sin(\theta) = \text{y-coordinate}</m></p>
+        </li>
+        <li>
+          <p><m>\cos(\theta) = \text{x-coordinate}</m></p>
+        </li>
+      </ul>
+      All other functions are defined from there.
+      <ul>
+        <li>
+          <p><m>\tan(\theta) = \frac{\sin(\theta)}{\cos(\theta)} = \frac{y}{x}</m> and <m>\sec(\theta) = \frac{1}{\cos(\theta)} = \frac{1}{x}</m></p>
+        </li>
+        <li>
+          <p><m>\cot(\theta) = \frac{\cos(\theta)}{\sin(\theta)} = \frac{x}{y}</m> and <m>\csc(\theta) = \frac{1}{\sin(\theta)} = \frac{1}{y}</m></p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+  <slide>
+    <title>Practice Finding Trig Values</title>
+    
+    <p>
+      Find <m>\sin(\theta)</m> and <m>\cos(\theta)</m> and then all other trigonometric function values.
+      <ul>
+        <li>
+          <p><m>\theta = \frac{-\pi}{4}</m></p>
+        </li>
+        <li>
+          <p><m>\theta = \frac{2\pi}{3}</m></p>
+        </li>
+        <li>
+          <p><m>\theta = \frac{-7\pi}{6}</m></p>
+        </li>
+        <li>
+          <p><m>\theta = \frac{23 \pi}{4}</m></p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+</section>

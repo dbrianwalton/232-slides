@@ -63,5 +63,6 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <xi:include href="./sec5.4-exponential-models.ptx" />
         <xi:include href="./sec5.5-lhopital-rule.ptx" />
 
+        <xi:include href="./sec6.1-trigonometry.ptx" />
     </slideshow>
 </pretext>

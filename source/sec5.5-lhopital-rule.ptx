@@ -80,7 +80,7 @@
         <p><m>\displaystyle \lim_{x \to 2} \frac{2^x-4}{x^2-4}</m></p>
       </li>
       <li>
-        <p><m>\displaystyle \lim_{x \to 0} \frac{e^{2x}-1-2x}{x^2}</m></p>
+        <p><m>\displaystyle \lim_{x \to 0} \frac{e^{2x}-1-2x}{x^2}</m> (Begin Day 14)</p>
       </li>
       <li>
         <p><m>\displaystyle \lim_{x \to \infty} \frac{e^x}{x^2}</m></p>
