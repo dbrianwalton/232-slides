@@ -214,7 +214,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Section 5.5: L’Hopital’s Rule",
-  "body": " Section 5.5: L'Hopital's Rule   Learning Goals    Only indeterminate limits that have the form or apply to L'Hopital's Rule    Evaluate limits using L'Hopital's rule    Be able to rewrite other indeterminate limits in the L'Hopital-style indeterminate form, including those involving powers   >   Indeterminate Limit Forms  A limit form refers to evaluating the individual terms of a limit and combining the resulting limits. The limit form is indeterminate if there are different limit answers possible for the same limit form, usually coming from cancellation involving infinity or zero.               , ,    >   L'Hopital's Rule  When a function is a quotient of two functions and we have:   either and as (limit form )    or and as (limit form )   If exists, then .  You must verify that the limit form is either or  and show that the limit of itself has a limit. If both are true, then the limit of will have the same limit.  We can repeat using the rule on the new formula if it is still indeterminate. >   Examples of L'Hopital's Rule               >   Rewriting Indeterminate Forms  A function with indeterminate form should be rewritten by rewriting one of the factors as division by the reciprocal.              A function with indeterminate form involving a power should be rewritten as using logarithms, find and then use as the final limit.             >  "
+  "body": " Section 5.5: L'Hopital's Rule   Learning Goals    Only indeterminate limits that have the form or apply to L'Hopital's Rule    Evaluate limits using L'Hopital's rule    Be able to rewrite other indeterminate limits in the L'Hopital-style indeterminate form, including those involving powers   >   Indeterminate Limit Forms  A limit form refers to evaluating the individual terms of a limit and combining the resulting limits. The limit form is indeterminate if there are different limit answers possible for the same limit form, usually coming from cancellation involving infinity or zero.               , ,    >   L'Hopital's Rule  When a function is a quotient of two functions and we have:   either and as (limit form )    or and as (limit form )   If exists, then .  You must verify that the limit form is either or  and show that the limit of itself has a limit. If both are true, then the limit of will have the same limit.  We can repeat using the rule on the new formula if it is still indeterminate. >   Examples of L'Hopital's Rule          (Begin Day 14)      >   Rewriting Indeterminate Forms  A function with indeterminate form should be rewritten by rewriting one of the factors as division by the reciprocal.              A function with indeterminate form involving a power should be rewritten as using logarithms, find and then use as the final limit.             >  "
 },
 {
   "id": "sec_5-5_LHopital-Rule-3-2",
@@ -224,6 +224,60 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "limit form indeterminate "
+},
+{
+  "id": "sec_6-1_Trigonometry",
+  "level": "1",
+  "url": "sec_6-1_Trigonometry.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 6.1: Trigonometric Functions",
+  "body": " Section 6.1: Trigonometric Functions   Learning Goals    Trigonometric functions were first defined for angles of right triangles: SOH CAH TOA    Two special triangles: 30-60-90 and 45-45-90    Change definition to use unit circle instead of right triangles    Measure angles in degrees (360 per circle) and radians (2 pi per circle)   >   Right Triangles  Start by introducing some geometric ideas.   An acute angle is an angle smaller than a right angle (90 degrees).    Two geometric shapes are similar if corresponding angles are equal and corresponding edges are all proportional.    Two right triangles (have 90 degree angle) if one acute angle matches.     Define trigonometric functions (SOH CAH TOA): Given acute angle  , take a right triangle with angle and identify the legs that are opposite and adjacent and the hypotenuse .    Right triangle ABC with angle theta at vertex A and right angle at vertex C and the complementary acute angle at vertex B. Leg BC is opposite, leg AC is adjacent, and AB is the hypotenuse.                   >   Geometric Applications  The triangle definitions for trigonometric functions allow us to solve for the lengths of various right triangles in applications:   A kite is flying with 100 ft of string and we measure the angle of the string from the ground as . How high is the kite?    When standing 20 feet away from the base of a tower, we find we need to look up to see the top. How tall is the tower?    At a stretch where a river flows in a straight line, you look directly across the river and identify a landmark. Then you walk 50 feet upriver and again look at the same landmark. But to see the landmark, you are looking along a line that is now 30˚ away from the bank. How wide is the river?    >   Two Special Triangles  You should be able to reproduce the exact trigonometric values for the following two triangles. Remember the Pythagorean Theorem: (leg lengths are and )     The isosceles right triangle has 45 degree angles.    A bisected equilateral triangle is a right triangle with 30 and 60 degree angles.       45-45-90 right triangle is isosceles with legs having length 1 and a hypotenuse length of square root of 2.       30-60-90 right triangle is a bisected equilateral triangle with a hypotenuse having length 1, a leg of length 1\/2 and another leg of length square root of 3 over 2.      >   Generalizing Trigonometry: Step 1  Only defining the trigonometric values for acute angles is limiting. We want to define it for arbitrary angles.  Step 1: Define everything in terms of sine and cosine.   Tangent:    Secant:    Cotangent:    Cosecant:    >   Generalizating Trigonometry: Step 2  Step 2: Define angles in terms of rotation.   360 degrees = 1 full rotation (circle)    radians = 1 full rotation (circle)     Draw a unit circle (radius 1) with axes going through the center. Sun rises in the east (right side) and sets in the west (left side)   Angle is measured from the positive  axis to the origin to a ray extending to infinity.    1 radian is the angle that travels exactly 1 radius length on the arc (partial circumference).     >   Angle Conversions  To convert measures of angles between degrees and radians, you just need to know that 360 degrees and radians both measure the same angle, and all other angles use the same proportionality.   Given an angle in degrees: Divide by 360 to find out the number of rotations, multiply by to get the equivalent radians.    Given an angle in radians: Divide by to find out the number of rotations, multiply by to get the equivalent degrees.     Practice:   90 degrees to radians    -900 degrees to radians    0.75 radians to degrees    >   Generalizing Trigonometry: Step 3  The critical observation connecting the circle to trigonometry is that for a unit circle , an acute angle with the angle placed at the origin has a hypotenuse of 1.   opposite length: height of the triangle is equal to coordinate on circle    adjacent length: width of the triangle is equal to coordinate on circle   So we define sine and cosine using the coordinates of the terminal point for any angle.        All other functions are defined from there.   and    and    >   Practice Finding Trig Values  Find and and then all other trigonometric function values.               >  "
+},
+{
+  "id": "sec_6-1_Trigonometry-3-2",
+  "level": "2",
+  "url": "sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-3-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "acute similar "
+},
+{
+  "id": "sec_6-1_Trigonometry-3-3",
+  "level": "2",
+  "url": "sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-3-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "acute angle opposite adjacent hypotenuse "
+},
+{
+  "id": "sec_6-1_Trigonometry-5-3",
+  "level": "2",
+  "url": "sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-5-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "isosceles equilateral "
+},
+{
+  "id": "sec_6-1_Trigonometry-7-3",
+  "level": "2",
+  "url": "sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-7-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "unit circle positive radian arc "
+},
+{
+  "id": "sec_6-1_Trigonometry-9-2",
+  "level": "2",
+  "url": "sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-9-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "unit circle define "
 }
 ]
 

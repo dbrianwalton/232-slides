@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Section 6.1: Trigonometric Functions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/css/custom-alt-slides.css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.18';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.1d92cd109bc12c4d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.74f6fa0c85f09c79.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Math 232: Calculus with Functions II</span> <span class="subtitle">Course Slides</span></a></h1>
+<p class="byline">Dr. Brian Walton</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button hidden" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_5-5_LHopital-Rule.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="root-1-2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar hidden"><nav id="ptx-toc" class="ptx-toc depth0 focused" data-preexpanded-levels="0" data-max-levels="0"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="root-1-2-3.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="introduction.html" class="internal"><span class="title">Introductory Examples</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="introduction.html#introduction-2" class="internal"><span class="title">Graph Analysis 1 (Begin Day 2)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="introduction.html#introduction-3" class="internal"><span class="title">Graph Analysis 2</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_4-1_algebraic_functions.html" class="internal"><span class="title">Section 4.1: Algebraic Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-1_algebraic_functions.html#sec_4-1_algebraic_functions-2" class="internal"><span class="title">Learning Goals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-1_algebraic_functions.html#sec_4-1_algebraic_functions-3" class="internal"><span class="title">Summary of Properties for Rational Powers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-1_algebraic_functions.html#sec_4-1_algebraic_functions-4" class="internal"><span class="title">Exploration of Simple Rational Powers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-1_algebraic_functions.html#sec_4-1_algebraic_functions-5" class="internal"><span class="title">Polynomials: Root and Factor Relation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-1_algebraic_functions.html#sec_4-1_algebraic_functions-6" class="internal"><span class="title">Synthetic Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-1_algebraic_functions.html#sec_4-1_algebraic_functions-7" class="internal"><span class="title">Example of Synthetic Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-1_algebraic_functions.html#sec_4-1_algebraic_functions-8" class="internal"><span class="title">Motivating Polynomial Division (Begin Day 3/Day 4)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-1_algebraic_functions.html#sec_4-1_algebraic_functions-9" class="internal"><span class="title">Polynomial Multiplication by Table</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-1_algebraic_functions.html#sec_4-1_algebraic_functions-10" class="internal"><span class="title">Polynomial Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-1_algebraic_functions.html#sec_4-1_algebraic_functions-11" class="internal"><span class="title">Polynomial Division Example</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_4-2_algebraic_functions.html" class="internal"><span class="title">Section 4.2: Power Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-2_algebraic_functions.html#sec_4-2_algebraic_functions-2" class="internal"><span class="title">Learning Goals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-2_algebraic_functions.html#sec_4-2_algebraic_functions-3" class="internal"><span class="title">End Behavior and Limits</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-2_algebraic_functions.html#sec_4-2_algebraic_functions-4" class="internal"><span class="title">Derivatives (Power Rule)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-2_algebraic_functions.html#sec_4-2_algebraic_functions-5" class="internal"><span class="title">Graph Analysis (Begin Day 5)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-2_algebraic_functions.html#sec_4-2_algebraic_functions-6" class="internal"><span class="title">Models Using Power Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-2_algebraic_functions.html#sec_4-2_algebraic_functions-7" class="internal"><span class="title">Find the Model</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_4-3_polynomials.html" class="internal"><span class="title">Section 4.3: Polynomials</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-3_polynomials.html#sec_4-3_polynomials-2" class="internal"><span class="title">Learning Goals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-3_polynomials.html#sec_4-3_polynomials-3" class="internal"><span class="title">Multiplicity of Roots and Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-3_polynomials.html#sec_4-3_polynomials-4" class="internal"><span class="title">Shape of Multiplicity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-3_polynomials.html#sec_4-3_polynomials-5" class="internal"><span class="title">Roots and Multiplicity to Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-3_polynomials.html#sec_4-3_polynomials-6" class="internal"><span class="title">End Behavior from Leading Term (Begin Day 6)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-3_polynomials.html#sec_4-3_polynomials-7" class="internal"><span class="title">Irreducible Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-3_polynomials.html#sec_4-3_polynomials-8" class="internal"><span class="title">Equations for Coefficients</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_4-4_rational.html" class="internal"><span class="title">Section 4.4: Rational Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-4_rational.html#sec_4-4_rational-2" class="internal"><span class="title">Learning Goals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-4_rational.html#sec_4-4_rational-3" class="internal"><span class="title">Domain, Holes, and Vertical Asymptotes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-4_rational.html#sec_4-4_rational-4" class="internal"><span class="title">Shape and Multiplicity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-4_rational.html#sec_4-4_rational-5" class="internal"><span class="title">Polynomial Division and Horizontal, Slant and Curve Asymptotes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4-4_rational.html#sec_4-4_rational-6" class="internal"><span class="title">Shape Analysis</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_5-1_exponential-logarithm-functions.html" class="internal"><span class="title">Section 5.1: Exponential and Logarithmic Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-1_exponential-logarithm-functions.html#sec_5-1_exponential-logarithm-functions-2" class="internal"><span class="title">Learning Goals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-1_exponential-logarithm-functions.html#sec_5-1_exponential-logarithm-functions-3" class="internal"><span class="title">Exponential Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-1_exponential-logarithm-functions.html#sec_5-1_exponential-logarithm-functions-4" class="internal"><span class="title">Exponential Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-1_exponential-logarithm-functions.html#sec_5-1_exponential-logarithm-functions-5" class="internal"><span class="title">Logarithms as Inverses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-1_exponential-logarithm-functions.html#sec_5-1_exponential-logarithm-functions-6" class="internal"><span class="title">Exponential and Logarithm Equivalent Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-1_exponential-logarithm-functions.html#sec_5-1_exponential-logarithm-functions-7" class="internal"><span class="title">Properties of Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-1_exponential-logarithm-functions.html#sec_5-1_exponential-logarithm-functions-8" class="internal"><span class="title">Solving Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-1_exponential-logarithm-functions.html#sec_5-1_exponential-logarithm-functions-9" class="internal"><span class="title">Simplifying Formulas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html" class="internal"><span class="title">Section 5.2 &amp; 5.3: Exponential and Logarithmic Limits and Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-2" class="internal"><span class="title">Learning Goals (Begin Day 10)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-3" class="internal"><span class="title">Exponential Functions and Limits</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-4" class="internal"><span class="title">Derivative of Exponential</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-5" class="internal"><span class="title">Natural Base <span class="process-math">\(e\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-6" class="internal"><span class="title">Practice Derivatives with Exponentials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-7" class="internal"><span class="title">The Natural Logarithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-8" class="internal"><span class="title">Limits of Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-9" class="internal"><span class="title">The Natural Logarithm’s Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-10" class="internal"><span class="title">Practice Derivatives with Logarithms (Begin Day 12)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-11" class="internal"><span class="title">Logarithms and Absolute Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-12" class="internal"><span class="title">Using Logarithm Expansion Before Differentiation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-2_5-3_exponential-limits-derivatives.html#sec_5-2_5-3_exponential-limits-derivatives-13" class="internal"><span class="title">Logarithmic Differentiation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_5-4_exponential-models.html" class="internal"><span class="title">Section 5.4: Exponential Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-4_exponential-models.html#sec_5-4_exponential-models-2" class="internal"><span class="title">Learning Goals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-4_exponential-models.html#sec_5-4_exponential-models-3" class="internal"><span class="title">Change of Base</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-4_exponential-models.html#sec_5-4_exponential-models-4" class="internal"><span class="title">Derivatives with Other Bases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-4_exponential-models.html#sec_5-4_exponential-models-5" class="internal"><span class="title">Exponential Growth and Decay</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_5-5_LHopital-Rule.html" class="internal"><span class="title">Section 5.5: L’Hopital’s Rule</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-5_LHopital-Rule.html#sec_5-5_LHopital-Rule-2" class="internal"><span class="title">Learning Goals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-5_LHopital-Rule.html#sec_5-5_LHopital-Rule-3" class="internal"><span class="title">Indeterminate Limit Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-5_LHopital-Rule.html#sec_5-5_LHopital-Rule-4" class="internal"><span class="title">L’Hopital’s Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-5_LHopital-Rule.html#sec_5-5_LHopital-Rule-5" class="internal"><span class="title">Examples of L’Hopital’s Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5-5_LHopital-Rule.html#sec_5-5_LHopital-Rule-6" class="internal"><span class="title">Rewriting Indeterminate Forms</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec_6-1_Trigonometry.html" class="internal"><span class="title">Section 6.1: Trigonometric Functions</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-2" class="internal"><span class="title">Learning Goals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-3" class="internal"><span class="title">Right Triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-4" class="internal"><span class="title">Geometric Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-5" class="internal"><span class="title">Two Special Triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-6" class="internal"><span class="title">Generalizing Trigonometry: Step 1</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-7" class="internal"><span class="title">Generalizating Trigonometry: Step 2</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-8" class="internal"><span class="title">Angle Conversions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-9" class="internal"><span class="title">Generalizing Trigonometry: Step 3</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-10" class="internal"><span class="title">Practice Finding Trig Values</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_6-1_Trigonometry"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 6.1: Trigonometric Functions</span>
+</h2>
+<section class="subsection" id="sec_6-1_Trigonometry-2"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Goals</span>
+</h3>
+<ul class="disc" id="sec_6-1_Trigonometry-2-2">
+<li id="sec_6-1_Trigonometry-2-2-1">
+<div class="para" id="sec_6-1_Trigonometry-2-2-1-1">Trigonometric functions were first defined for angles of right triangles: SOH CAH TOA<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-2-2-2">
+<div class="para" id="sec_6-1_Trigonometry-2-2-2-1">Two special triangles: 30-60-90 and 45-45-90<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-2-2-3">
+<div class="para" id="sec_6-1_Trigonometry-2-2-3-1">Change definition to use unit circle instead of right triangles<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-2-2-4">
+<div class="para" id="sec_6-1_Trigonometry-2-2-4-1">Measure angles in degrees (360 per circle) and radians (2 pi per circle)<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Learning Goals"><a href="#sec_6-1_Trigonometry-2" title="Copy heading and permalink for Subsection: Learning Goals" aria-label="Copy heading and permalink for Subsection: Learning Goals">🔗</a></div></section><section class="subsection" id="sec_6-1_Trigonometry-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Right Triangles</span>
+</h3>
+<div class="para logical" id="sec_6-1_Trigonometry-3-2">
+<div class="para">Start by introducing some geometric ideas.</div>
+<ul class="disc" id="sec_6-1_Trigonometry-3-2-1">
+<li id="sec_6-1_Trigonometry-3-2-1-1">
+<div class="para" id="sec_6-1_Trigonometry-3-2-1-1-1">An <dfn class="terminology">acute</dfn> angle is an angle smaller than a right angle (90 degrees).<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-3-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-3-2-1-2">
+<div class="para" id="sec_6-1_Trigonometry-3-2-1-2-1">Two geometric shapes are <dfn class="terminology">similar</dfn> if corresponding angles are equal and corresponding edges are all proportional.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-3-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-3-2-1-3">
+<div class="para" id="sec_6-1_Trigonometry-3-2-1-3-1">Two right triangles (have 90 degree angle) if one acute angle matches.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-3-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-3-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_6-1_Trigonometry-3-3">Define trigonometric functions (SOH CAH TOA): Given <dfn class="terminology">acute angle</dfn> <span class="process-math">\(\theta\text{,}\)</span> take a right triangle with angle <span class="process-math">\(\theta\)</span> and identify the legs that are <dfn class="terminology">opposite</dfn> and <dfn class="terminology">adjacent</dfn> and the <dfn class="terminology">hypotenuse</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:20% 10% 70%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/sec_6-1_Trigonometry-3-4-1.svg" role="img" class="contained" alt="Right triangle ABC with angle theta at vertex A and right angle at vertex C and the complementary acute angle at vertex B. Leg BC is opposite, leg AC is adjacent, and AB is the hypotenuse."></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="sec_6-1_Trigonometry-3-4-2"><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="sec_6-1_Trigonometry-3-4-3">
+<ul class="disc" id="sec_6-1_Trigonometry-3-4-3-1">
+<li id="sec_6-1_Trigonometry-3-4-3-1-1">
+<div class="para" id="sec_6-1_Trigonometry-3-4-3-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle \sin(\theta) = \frac{\text{opp}}{\text{hyp}} = \frac{BC}{AB}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-3-4-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-3-4-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-3-4-3-1-2">
+<div class="para" id="sec_6-1_Trigonometry-3-4-3-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle \cos(\theta) = \frac{\text{adj}}{\text{hyp}} = \frac{AC}{AB}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-3-4-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-3-4-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-3-4-3-1-3">
+<div class="para" id="sec_6-1_Trigonometry-3-4-3-1-3-1">
+<span class="process-math">\(\displaystyle \displaystyle \tan(\theta) = \frac{\text{opp}}{\text{adj}} = \frac{BC}{AC}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-3-4-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-3-4-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-3-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="autopermalink" data-description="Subsection: Right Triangles"><a href="#sec_6-1_Trigonometry-3" title="Copy heading and permalink for Subsection: Right Triangles" aria-label="Copy heading and permalink for Subsection: Right Triangles">🔗</a></div></section><section class="subsection" id="sec_6-1_Trigonometry-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Geometric Applications</span>
+</h3>
+<div class="para logical" id="sec_6-1_Trigonometry-4-2">
+<div class="para">The triangle definitions for trigonometric functions allow us to solve for the lengths of various right triangles in applications:</div>
+<ol class="decimal" id="sec_6-1_Trigonometry-4-2-1">
+<li id="sec_6-1_Trigonometry-4-2-1-1">
+<div class="para" id="sec_6-1_Trigonometry-4-2-1-1-1">A kite is flying with 100 ft of string and we measure the angle of the string from the ground as <span class="process-math">\(40^\circ\text{.}\)</span> How high is the kite?<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-4-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec_6-1_Trigonometry-4-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-4-2-1-2">
+<div class="para" id="sec_6-1_Trigonometry-4-2-1-2-1">When standing 20 feet away from the base of a tower, we find we need to look up <span class="process-math">\(70^\circ\)</span> to see the top. How tall is the tower?<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-4-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec_6-1_Trigonometry-4-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-4-2-1-3">
+<div class="para" id="sec_6-1_Trigonometry-4-2-1-3-1">At a stretch where a river flows in a straight line, you look directly across the river and identify a landmark. Then you walk 50 feet upriver and again look at the same landmark. But to see the landmark, you are looking along a line that is now 30˚ away from the bank. How wide is the river?<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-4-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec_6-1_Trigonometry-4-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Geometric Applications"><a href="#sec_6-1_Trigonometry-4" title="Copy heading and permalink for Subsection: Geometric Applications" aria-label="Copy heading and permalink for Subsection: Geometric Applications">🔗</a></div></section><section class="subsection" id="sec_6-1_Trigonometry-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Two Special Triangles</span>
+</h3>
+<div class="para" id="sec_6-1_Trigonometry-5-2">You should be able to reproduce the exact trigonometric values for the following two triangles. Remember the Pythagorean Theorem: <span class="process-math">\(a^2 + b^2 = c^2\)</span> (leg lengths are <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_6-1_Trigonometry-5-3">
+<ul class="disc" id="sec_6-1_Trigonometry-5-3-1">
+<li id="sec_6-1_Trigonometry-5-3-1-1">
+<div class="para" id="sec_6-1_Trigonometry-5-3-1-1-1">The <dfn class="terminology">isosceles</dfn> right triangle has 45 degree angles.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-5-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-5-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-5-3-1-2">
+<div class="para" id="sec_6-1_Trigonometry-5-3-1-2-1">A bisected <dfn class="terminology">equilateral</dfn> triangle is a right triangle with 30 and 60 degree angles.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-5-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-5-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:30% 20% 30% 20%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/sec_6-1_Trigonometry-5-4-1.svg" role="img" class="contained" alt="45-45-90 right triangle is isosceles with legs having length 1 and a hypotenuse length of square root of 2."></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="sec_6-1_Trigonometry-5-4-2"><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-5-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/sec_6-1_Trigonometry-5-4-3.svg" role="img" class="contained" alt="30-60-90 right triangle is a bisected equilateral triangle with a hypotenuse having length 1, a leg of length 1/2 and another leg of length square root of 3 over 2."></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="sec_6-1_Trigonometry-5-4-4"><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-5-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></div>
+</div></div>
+<div class="autopermalink" data-description="Subsection: Two Special Triangles"><a href="#sec_6-1_Trigonometry-5" title="Copy heading and permalink for Subsection: Two Special Triangles" aria-label="Copy heading and permalink for Subsection: Two Special Triangles">🔗</a></div></section><section class="subsection" id="sec_6-1_Trigonometry-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Generalizing Trigonometry: Step 1</span>
+</h3>
+<div class="para" id="sec_6-1_Trigonometry-6-2">Only defining the trigonometric values for acute angles is limiting. We want to define it for arbitrary angles.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_6-1_Trigonometry-6-3">
+<div class="para">Step 1: Define everything in terms of sine and cosine.</div>
+<ul class="disc" id="sec_6-1_Trigonometry-6-3-1">
+<li id="sec_6-1_Trigonometry-6-3-1-1">
+<div class="para" id="sec_6-1_Trigonometry-6-3-1-1-1">Tangent: <span class="process-math">\(\displaystyle \tan(\theta) = \frac{\sin(\theta)}{\cos(\theta)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-6-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-6-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-6-3-1-2">
+<div class="para" id="sec_6-1_Trigonometry-6-3-1-2-1">Secant: <span class="process-math">\(\displaystyle \cot(\theta) = \frac{1}{\cos(\theta)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-6-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-6-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-6-3-1-3">
+<div class="para" id="sec_6-1_Trigonometry-6-3-1-3-1">Cotangent: <span class="process-math">\(\displaystyle \cot(\theta) = \frac{\cos(\theta)}{\sin(\theta)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-6-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-6-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-6-3-1-4">
+<div class="para" id="sec_6-1_Trigonometry-6-3-1-4-1">Cosecant: <span class="process-math">\(\displaystyle \csc(\theta) = \frac{1}{\sin(\theta)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-6-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-6-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Generalizing Trigonometry: Step 1"><a href="#sec_6-1_Trigonometry-6" title="Copy heading and permalink for Subsection: Generalizing Trigonometry: Step 1" aria-label="Copy heading and permalink for Subsection: Generalizing Trigonometry: Step 1">🔗</a></div></section><section class="subsection" id="sec_6-1_Trigonometry-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Generalizating Trigonometry: Step 2</span>
+</h3>
+<div class="para logical" id="sec_6-1_Trigonometry-7-2">
+<div class="para">Step 2: Define angles in terms of rotation.</div>
+<ul class="disc" id="sec_6-1_Trigonometry-7-2-1">
+<li id="sec_6-1_Trigonometry-7-2-1-1">
+<div class="para" id="sec_6-1_Trigonometry-7-2-1-1-1">360 degrees = 1 full rotation (circle)<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-7-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-7-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-7-2-1-2">
+<div class="para" id="sec_6-1_Trigonometry-7-2-1-2-1">
+<span class="process-math">\(2\pi\)</span> radians = 1 full rotation (circle)<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-7-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-7-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_6-1_Trigonometry-7-3">
+<div class="para">Draw a <dfn class="terminology">unit circle</dfn> (radius 1) with axes going through the center. Sun rises in the east (right side) and sets in the west (left side)</div>
+<ul class="disc" id="sec_6-1_Trigonometry-7-3-2">
+<li id="sec_6-1_Trigonometry-7-3-2-1">
+<div class="para" id="sec_6-1_Trigonometry-7-3-2-1-1">Angle is measured from the <dfn class="terminology">positive</dfn> <span class="process-math">\(x\)</span> axis to the origin to a ray extending to infinity.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-7-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-7-3-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-7-3-2-2">
+<div class="para" id="sec_6-1_Trigonometry-7-3-2-2-1">1 <dfn class="terminology">radian</dfn> is the angle that travels exactly 1 radius length on the <dfn class="terminology">arc</dfn> (partial circumference).<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-7-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-7-3-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="video-box" style="width: 40%;padding-top: 22.5%; margin-left: 30%; margin-right: 30%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/opQhR1vX1U4?&amp;modestbranding=1&amp;rel=0&amp;start=69&amp;end=84" id="sec_6-1_Trigonometry-7-4"></iframe></div>
+<div class="autopermalink" data-description="Subsection: Generalizating Trigonometry: Step 2"><a href="#sec_6-1_Trigonometry-7" title="Copy heading and permalink for Subsection: Generalizating Trigonometry: Step 2" aria-label="Copy heading and permalink for Subsection: Generalizating Trigonometry: Step 2">🔗</a></div></section><section class="subsection" id="sec_6-1_Trigonometry-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Angle Conversions</span>
+</h3>
+<div class="para logical" id="sec_6-1_Trigonometry-8-2">
+<div class="para">To convert measures of angles between degrees and radians, you just need to know that 360 degrees and <span class="process-math">\(2\pi\)</span> radians both measure the same angle, and all other angles use the same proportionality.</div>
+<ul class="disc" id="sec_6-1_Trigonometry-8-2-2">
+<li id="sec_6-1_Trigonometry-8-2-2-1">
+<div class="para" id="sec_6-1_Trigonometry-8-2-2-1-1">Given an angle in degrees: Divide by 360 to find out the number of rotations, multiply by <span class="process-math">\(2 \pi\)</span> to get the equivalent radians.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-8-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-8-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-8-2-2-2">
+<div class="para" id="sec_6-1_Trigonometry-8-2-2-2-1">Given an angle in radians: Divide by <span class="process-math">\(2 \pi\)</span> to find out the number of rotations, multiply by <span class="process-math">\(360\)</span> to get the equivalent degrees.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-8-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-8-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_6-1_Trigonometry-8-3">
+<div class="para">Practice:</div>
+<ol class="decimal" id="sec_6-1_Trigonometry-8-3-1">
+<li id="sec_6-1_Trigonometry-8-3-1-1">
+<div class="para" id="sec_6-1_Trigonometry-8-3-1-1-1">90 degrees to radians<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-8-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec_6-1_Trigonometry-8-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-8-3-1-2">
+<div class="para" id="sec_6-1_Trigonometry-8-3-1-2-1">-900 degrees to radians<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-8-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec_6-1_Trigonometry-8-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-8-3-1-3">
+<div class="para" id="sec_6-1_Trigonometry-8-3-1-3-1">0.75 radians to degrees<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-8-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec_6-1_Trigonometry-8-3-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Angle Conversions"><a href="#sec_6-1_Trigonometry-8" title="Copy heading and permalink for Subsection: Angle Conversions" aria-label="Copy heading and permalink for Subsection: Angle Conversions">🔗</a></div></section><section class="subsection" id="sec_6-1_Trigonometry-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Generalizing Trigonometry: Step 3</span>
+</h3>
+<div class="para logical" id="sec_6-1_Trigonometry-9-2">
+<div class="para">The critical observation connecting the circle to trigonometry is that for a <dfn class="terminology">unit circle</dfn>, an acute angle with the angle placed at the origin has a hypotenuse of 1.</div>
+<ul class="disc" id="sec_6-1_Trigonometry-9-2-2">
+<li id="sec_6-1_Trigonometry-9-2-2-1">
+<div class="para" id="sec_6-1_Trigonometry-9-2-2-1-1">opposite length: height of the triangle is equal to <span class="process-math">\(y\)</span> coordinate on circle<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-9-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-9-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-9-2-2-2">
+<div class="para" id="sec_6-1_Trigonometry-9-2-2-2-1">adjacent length: width of the triangle is equal to <span class="process-math">\(x\)</span> coordinate on circle<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-9-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-9-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">So we <dfn class="terminology">define</dfn> sine and cosine using the coordinates of the terminal point for <em class="emphasis">any</em> angle.</div>
+<ul class="disc" id="sec_6-1_Trigonometry-9-2-5">
+<li id="sec_6-1_Trigonometry-9-2-5-1">
+<div class="para" id="sec_6-1_Trigonometry-9-2-5-1-1">
+<span class="process-math">\(\displaystyle \sin(\theta) = \text{y-coordinate}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-9-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-9-2-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-9-2-5-2">
+<div class="para" id="sec_6-1_Trigonometry-9-2-5-2-1">
+<span class="process-math">\(\displaystyle \cos(\theta) = \text{x-coordinate}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-9-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-9-2-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">All other functions are defined from there.</div>
+<ul class="disc" id="sec_6-1_Trigonometry-9-2-6">
+<li id="sec_6-1_Trigonometry-9-2-6-1">
+<div class="para" id="sec_6-1_Trigonometry-9-2-6-1-1">
+<span class="process-math">\(\tan(\theta) = \frac{\sin(\theta)}{\cos(\theta)} = \frac{y}{x}\)</span> and <span class="process-math">\(\sec(\theta) = \frac{1}{\cos(\theta)} = \frac{1}{x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-9-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-9-2-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-9-2-6-2">
+<div class="para" id="sec_6-1_Trigonometry-9-2-6-2-1">
+<span class="process-math">\(\cot(\theta) = \frac{\cos(\theta)}{\sin(\theta)} = \frac{x}{y}\)</span> and <span class="process-math">\(\csc(\theta) = \frac{1}{\sin(\theta)} = \frac{1}{y}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-9-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-9-2-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Generalizing Trigonometry: Step 3"><a href="#sec_6-1_Trigonometry-9" title="Copy heading and permalink for Subsection: Generalizing Trigonometry: Step 3" aria-label="Copy heading and permalink for Subsection: Generalizing Trigonometry: Step 3">🔗</a></div></section><section class="subsection" id="sec_6-1_Trigonometry-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Finding Trig Values</span>
+</h3>
+<div class="para logical" id="sec_6-1_Trigonometry-10-2">
+<div class="para">Find <span class="process-math">\(\sin(\theta)\)</span> and <span class="process-math">\(\cos(\theta)\)</span> and then all other trigonometric function values.</div>
+<ul class="disc" id="sec_6-1_Trigonometry-10-2-3">
+<li id="sec_6-1_Trigonometry-10-2-3-1">
+<div class="para" id="sec_6-1_Trigonometry-10-2-3-1-1">
+<span class="process-math">\(\displaystyle \theta = \frac{-\pi}{4}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-10-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-10-2-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-10-2-3-2">
+<div class="para" id="sec_6-1_Trigonometry-10-2-3-2-1">
+<span class="process-math">\(\displaystyle \theta = \frac{2\pi}{3}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-10-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-10-2-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-10-2-3-3">
+<div class="para" id="sec_6-1_Trigonometry-10-2-3-3-1">
+<span class="process-math">\(\displaystyle \theta = \frac{-7\pi}{6}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-10-2-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-10-2-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-1_Trigonometry-10-2-3-4">
+<div class="para" id="sec_6-1_Trigonometry-10-2-3-4-1">
+<span class="process-math">\(\displaystyle \theta = \frac{23 \pi}{4}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-10-2-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-1_Trigonometry-10-2-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-1_Trigonometry-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Practice Finding Trig Values"><a href="#sec_6-1_Trigonometry-10" title="Copy heading and permalink for Subsection: Practice Finding Trig Values" aria-label="Copy heading and permalink for Subsection: Practice Finding Trig Values">🔗</a></div></section><div class="autopermalink" data-description="Section: Section 6.1: Trigonometric Functions"><a href="#sec_6-1_Trigonometry" title="Copy heading and permalink for Section: Section 6.1: Trigonometric Functions" aria-label="Copy heading and permalink for Section: Section 6.1: Trigonometric Functions">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec_5-5_LHopital-Rule.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
