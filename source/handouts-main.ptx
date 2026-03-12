@@ -350,6 +350,50 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
                         For <m>\displaystyle f(x) = \frac{x^2}{e^{x^2}}</m>, solve for all values <m>x</m> where <m>f'(x) = 0</m>.
                     </p>
                 </paragraphs>
+
+                <paragraphs>
+                    <title>Solution</title>
+                    
+                    <p>
+                        First, we need to find the derivative. We could use the quotient rule directly.
+                        <md>
+                            <mrow>f'(x) \amp = \frac{d}{dx}\Big[ \frac{x^2}{e^{x^2}}\Big] </mrow>
+                            <mrow> \amp = \frac{2x \cdot e^{x^2} - x^2 \cdot (2x e^{x^2})}{(e^{x^2})^2} </mrow>
+                            <mrow> \amp = \frac{e^{x^2} \cdot (2x  - 2x^3 )}{(e^{x^2})^2} </mrow>
+                            <mrow> \amp = \frac{2x  - 2x^3 }{e^{x^2}} </mrow>
+                        </md>
+                        Alternatively, we could first rewrite this as a product and then take a derivative.
+                        <md>
+                            <mrow>f'(x) \amp = \frac{d}{dx}\Big[ x^2 e^{-x^2}\Big] </mrow>
+                            <mrow> \amp = 2x \cdot e^{-x^2} + x^2 \cdot (-2x e^{-x^2}) </mrow>
+                            <mrow> \amp = e^{-x^2} \cdot (2x - 2x^3) </mrow>
+                        </md>
+                    </p>
+                    <p>
+                        Once we have the derivative, we solve for <m>f'(x)=0</m> by considering the factors.
+                        We know that <m>e^{x^2}</m> or <m>e^{-x^2}</m> will always be positive and can never equal zero.
+                        We just need to solve <m>2x-2x^3 = 0</m>, which we do by factoring:
+                        <md>
+                            <mrow>2x - 2x^3 \amp = 2x(1-x^2) = 2x(1-x)(1+x) = 0 </mrow>
+                        </md>
+                        Considering each factor separately, we find three values: <m>x=0</m>, <m>x=1</m> and <m>x=-1</m>.
+                    </p>
+                </paragraphs>
+            </handout>
+            <handout>
+              <title>Week 8 Quiz</title>
+              
+              <paragraphs>
+                <title>Question</title>
+                
+                <p>
+                  Expand <m>f(x)</m> as much as possible using logarithm properties and then compute <m>f'(x)</m>.
+                  <md>
+                    f(x) = \ln\Big(\left | \frac{4e^{x^2} (2x+3)^5}{x^3(x^2-5)^4} \right | \Big)
+                  </md>
+                  
+                </p>
+              </paragraphs>
             </handout>
         </chapter>
     </book>
