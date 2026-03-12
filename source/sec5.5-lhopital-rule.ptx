@@ -107,7 +107,7 @@
       </ul>
     </p>
     <p>
-      A function with indeterminate form involving a power should be rewritten as <m>e^u</m> using logarithms, find <m>\lim u = L</m> and then use <m>e^L</m> as the final limit.
+      (Begin Day 15) A function with indeterminate form involving a power should be rewritten as <m>e^u</m> using logarithms, find <m>\lim u = L</m> and then use <m>e^L</m> as the final limit.
       <ul>
         <li>
           <p>

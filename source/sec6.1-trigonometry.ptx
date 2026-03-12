@@ -173,7 +173,7 @@
           <p>Tangent: <m>\displaystyle \tan(\theta) = \frac{\sin(\theta)}{\cos(\theta)}</m></p>
         </li>
         <li>
-          <p>Secant: <m>\displaystyle \cot(\theta) = \frac{1}{\cos(\theta)}</m></p>
+          <p>Secant: <m>\displaystyle \sec(\theta) = \frac{1}{\cos(\theta)}</m></p>
         </li>
         <li>
           <p>Cotangent: <m>\displaystyle \cot(\theta) = \frac{\cos(\theta)}{\sin(\theta)}</m></p>
