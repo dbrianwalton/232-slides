@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2026-03-12T16:02:27Z       *-->
+<!--*       on 2026-03-23T20:10:28Z       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -36,7 +36,7 @@
 <tr><td align="center" style="border-bottom: 0px;">James Madison University</td></tr>
 <tr><td align="center"></td></tr>
 </table>
-<h4><div class="date">as of March 12, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
+<h4><div class="date">as of March 23, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
 <div align="left"><p><span class="process-math">\(\displaystyle f(x) = \frac{x}{x^2+4}\)</span> and <span class="process-math">\(\displaystyle f'(x) = \frac{-x^2+4}{(x^2+4)^2}\)</span></p></div></section><section><h3>Graph Analysis 2</h3>
 <div align="left"><p><span class="process-math">\(f(x) = x \cdot (x^2-9)^{1/3}\)</span></p></div></section></section><section><section><h1>Section 4.1: Algebraic Functions</h1></section><section><h3>Learning Goals</h3>
 <div align="left"><ul class="disc" id="sec_4-1_algebraic_functions-2-2">
@@ -580,7 +580,7 @@ f(x) = \ln(|x|) = \begin{cases} \ln(x), &amp; x &gt; 0, \\ \ln(-x), &amp; x &lt;
 <li><p>1 <dfn class="terminology">radian</dfn> is the angle that travels exactly 1 radius length on the <dfn class="terminology">arc</dfn> (partial circumference).</p></li>
 </ul></p>
 <div class="video-box" style="width: 40%;padding-top: 22.5%; margin-left: 30%; margin-right: 30%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/opQhR1vX1U4?&amp;modestbranding=1&amp;rel=0&amp;start=69&amp;end=84" id="sec_6-1_Trigonometry-7-4"></iframe></div>
-</div></section><section><h3>Angle Conversions</h3>
+</div></section><section><h3>Angle Conversions (Begin Day 16)</h3>
 <div align="left">
 <p>To convert measures of angles between degrees and radians, you just need to know that 360 degrees and <span class="process-math">\(2\pi\)</span> radians both measure the same angle, and all other angles use the same proportionality.<ul class="disc" id="sec_6-1_Trigonometry-8-2-2">
 <li><p>Given an angle in degrees: Divide by 360 to find out the number of rotations, multiply by <span class="process-math">\(2 \pi\)</span> to get the equivalent radians.</p></li>
@@ -607,7 +607,99 @@ f(x) = \ln(|x|) = \begin{cases} \ln(x), &amp; x &gt; 0, \\ \ln(-x), &amp; x &lt;
 <li><p><span class="process-math">\(\displaystyle \theta = \frac{2\pi}{3}\)</span></p></li>
 <li><p><span class="process-math">\(\displaystyle \theta = \frac{-7\pi}{6}\)</span></p></li>
 <li><p><span class="process-math">\(\displaystyle \theta = \frac{23 \pi}{4}\)</span></p></li>
-</ul></p></div></section></section>
+</ul></p></div></section></section><section><section><h1>Section 6.2: Trigonometric Identities</h1></section><section><h3>Learning Goals</h3>
+<div align="left"><ul class="disc" id="sec_6-2_Trig-Identities-2-2">
+<li><p>The unit circle equation is <span class="process-math">\(x^2+y^2=1\text{.}\)</span> This leads to three Pythagorean identities for trigonometry.</p></li>
+<li><p>Sine and cosine have <dfn class="terminology">sum identities</dfn> to expand <span class="process-math">\(\sin(A+B)\)</span> and <span class="process-math">\(\cos(A+B)\text{.}\)</span></p></li>
+<li><p>Use identities to take given information to find trigonometric values of various combinations or transformations of angles.</p></li>
+<li><p>Trigonometric functions have symmetries: even vs odd, periodic</p></li>
+</ul></div></section><section><h3>Pythagorean Identity</h3>
+<div align="left">
+<p>The unit circle equation in terms of coordinates is <span class="process-math">\(x^2+y^2 = 1\text{.}\)</span> Because <span class="process-math">\(\cos(\theta)\)</span> and <span class="process-math">\(\sin(\theta)\)</span> are the <span class="process-math">\((x,y)\)</span> coordinates, the unit circle equation also gives us the Pythagorean identities, valid for any angle <span class="process-math">\(\theta\text{.}\)</span><div class="displaymath process-math" id="sec_6-2_Trig-Identities-3-2-6">
+\begin{align*}
+\sin^2(\theta) + \cos^2(\theta) \amp = 1 \\
+\tan^2(\theta) + 1 \amp = \sec^2(\theta) \\
+1 + \cot^2(\theta) \amp = \csc^2(\theta) 
+\end{align*}
+</div>We most commonly work with the identity relating sine and cosine. Use quadrants to identify signs.</p>
+<p><em class="emphasis">Example</em>: If <span class="process-math">\(\pi \lt \theta \lt \frac{3 \pi}{2}\)</span> and <span class="process-math">\(\sin(\theta) = -0.6\text{,}\)</span> find <span class="process-math">\(\cot(\theta)\text{.}\)</span></p>
+</div></section><section><h3>Sum Identities</h3>
+<div align="left">
+<p>The unit circle interpretation of an angle is as a <dfn class="terminology">rotation</dfn> of the point <span class="process-math">\((1,0)\)</span> around the center of the circle. Adding angles corresponds to combining rotations. The sum identities tell us how to find the coordinates for a rotation formed by adding two rotations based on the known coordinates of the individual rotations.<div class="displaymath process-math" id="sec_6-2_Trig-Identities-4-2-3">
+\begin{align*}
+\sin(A+B) \amp = \sin(A) \cos(B) + \cos(A) \sin(B) \\
+\amp = y_A x_B + x_A y_B \\
+\cos(A+B) \amp = \cos(A) \cos(B) - \sin(A) \sin(B) \\
+\amp = x_A x_B - y_A y_B 
+\end{align*}
+</div></p>
+<p><em class="emphasis">Example</em>: Suppose <span class="process-math">\(\beta\)</span> is the angle ending in Q2 with <span class="process-math">\(\sin \beta = \frac{2}{5}\text{.}\)</span> Find <span class="process-math">\(\sin(\beta + \frac{\pi}{4})\)</span> and <span class="process-math">\(\cos(\beta + \frac{\pi}{4})\text{.}\)</span></p>
+</div></section><section><h3>Even/Odd Symmetry</h3>
+<div align="left">
+<p>If we compare angles <span class="process-math">\(\theta\)</span> and <span class="process-math">\(-\theta\)</span> on the unit circle, we can immediately recognize that their standard positions terminate with the <em class="emphasis">same</em> x-coordinates and <em class="emphasis">opposite</em> y-coordinates. This implies that <span class="process-math">\(\sin(-\theta) = - \sin(\theta)\)</span> (an <dfn class="terminology">odd function</dfn>) and that <span class="process-math">\(\cos(-\theta) = \cos(\theta)\)</span> (an <dfn class="terminology">even function</dfn>).</p>
+<p>Consequently, the sum identities also give us <dfn class="terminology">difference identities</dfn>:<div class="displaymath process-math" id="sec_6-2_Trig-Identities-5-3-2">
+\begin{align*}
+\sin(A - B) \amp = \sin(A+-B)\\
+\amp = \sin(A) \cos(-B) + \cos(A) \sin(-B)\\
+\amp = \sin(A) \cos(B) - \cos(A) \sin(B)\\
+\cos(A - B) \amp = \cos(A+-B)\\
+\amp = \cos(A) \cos(-B) - \sin(A) \sin(-B)\\
+\amp = \cos(A) \cos(B) + \sin(A) \sin(B)
+\end{align*}
+</div></p>
+</div></section><section><h3>Visualizing the Graphs: Periodic Behavior</h3>
+<div align="left">
+<p>For every full rotation by an angle <span class="process-math">\(2 \pi\text{,}\)</span> we return to the same point on the unit circle. This means that all of the trigonometric functions are <dfn class="terminology">periodic</dfn> because they satisfy<div class="displaymath process-math" id="sec_6-2_Trig-Identities-6-2-3">
+\begin{equation*}
+f(\theta + 2 \pi) = f(\theta).
+\end{equation*}
+</div>The value <span class="process-math">\(2 \pi\)</span> is called a <dfn class="terminology">period</dfn>, the amount a function can be shifted horizontally and start over exactly again.</p>
+<p>The tangent and cotangent functions actually repeat twice per full rotation and have period <span class="process-math">\(\pi\text{.}\)</span></p>
+<div style="display:table;margin-left:1.666666666666667%;margin-right:1.666666666666667%;" class="sidebyside">
+<div style="display:table-cell;width:31.0344827586207%;vertical-align:top;"><div class="image-box"><img src="generated/latex-image/sec_6-2_Trig-Identities-6-4-1.svg" role="img" class="contained" alt="Graphs of sine (red, solid) and cosine (blue, dashed) to show their periods of 2 pi."></div></div>
+<div style="display:table-cell;width:31.0344827586207%;vertical-align:top;"><div class="image-box"><img src="generated/latex-image/sec_6-2_Trig-Identities-6-4-2.svg" role="img" class="contained" alt="Graphs of tangent (red, solid) and cotangent (blue, dashed) to show their periods of 2 pi."></div></div>
+<div style="display:table-cell;width:31.0344827586207%;vertical-align:top;"><div class="image-box"><img src="generated/latex-image/sec_6-2_Trig-Identities-6-4-3.svg" role="img" class="contained" alt="Graphs of secant (red, solid) and cosecant (blue, dashed) to show their periods of 2 pi."></div></div>
+</div>
+</div></section><section><h3>Double-Angle Identities</h3>
+<div align="left">
+<p>Doubling an angle corresponds to adding it to itself. This gives us so-called <dfn class="terminology">double-angle identities</dfn>.<div class="displaymath process-math" id="sec_6-2_Trig-Identities-7-2-2">
+\begin{align*}
+\sin(2 \theta) \amp = \sin(\theta + \theta) \\
+\amp = \sin(\theta) \cos(\theta) + \cos(\theta) \sin(\theta) \\
+\amp = 2 \sin(\theta) \cos(\theta) 
+\end{align*}
+</div><div class="displaymath process-math" id="sec_6-2_Trig-Identities-7-2-3">
+\begin{align*}
+\cos(2 \theta) \amp = \cos(\theta + \theta) \\
+\amp = \cos(\theta) \cos(\theta) - \sin(\theta) \sin(\theta) \\
+\amp = \cos^2(\theta) - \sin^2(\theta) 
+\end{align*}
+</div></p>
+<p>If we use the Pythagorean identity <span class="process-math">\(\sin^2(\theta) + \cos^2(\theta) = 1\)</span> and solve for <span class="process-math">\(\sin^2(\theta) = 1 - \cos^2(\theta)\)</span> or for <span class="process-math">\(\cos^2(\theta) = 1 - \sin^2(\theta)\text{,}\)</span> we arrive at two alternative representations of the cosine’s double-angle identity:<div class="displaymath process-math" id="sec_6-2_Trig-Identities-7-3-4">
+\begin{align*}
+\cos(2\theta) \amp = 2 \cos^2(\theta) - 1\\
+\cos(2\theta) \amp = 1 - 2 \sin^2(\theta)
+\end{align*}
+</div></p>
+</div></section><section><h3>Half-Angle Identities</h3>
+<div align="left">
+<p>Using the double-angle identity and solving for <span class="process-math">\(\sin^2(\theta)\)</span> or <span class="process-math">\(\cos^2(\theta)\text{,}\)</span> we create what are called the <dfn class="terminology">half-angle identities</dfn>.</p>
+<p><div class="displaymath process-math" id="sec_6-2_Trig-Identities-8-3-1">
+\begin{gather*}
+\cos(2\theta) = 1 - 2 \sin^2(\theta)\\
+2 \sin^2(\theta) = 1 - \cos(2\theta)\\
+\sin^2(\theta) = \frac{1 - \cos(2\theta)}{2}
+\end{gather*}
+</div></p>
+<p><div class="displaymath process-math" id="sec_6-2_Trig-Identities-8-4-1">
+\begin{gather*}
+\cos(2\theta) = 2 \cos^2(\theta) - 1\\
+2 \cos^2(\theta) = 1 + \cos(2\theta)\\
+\cos^2(\theta) = \frac{1 + \cos(2\theta)}{2}
+\end{gather*}
+</div></p>
+<p>Note that because <span class="process-math">\(\sin(\theta)\)</span> or <span class="process-math">\(\cos(\theta)\)</span> appears squared, there are actually two locations for a half-angle based on the unit circle location. The identities become useful in Calculus 2 (MATH 236) when learning about integration methods.</p>
+</div></section></section>
 </div>
 </div></body>
 <script>

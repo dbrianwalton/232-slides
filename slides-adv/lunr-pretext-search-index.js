@@ -232,7 +232,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Section 6.1: Trigonometric Functions",
-  "body": " Section 6.1: Trigonometric Functions   Learning Goals    Trigonometric functions were first defined for angles of right triangles: SOH CAH TOA    Two special triangles: 30-60-90 and 45-45-90    Change definition to use unit circle instead of right triangles    Measure angles in degrees (360 per circle) and radians (2 pi per circle)   >   Right Triangles  Start by introducing some geometric ideas.   An acute angle is an angle smaller than a right angle (90 degrees).    Two geometric shapes are similar if corresponding angles are equal and corresponding edges are all proportional.    Two right triangles (have 90 degree angle) if one acute angle matches.     Define trigonometric functions (SOH CAH TOA): Given acute angle  , take a right triangle with angle and identify the legs that are opposite and adjacent and the hypotenuse .    Right triangle ABC with angle theta at vertex A and right angle at vertex C and the complementary acute angle at vertex B. Leg BC is opposite, leg AC is adjacent, and AB is the hypotenuse.                   >   Geometric Applications  The triangle definitions for trigonometric functions allow us to solve for the lengths of various right triangles in applications:   A kite is flying with 100 ft of string and we measure the angle of the string from the ground as . How high is the kite?    When standing 20 feet away from the base of a tower, we find we need to look up to see the top. How tall is the tower?    At a stretch where a river flows in a straight line, you look directly across the river and identify a landmark. Then you walk 50 feet upriver and again look at the same landmark. But to see the landmark, you are looking along a line that is now 30˚ away from the bank. How wide is the river?    >   Two Special Triangles  You should be able to reproduce the exact trigonometric values for the following two triangles. Remember the Pythagorean Theorem: (leg lengths are and )     The isosceles right triangle has 45 degree angles.    A bisected equilateral triangle is a right triangle with 30 and 60 degree angles.       45-45-90 right triangle is isosceles with legs having length 1 and a hypotenuse length of square root of 2.       30-60-90 right triangle is a bisected equilateral triangle with a hypotenuse having length 1, a leg of length 1\/2 and another leg of length square root of 3 over 2.      >   Generalizing Trigonometry: Step 1  Only defining the trigonometric values for acute angles is limiting. We want to define it for arbitrary angles.  Step 1: Define everything in terms of sine and cosine.   Tangent:    Secant:    Cotangent:    Cosecant:    >   Generalizating Trigonometry: Step 2  Step 2: Define angles in terms of rotation.   360 degrees = 1 full rotation (circle)    radians = 1 full rotation (circle)     Draw a unit circle (radius 1) with axes going through the center. Sun rises in the east (right side) and sets in the west (left side)   Angle is measured from the positive  axis to the origin to a ray extending to infinity.    1 radian is the angle that travels exactly 1 radius length on the arc (partial circumference).     >   Angle Conversions  To convert measures of angles between degrees and radians, you just need to know that 360 degrees and radians both measure the same angle, and all other angles use the same proportionality.   Given an angle in degrees: Divide by 360 to find out the number of rotations, multiply by to get the equivalent radians.    Given an angle in radians: Divide by to find out the number of rotations, multiply by to get the equivalent degrees.     Practice:   90 degrees to radians    -900 degrees to radians    0.75 radians to degrees    >   Generalizing Trigonometry: Step 3  The critical observation connecting the circle to trigonometry is that for a unit circle , an acute angle with the angle placed at the origin has a hypotenuse of 1.   opposite length: height of the triangle is equal to coordinate on circle    adjacent length: width of the triangle is equal to coordinate on circle   So we define sine and cosine using the coordinates of the terminal point for any angle.        All other functions are defined from there.   and    and    >   Practice Finding Trig Values  Find and and then all other trigonometric function values.               >  "
+  "body": " Section 6.1: Trigonometric Functions   Learning Goals    Trigonometric functions were first defined for angles of right triangles: SOH CAH TOA    Two special triangles: 30-60-90 and 45-45-90    Change definition to use unit circle instead of right triangles    Measure angles in degrees (360 per circle) and radians (2 pi per circle)   >   Right Triangles  Start by introducing some geometric ideas.   An acute angle is an angle smaller than a right angle (90 degrees).    Two geometric shapes are similar if corresponding angles are equal and corresponding edges are all proportional.    Two right triangles (have 90 degree angle) if one acute angle matches.     Define trigonometric functions (SOH CAH TOA): Given acute angle  , take a right triangle with angle and identify the legs that are opposite and adjacent and the hypotenuse .    Right triangle ABC with angle theta at vertex A and right angle at vertex C and the complementary acute angle at vertex B. Leg BC is opposite, leg AC is adjacent, and AB is the hypotenuse.                   >   Geometric Applications  The triangle definitions for trigonometric functions allow us to solve for the lengths of various right triangles in applications:   A kite is flying with 100 ft of string and we measure the angle of the string from the ground as . How high is the kite?    When standing 20 feet away from the base of a tower, we find we need to look up to see the top. How tall is the tower?    At a stretch where a river flows in a straight line, you look directly across the river and identify a landmark. Then you walk 50 feet upriver and again look at the same landmark. But to see the landmark, you are looking along a line that is now 30˚ away from the bank. How wide is the river?    >   Two Special Triangles  You should be able to reproduce the exact trigonometric values for the following two triangles. Remember the Pythagorean Theorem: (leg lengths are and )     The isosceles right triangle has 45 degree angles.    A bisected equilateral triangle is a right triangle with 30 and 60 degree angles.       45-45-90 right triangle is isosceles with legs having length 1 and a hypotenuse length of square root of 2.       30-60-90 right triangle is a bisected equilateral triangle with a hypotenuse having length 1, a leg of length 1\/2 and another leg of length square root of 3 over 2.      >   Generalizing Trigonometry: Step 1  Only defining the trigonometric values for acute angles is limiting. We want to define it for arbitrary angles.  Step 1: Define everything in terms of sine and cosine.   Tangent:    Secant:    Cotangent:    Cosecant:    >   Generalizating Trigonometry: Step 2  Step 2: Define angles in terms of rotation.   360 degrees = 1 full rotation (circle)    radians = 1 full rotation (circle)     Draw a unit circle (radius 1) with axes going through the center. Sun rises in the east (right side) and sets in the west (left side)   Angle is measured from the positive  axis to the origin to a ray extending to infinity.    1 radian is the angle that travels exactly 1 radius length on the arc (partial circumference).     >   Angle Conversions (Begin Day 16)  To convert measures of angles between degrees and radians, you just need to know that 360 degrees and radians both measure the same angle, and all other angles use the same proportionality.   Given an angle in degrees: Divide by 360 to find out the number of rotations, multiply by to get the equivalent radians.    Given an angle in radians: Divide by to find out the number of rotations, multiply by to get the equivalent degrees.     Practice:   90 degrees to radians    -900 degrees to radians    0.75 radians to degrees    >   Generalizing Trigonometry: Step 3  The critical observation connecting the circle to trigonometry is that for a unit circle , an acute angle with the angle placed at the origin has a hypotenuse of 1.   opposite length: height of the triangle is equal to coordinate on circle    adjacent length: width of the triangle is equal to coordinate on circle   So we define sine and cosine using the coordinates of the terminal point for any angle.        All other functions are defined from there.   and    and    >   Practice Finding Trig Values  Find and and then all other trigonometric function values.               >  "
 },
 {
   "id": "sec_6-1_Trigonometry-3-2",
@@ -278,6 +278,78 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "unit circle define "
+},
+{
+  "id": "sec_6-2_Trig-Identities",
+  "level": "1",
+  "url": "sec_6-2_Trig-Identities.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 6.2: Trigonometric Identities",
+  "body": " Section 6.2: Trigonometric Identities   Learning Goals    The unit circle equation is . This leads to three Pythagorean identities for trigonometry.    Sine and cosine have sum identities to expand and .    Use identities to take given information to find trigonometric values of various combinations or transformations of angles.    Trigonometric functions have symmetries: even vs odd, periodic   >   Pythagorean Identity  The unit circle equation in terms of coordinates is . Because and are the coordinates, the unit circle equation also gives us the Pythagorean identities, valid for any angle . We most commonly work with the identity relating sine and cosine. Use quadrants to identify signs.   Example : If and , find . >   Sum Identities  The unit circle interpretation of an angle is as a rotation of the point around the center of the circle. Adding angles corresponds to combining rotations. The sum identities tell us how to find the coordinates for a rotation formed by adding two rotations based on the known coordinates of the individual rotations.    Example : Suppose is the angle ending in Q2 with . Find and . >   Even\/Odd Symmetry  If we compare angles and on the unit circle, we can immediately recognize that their standard positions terminate with the same x-coordinates and opposite y-coordinates. This implies that (an odd function ) and that (an even function ).  Consequently, the sum identities also give us difference identities :  >   Visualizing the Graphs: Periodic Behavior  For every full rotation by an angle , we return to the same point on the unit circle. This means that all of the trigonometric functions are periodic because they satisfy The value is called a period , the amount a function can be shifted horizontally and start over exactly again.  The tangent and cotangent functions actually repeat twice per full rotation and have period .    Graphs of sine (red, solid) and cosine (blue, dashed) to show their periods of 2 pi.     Graphs of tangent (red, solid) and cotangent (blue, dashed) to show their periods of 2 pi.     Graphs of secant (red, solid) and cosecant (blue, dashed) to show their periods of 2 pi.    >   Double-Angle Identities  Doubling an angle corresponds to adding it to itself. This gives us so-called double-angle identities .    If we use the Pythagorean identity and solve for or for , we arrive at two alternative representations of the cosine's double-angle identity:  >   Half-Angle Identities  Using the double-angle identity and solving for or , we create what are called the half-angle identities .        Note that because or appears squared, there are actually two locations for a half-angle based on the unit circle location. The identities become useful in Calculus 2 (MATH 236) when learning about integration methods. >  "
+},
+{
+  "id": "sec_6-2_Trig-Identities-2-2-2-1",
+  "level": "2",
+  "url": "sec_6-2_Trig-Identities.html#sec_6-2_Trig-Identities-2-2-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "sum identities "
+},
+{
+  "id": "sec_6-2_Trig-Identities-4-2",
+  "level": "2",
+  "url": "sec_6-2_Trig-Identities.html#sec_6-2_Trig-Identities-4-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "rotation "
+},
+{
+  "id": "sec_6-2_Trig-Identities-5-2",
+  "level": "2",
+  "url": "sec_6-2_Trig-Identities.html#sec_6-2_Trig-Identities-5-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "odd function even function "
+},
+{
+  "id": "sec_6-2_Trig-Identities-5-3",
+  "level": "2",
+  "url": "sec_6-2_Trig-Identities.html#sec_6-2_Trig-Identities-5-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "difference identities "
+},
+{
+  "id": "sec_6-2_Trig-Identities-6-2",
+  "level": "2",
+  "url": "sec_6-2_Trig-Identities.html#sec_6-2_Trig-Identities-6-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "periodic period "
+},
+{
+  "id": "sec_6-2_Trig-Identities-7-2",
+  "level": "2",
+  "url": "sec_6-2_Trig-Identities.html#sec_6-2_Trig-Identities-7-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "double-angle identities "
+},
+{
+  "id": "sec_6-2_Trig-Identities-8-2",
+  "level": "2",
+  "url": "sec_6-2_Trig-Identities.html#sec_6-2_Trig-Identities-8-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "half-angle identities "
 }
 ]
 
