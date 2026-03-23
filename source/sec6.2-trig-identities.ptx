@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_6-2_Trig-Identities" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 6.2: Trigonometric Identities</title>
+
+  <slide>
+    <title>Learning Goals</title>
+
+    <ul>
+      <li>
+        <p>The unit circle equation is <m>x^2+y^2=1</m>. This leads to three Pythagorean identities for trigonometry.</p>
+      </li>
+      <li>
+        <p>Sine and cosine have <term>sum identities</term> to expand <m>\sin(A+B)</m> and <m>\cos(A+B)</m>.</p>
+      </li>
+      <li>
+        <p>Use identities to take given information to find trigonometric values of various combinations or transformations of angles.</p>
+      </li>
+      <li>
+        <p>Trigonometric functions have symmetries: even vs odd, periodic</p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Pythagorean Identity</title>
+    
+    <p>
+      The unit circle equation in terms of coordinates is <m>x^2+y^2 = 1</m>.
+      Because <m>\cos(\theta)</m> and <m>\sin(\theta)</m> are the <m>(x,y)</m> coordinates,
+      the unit circle equation also gives us the Pythagorean identities, valid for any angle <m>\theta</m>.
+      <md>
+        <mrow>\sin^2(\theta) + \cos^2(\theta) \amp = 1 </mrow>
+        <mrow>\tan^2(\theta) + 1 \amp = \sec^2(\theta) </mrow>
+        <mrow>1 + \cot^2(\theta) \amp = \csc^2(\theta) </mrow>
+      </md>
+      We most commonly work with the identity relating sine and cosine. Use quadrants to identify signs.
+    </p>
+    <p>
+      <em>Example</em>: If <m>\pi \lt \theta \lt \frac{3 \pi}{2}</m> and <m>\sin(\theta) = -0.6</m>,
+      find <m>\cot(\theta)</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Sum Identities</title>
+    
+    <p>
+      The unit circle interpretation of an angle is as a <term>rotation</term> of the point <m>(1,0)</m> around the center of the circle.
+      Adding angles corresponds to combining rotations.
+      The sum identities tell us how to find the coordinates for a rotation formed by adding two rotations
+      based on the known coordinates of the individual rotations.
+      <md>
+        <mrow>\sin(A+B) \amp = \sin(A) \cos(B) + \cos(A) \sin(B) </mrow>
+        <mrow> \amp = y_A x_B + x_A y_B </mrow>
+        <mrow>\cos(A+B) \amp = \cos(A) \cos(B) - \sin(A) \sin(B) </mrow>
+        <mrow> \amp = x_A x_B - y_A y_B </mrow>
+      </md>
+    </p>
+    <p>
+      <em>Example</em>: Suppose <m>\beta</m> is the angle ending in Q2 with <m>\sin \beta = \frac{2}{5}</m>.
+      Find <m>\sin(\beta + \frac{\pi}{4})</m> and <m>\cos(\beta + \frac{\pi}{4})</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Even/Odd Symmetry</title>
+    
+    <p>
+      If we compare angles <m>\theta</m> and <m>-\theta</m> on the unit circle, we can immediately recognize that their standard positions terminate with the <em>same</em> x-coordinates and <em>opposite</em> y-coordinates.
+      This implies that <m>\sin(-\theta) = - \sin(\theta)</m> (an <term>odd function</term>)
+      and that <m>\cos(-\theta) = \cos(\theta)</m> (an <term>even function</term>).
+    </p>
+    <p>
+      Consequently, the sum identities also give us <term>difference identities</term>:
+      <md>
+        <mrow>\sin(A - B) \amp = \sin(A+-B)</mrow>
+        <mrow> \amp = \sin(A) \cos(-B) + \cos(A) \sin(-B)</mrow>
+        <mrow> \amp = \sin(A) \cos(B) - \cos(A) \sin(B)</mrow>
+        <mrow>\cos(A - B) \amp = \cos(A+-B)</mrow>
+        <mrow> \amp = \cos(A) \cos(-B) - \sin(A) \sin(-B)</mrow>
+        <mrow> \amp = \cos(A) \cos(B) + \sin(A) \sin(B)</mrow>
+      </md>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Visualizing the Graphs: Periodic Behavior</title>
+    
+    <p>
+      For every full rotation by an angle <m>2 \pi</m>, we return to the same point on the unit circle.
+      This means that all of the trigonometric functions are <term>periodic</term> because they satisfy
+      <md>
+        f(\theta + 2 \pi) = f(\theta).
+      </md>
+      The value <m>2 \pi</m> is called a <term>period</term>, the amount a function can be shifted horizontally and start over exactly again.
+    </p>
+    <p>
+      The tangent and cotangent functions actually repeat twice per full rotation and have period <m>\pi</m>.
+    </p>
+    <sidebyside widths="30% 30% 30%">
+      <image>
+        <shortdescription>Graphs of sine (red, solid) and cosine (blue, dashed) to show their periods of 2 pi.</shortdescription>
+        <latex-image>
+          \begin{tikzpicture}
+            \begin{axis}[
+              axis lines = middle,
+              % grid = both,
+              xmin = -10,
+              xmax = 10,
+              ymin = -2,
+              ymax = 2,
+              xlabel={$x$},
+              ylabel={$y$},
+              trig format plots=rad, % Set the format to radians
+              xtick={-3*pi, -2*pi, -pi, -pi/2, pi/2, pi, 4.7124, 2*pi, 3*pi},
+              % Define the corresponding labels
+              xticklabels={$-3\pi$, $-2\pi$, $-\pi$, $\frac{-\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$, $3\pi$,},
+            ]
+            \addplot [thick, red, samples=200, domain=-10:10] {sin(x)};
+            \addlegendentry{$\sin(x)$};
+            \addplot [thick, blue, dashed, samples=200, domain=-10:10]  {cos(x)};
+            \addlegendentry{$\cos(x)$};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <image>
+        <shortdescription>Graphs of tangent (red, solid) and cotangent (blue, dashed) to show their periods of 2 pi.</shortdescription>
+        <latex-image>
+          \begin{tikzpicture}
+            \begin{axis}[
+              axis lines = middle,
+              % grid = both,
+              xmin = -10,
+              xmax = 10,
+              ymin = -10,
+              ymax = 10,
+              xlabel={$x$},
+              ylabel={$y$},
+              trig format plots=rad, % Set the format to radians
+              xtick={-3*pi, -2*pi, -pi, -pi/2, pi/2, pi, 4.7124, 2*pi, 3*pi},
+              % Define the corresponding labels
+              xticklabels={$-3\pi$, $-2\pi$, $-\pi$, $\frac{-\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$, $3\pi$,},
+            ]
+            \foreach \n in {-3, ..., 3}
+            {
+            \addplot [thick, red, samples=200, domain=-15*pi/32:15*pi/32, forget plot] 
+              ({x+\n*pi}, {tan(x+\n*pi)});
+            \addplot [thick, blue, dashed, samples=200, domain=pi/32:31*pi/32, forget plot]
+              ({x+\n*pi}, {cot(x+\n*pi)});
+            }
+            \addplot [thick, red, samples=200, domain=-15*pi/32:15*pi/32] 
+              ({x}, {tan(x)});
+            \addlegendentry{$\tan(x)$};
+            \addplot [thick, blue, dashed, samples=200, domain=pi/32:31*pi/32]
+              ({x}, {cot(x)});
+            \addlegendentry{$\cot(x)$};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <image>
+        <shortdescription>Graphs of secant (red, solid) and cosecant (blue, dashed) to show their periods of 2 pi.</shortdescription>
+        <latex-image>
+          \begin{tikzpicture}
+            \begin{axis}[
+              axis lines = middle,
+              % grid = both,
+              xmin = -10,
+              xmax = 10,
+              ymin = -10,
+              ymax = 10,
+              xlabel={$x$},
+              ylabel={$y$},
+              trig format plots=rad, % Set the format to radians
+              xtick={-3*pi, -2*pi, -pi, -pi/2, pi/2, pi, 4.7124, 2*pi, 3*pi},
+              % Define the corresponding labels
+              xticklabels={$-3\pi$, $-2\pi$, $-\pi$, $\frac{-\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$, $3\pi$,},
+            ]
+            \foreach \n in {-3, ..., 3}
+            {
+            \addplot [thick, red, samples=200, domain=-15*pi/32:15*pi/32, forget plot] 
+              ({x+\n*pi}, {sec(x+\n*pi)});
+            \addplot [thick, blue, dashed, samples=200, domain=pi/32:31*pi/32, forget plot]
+              ({x+\n*pi}, {1/sin(x+\n*pi)});
+            }
+            \addplot [thick, red, samples=200, domain=-15*pi/32:15*pi/32] 
+              ({x}, {sec(x)});
+            \addlegendentry{$\sec(x)$};
+            \addplot [thick, blue, dashed, samples=200, domain=pi/32:31*pi/32]
+              ({x}, {1/sin(x)});
+            \addlegendentry{$\csc(x)$};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Double-Angle Identities</title>
+    
+    <p>
+      Doubling an angle corresponds to adding it to itself. This gives us so-called 
+      <term>double-angle identities</term>.
+      <md>
+        <mrow>\sin(2 \theta) \amp = \sin(\theta + \theta) </mrow>
+        <mrow> \amp = \sin(\theta) \cos(\theta) + \cos(\theta) \sin(\theta) </mrow>
+        <mrow> \amp = 2 \sin(\theta) \cos(\theta) </mrow>
+      </md>
+      <md>
+        <mrow>\cos(2 \theta) \amp = \cos(\theta + \theta) </mrow>
+        <mrow> \amp = \cos(\theta) \cos(\theta) - \sin(\theta) \sin(\theta) </mrow>
+        <mrow> \amp = \cos^2(\theta) - \sin^2(\theta) </mrow>
+      </md>
+    </p>
+    <p>
+      If we use the Pythagorean identity <m>\sin^2(\theta) + \cos^2(\theta) = 1</m>
+      and solve for <m>\sin^2(\theta) = 1 - \cos^2(\theta)</m> or for <m>\cos^2(\theta) = 1 - \sin^2(\theta)</m>,
+      we arrive at two alternative representations of the cosine's double-angle identity:
+      <md>
+        <mrow>\cos(2\theta) \amp = 2 \cos^2(\theta) - 1</mrow>
+        <mrow>\cos(2\theta) \amp = 1 - 2 \sin^2(\theta)</mrow>
+      </md>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Half-Angle Identities</title>
+    
+    <p>
+      Using the double-angle identity and solving for <m>\sin^2(\theta)</m> or <m>\cos^2(\theta)</m>,
+      we create what are called the <term>half-angle identities</term>.
+    </p>
+    <p>
+      <md>
+        <mrow>\cos(2\theta) = 1 - 2 \sin^2(\theta)</mrow>
+        <mrow>2 \sin^2(\theta) = 1 - \cos(2\theta)</mrow>
+        <mrow>\sin^2(\theta) = \frac{1 - \cos(2\theta)}{2}</mrow>
+      </md>
+    </p>
+    <p>
+      <md>
+        <mrow>\cos(2\theta) = 2 \cos^2(\theta) - 1</mrow>
+        <mrow>2 \cos^2(\theta) = 1 + \cos(2\theta)</mrow>
+        <mrow>\cos^2(\theta) = \frac{1 + \cos(2\theta)}{2}</mrow>
+      </md>
+    </p>
+    <p>
+      Note that because <m>\sin(\theta)</m> or <m>\cos(\theta)</m> appears squared, 
+      there are actually two locations for a half-angle based on the unit circle location.
+      The identities become useful in Calculus 2 (MATH 236) when learning about integration methods.
+    </p>
+  </slide>
+</section>
