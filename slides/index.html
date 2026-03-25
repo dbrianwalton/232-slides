@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2026-03-23T20:10:28Z       *-->
+<!--*       on 2026-03-25T18:57:46Z       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -36,7 +36,7 @@
 <tr><td align="center" style="border-bottom: 0px;">James Madison University</td></tr>
 <tr><td align="center"></td></tr>
 </table>
-<h4><div class="date">as of March 23, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
+<h4><div class="date">as of March 25, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
 <div align="left"><p><span class="process-math">\(\displaystyle f(x) = \frac{x}{x^2+4}\)</span> and <span class="process-math">\(\displaystyle f'(x) = \frac{-x^2+4}{(x^2+4)^2}\)</span></p></div></section><section><h3>Graph Analysis 2</h3>
 <div align="left"><p><span class="process-math">\(f(x) = x \cdot (x^2-9)^{1/3}\)</span></p></div></section></section><section><section><h1>Section 4.1: Algebraic Functions</h1></section><section><h3>Learning Goals</h3>
 <div align="left"><ul class="disc" id="sec_4-1_algebraic_functions-2-2">
@@ -607,7 +607,7 @@ f(x) = \ln(|x|) = \begin{cases} \ln(x), &amp; x &gt; 0, \\ \ln(-x), &amp; x &lt;
 <li><p><span class="process-math">\(\displaystyle \theta = \frac{2\pi}{3}\)</span></p></li>
 <li><p><span class="process-math">\(\displaystyle \theta = \frac{-7\pi}{6}\)</span></p></li>
 <li><p><span class="process-math">\(\displaystyle \theta = \frac{23 \pi}{4}\)</span></p></li>
-</ul></p></div></section></section><section><section><h1>Section 6.2: Trigonometric Identities</h1></section><section><h3>Learning Goals</h3>
+</ul></p></div></section></section><section><section><h1>Section 6.2: Trigonometric Identities</h1></section><section><h3>Learning Goals (Begin Day 17)</h3>
 <div align="left"><ul class="disc" id="sec_6-2_Trig-Identities-2-2">
 <li><p>The unit circle equation is <span class="process-math">\(x^2+y^2=1\text{.}\)</span> This leads to three Pythagorean identities for trigonometry.</p></li>
 <li><p>Sine and cosine have <dfn class="terminology">sum identities</dfn> to expand <span class="process-math">\(\sin(A+B)\)</span> and <span class="process-math">\(\cos(A+B)\text{.}\)</span></p></li>
@@ -699,7 +699,88 @@ f(\theta + 2 \pi) = f(\theta).
 \end{gather*}
 </div></p>
 <p>Note that because <span class="process-math">\(\sin(\theta)\)</span> or <span class="process-math">\(\cos(\theta)\)</span> appears squared, there are actually two locations for a half-angle based on the unit circle location. The identities become useful in Calculus 2 (MATH 236) when learning about integration methods.</p>
-</div></section></section>
+</div></section></section><section><section><h1>Section 6.3: Limits and Derivatives of Trigonometric Functions</h1></section><section><h3>Learning Goals</h3>
+<div align="left"><ul class="disc" id="sec_6-3_Trig-Calculus-2-2">
+<li><p>Except where they are undefined due to division by zero, trigonometric functions are continuous.</p></li>
+<li><p>Infinite oscillation that does not decay has no limit. The squeeze theorem (sandwich theorem) gives us a method to deal with decay.</p></li>
+<li><p>The derivatives of sine and cosine cycle between one another.</p></li>
+<li><p>All other derivatives derive from the quotient rule.</p></li>
+</ul></div></section><section><h3>Continuity</h3>
+<div align="left">
+<p>Sine and cosine smoothly change to create continuous periodic waves.</p>
+<p>The other four trigonometric functions all have vertical asymptotes at the points where the denominator equals zero, but they are otherwise continuous.</p>
+<ul class="disc" id="sec_6-3_Trig-Calculus-3-4">
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to \pi} \cot(x)\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to -\frac{\pi}{2}} \sec(x)\)</span></p></li>
+</ul>
+</div></section><section><h3>Oscillation and Limits</h3>
+<div align="left">
+<p>For a function <span class="process-math">\(f(x)\)</span> to have a limit, the value of <span class="process-math">\(f(x)\)</span> must become closer and closer to that limiting value. Oscillation (waves) means that a function keeps moving between different values. The only way we can have a limit with <em class="emphasis">infinitely many oscillations</em> is if the amplitude of the oscillation decays to 0.</p>
+<div style="display:table;margin-left:0%;margin-right:0%;" class="sidebyside">
+<div style="display:table-cell;width:50%;vertical-align:top;"><div class="interactive-iframe-container"><iframe id="interactive-sine-reciprocal-no-limit" style="width:300px; height:300px; display: block; " src="interactive-sine-reciprocal-no-limit-if.html"></iframe></div></div>
+<div style="display:table-cell;width:50%;vertical-align:top;"><div class="interactive-iframe-container"><iframe id="interactive-sine-reciprocal-has-limit" style="width:300px; height:300px; display: block; " src="interactive-sine-reciprocal-has-limit-if.html"></iframe></div></div>
+</div>
+</div></section><section><h3>Squeeze (Sandwich) Theorem</h3>
+<div align="left">
+<p>If <span class="process-math">\(f(x)\)</span> is <em class="emphasis">squeezed</em> (sandwiched) between two functions <span class="process-math">\(L(x)\)</span> and <span class="process-math">\(U(x)\text{,}\)</span> so that <span class="process-math">\(L(x) \le f(x) \le U(x)\text{,}\)</span> and they have the same limit <span class="process-math">\(\displaystyle \lim_{x \to a} L(x) = \lim_{x \to a} U(x) = C\text{,}\)</span> then <span class="process-math">\(\displaystyle \lim_{x \to a} f(x) = C\text{.}\)</span></p>
+<p>For sine (and similarly for cosine), we can always start with <span class="process-math">\(-1 \le \sin(x) \le 1\text{.}\)</span></p>
+<ul class="disc" id="sec_6-3_Trig-Calculus-5-4">
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to 0^+} x \sin(\frac{1}{x})\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \lim_{x \to \infty} x^{-1} \sin(x^2)\)</span></p></li>
+</ul>
+</div></section><section><h3>Derivatives of Sine and Cosine (1)</h3>
+<div align="left"><p>As the most basic trigonometric functions, sine and cosine need their derivatives based on the limit definition. We use the sum identity in the process.<div class="displaymath process-math" id="sec_6-3_Trig-Calculus-6-2-1">
+\begin{align*}
+\sin'(x) \amp = \lim_{h \to 0} \frac{\sin(x+h)-\sin(x)}{h} \\
+\amp = \lim_{h \to 0} \frac{ \sin(x) \cos(h) +\cos(x) \sin(h) - \sin(x)}{h}\\
+\amp = \lim_{h \to 0} \sin(x) \cdot \frac{\cos(h)-1}{h} +\cos(x) \frac{\sin(h)}{h}
+\end{align*}
+</div><div class="displaymath process-math" id="sec_6-3_Trig-Calculus-6-2-2">
+\begin{align*}
+\cos'(x) \amp = \lim_{h \to 0} \frac{\cos(x+h)-\cos(x)}{h} \\
+\amp = \lim_{h \to 0} \frac{ \cos(x) \cos(h)  - \sin(x) \sin(h) - \cos(x)}{h}\\
+\amp = \lim_{h \to 0} \cos(x) \cdot \frac{\cos(h)-1}{h} - \sin(x) \frac{\sin(h)}{h}
+\end{align*}
+</div></p></div></section><section><h3>Derivatives of Sine and Cosine (2)</h3>
+<div align="left"><p>There are two key limits that appear, similar to <span class="process-math">\(\displaystyle \lim_{h \to 0} \frac{b^h-1}{h}\)</span> that had appeared when learning about exponential derivatives. When we are working with angles defined in <em class="emphasis">radians</em>, we can show<div class="displaymath process-math" id="sec_6-3_Trig-Calculus-7-2-3">
+\begin{gather*}
+\lim_{h \to 0} \frac{\sin(h)}{h} = 1\\
+\lim_{h \to 0} \frac{\cos(h)-1}{h} = 0
+\end{gather*}
+</div>Consequently, the derivatives (using <em class="emphasis">radians</em>) will be:<div class="displaymath process-math" id="sec_6-3_Trig-Calculus-7-2-5">
+\begin{gather*}
+\sin'(x) = \cos(x)\\
+\cos'(x) = -\sin(x)
+\end{gather*}
+</div></p></div></section><section><h3>Other Trigonometric Derivatives</h3>
+<div align="left"><p>Once we know the derivatives of sine and cosine, all others can be found using the basic rules of calculus.<ul class="disc" id="sec_6-3_Trig-Calculus-8-2-1">
+<li><p>Chain Rule for Sine and Cosine:<div class="displaymath process-math" id="sec_6-3_Trig-Calculus-8-2-1-1-1-1">
+\begin{align*}
+\frac{d}{dx}\Big[\sin(u)\Big] \amp = \sin'(u) \cdot u' = \cos(u) \cdot u'\\
+\frac{d}{dx}\Big[\cos(u)\Big] \amp = \cos'(u) \cdot u' = -\sin(u) \cdot u'
+\end{align*}
+</div></p></li>
+<li><p>Using Quotient Rule:<div class="displaymath process-math" id="sec_6-3_Trig-Calculus-8-2-1-2-1-1">
+\begin{align*}
+\tan'(x) \amp = \frac{d}{dx}\Big[\frac{\sin(x)}{\cos(x)}
+\Big] = \frac{\cos(x) \sin'(x) - \sin(x) \cos'(x)}{\cos^2(x)}\\
+\amp = \frac{\cos^2(x) + \sin^2(x)}{\cos^2(x)}  = \frac{1}{\cos^2(x)}\\
+\amp = \sec^2(x) 
+\end{align*}
+</div></p></li>
+</ul></p></div></section><section><h3>Summary of New Derivatives</h3>
+<div align="left"><p><ul class="disc" id="sec_6-3_Trig-Calculus-9-2-1">
+<li><p><span class="process-math">\(\displaystyle \sin'(x) = \cos(x)\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \cos'(x) = -\sin(x)\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \tan'(x) = \sec^2(x)\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \sec'(x) = \sec(x)\tan(x)\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \cot'(x) = -\csc^2(x)\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \csc'(x) = -\csc(x)\cot(x)\)</span></p></li>
+</ul></p></div></section><section><h3>Sign Analysis of Trigonometric Derivatives</h3>
+<div align="left"><p>Now that we know the formulas for derivatives, we can analyze the shape of graphs using sign analysis of derivatives. Also note that we can determine signs based on which quadrant an angle is in.<ul class="disc" id="sec_6-3_Trig-Calculus-10-2-1"><li>
+<p><span class="process-math">\(y=\sin(x)\)</span></p>
+<p><span class="process-math">\(y=\sec(x)\)</span></p>
+</li></ul></p></div></section></section>
 </div>
 </div></body>
 <script>

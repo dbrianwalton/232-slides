@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Section 6.2: Trigonometric Identities</title>
+<title>Section 6.3: Limits and Derivatives of Trigonometric Functions</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -128,7 +128,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_6-1_Trigonometry.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="root-1-2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_6-3_Trig-Calculus.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_6-2_Trig-Identities.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="root-1-2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -257,9 +257,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-1_Trigonometry.html#sec_6-1_Trigonometry-10" class="internal"><span class="title">Practice Finding Trig Values</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section contains-active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6-2_Trig-Identities.html" class="internal"><span class="title">Section 6.2: Trigonometric Identities</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-2_Trig-Identities.html#sec_6-2_Trig-Identities-2" class="internal"><span class="title">Learning Goals (Begin Day 17)</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-2_Trig-Identities.html#sec_6-2_Trig-Identities-3" class="internal"><span class="title">Pythagorean Identity</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-2_Trig-Identities.html#sec_6-2_Trig-Identities-4" class="internal"><span class="title">Sum Identities</span></a></div></li>
@@ -269,9 +269,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-2_Trig-Identities.html#sec_6-2_Trig-Identities-8" class="internal"><span class="title">Half-Angle Identities</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec_6-3_Trig-Calculus.html" class="internal"><span class="title">Section 6.3: Limits and Derivatives of Trigonometric Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-3_Trig-Calculus.html#sec_6-3_Trig-Calculus-2" class="internal"><span class="title">Learning Goals</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-3_Trig-Calculus.html#sec_6-3_Trig-Calculus-3" class="internal"><span class="title">Continuity</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6-3_Trig-Calculus.html#sec_6-3_Trig-Calculus-4" class="internal"><span class="title">Oscillation and Limits</span></a></div></li>
@@ -284,171 +284,226 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_6-2_Trig-Identities"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 6.2: Trigonometric Identities</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_6-3_Trig-Calculus"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 6.3: Limits and Derivatives of Trigonometric Functions</span>
 </h2>
-<section class="subsection" id="sec_6-2_Trig-Identities-2"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Goals (Begin Day 17)</span>
+<section class="subsection" id="sec_6-3_Trig-Calculus-2"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Goals</span>
 </h3>
-<ul class="disc" id="sec_6-2_Trig-Identities-2-2">
-<li id="sec_6-2_Trig-Identities-2-2-1">
-<div class="para" id="sec_6-2_Trig-Identities-2-2-1-1">The unit circle equation is <span class="process-math">\(x^2+y^2=1\text{.}\)</span> This leads to three Pythagorean identities for trigonometry.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ul class="disc" id="sec_6-3_Trig-Calculus-2-2">
+<li id="sec_6-3_Trig-Calculus-2-2-1">
+<div class="para" id="sec_6-3_Trig-Calculus-2-2-1-1">Except where they are undefined due to division by zero, trigonometric functions are continuous.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec_6-2_Trig-Identities-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sec_6-2_Trig-Identities-2-2-2">
-<div class="para" id="sec_6-2_Trig-Identities-2-2-2-1">Sine and cosine have <dfn class="terminology">sum identities</dfn> to expand <span class="process-math">\(\sin(A+B)\)</span> and <span class="process-math">\(\cos(A+B)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sec_6-3_Trig-Calculus-2-2-2">
+<div class="para" id="sec_6-3_Trig-Calculus-2-2-2-1">Infinite oscillation that does not decay has no limit. The squeeze theorem (sandwich theorem) gives us a method to deal with decay.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec_6-2_Trig-Identities-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sec_6-2_Trig-Identities-2-2-3">
-<div class="para" id="sec_6-2_Trig-Identities-2-2-3-1">Use identities to take given information to find trigonometric values of various combinations or transformations of angles.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sec_6-3_Trig-Calculus-2-2-3">
+<div class="para" id="sec_6-3_Trig-Calculus-2-2-3-1">The derivatives of sine and cosine cycle between one another.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec_6-2_Trig-Identities-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sec_6-2_Trig-Identities-2-2-4">
-<div class="para" id="sec_6-2_Trig-Identities-2-2-4-1">Trigonometric functions have symmetries: even vs odd, periodic<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sec_6-3_Trig-Calculus-2-2-4">
+<div class="para" id="sec_6-3_Trig-Calculus-2-2-4-1">All other derivatives derive from the quotient rule.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec_6-2_Trig-Identities-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Subsection: Learning Goals (Begin Day 17)"><a href="#sec_6-2_Trig-Identities-2" title="Copy heading and permalink for Subsection: Learning Goals (Begin Day 17)" aria-label="Copy heading and permalink for Subsection: Learning Goals (Begin Day 17)">🔗</a></div></section><section class="subsection" id="sec_6-2_Trig-Identities-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pythagorean Identity</span>
+<div class="autopermalink" data-description="Subsection: Learning Goals"><a href="#sec_6-3_Trig-Calculus-2" title="Copy heading and permalink for Subsection: Learning Goals" aria-label="Copy heading and permalink for Subsection: Learning Goals">🔗</a></div></section><section class="subsection" id="sec_6-3_Trig-Calculus-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Continuity</span>
 </h3>
-<div class="para logical" id="sec_6-2_Trig-Identities-3-2">
-<div class="para">The unit circle equation in terms of coordinates is <span class="process-math">\(x^2+y^2 = 1\text{.}\)</span> Because <span class="process-math">\(\cos(\theta)\)</span> and <span class="process-math">\(\sin(\theta)\)</span> are the <span class="process-math">\((x,y)\)</span> coordinates, the unit circle equation also gives us the Pythagorean identities, valid for any angle <span class="process-math">\(\theta\text{.}\)</span>
+<div class="para" id="sec_6-3_Trig-Calculus-3-2">Sine and cosine smoothly change to create continuous periodic waves.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="sec_6-2_Trig-Identities-3-2-6">
-\begin{align*}
-\sin^2(\theta) + \cos^2(\theta) \amp = 1 \\
-\tan^2(\theta) + 1 \amp = \sec^2(\theta) \\
-1 + \cot^2(\theta) \amp = \csc^2(\theta) 
-\end{align*}
+<div class="para" id="sec_6-3_Trig-Calculus-3-3">The other four trigonometric functions all have vertical asymptotes at the points where the denominator equals zero, but they are otherwise continuous.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">We most commonly work with the identity relating sine and cosine. Use quadrants to identify signs.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ul class="disc" id="sec_6-3_Trig-Calculus-3-4">
+<li id="sec_6-3_Trig-Calculus-3-4-1">
+<div class="para" id="sec_6-3_Trig-Calculus-3-4-1-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \to \pi} \cot(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec_6-2_Trig-Identities-3-3">
-<em class="emphasis">Example</em>: If <span class="process-math">\(\pi \lt \theta \lt \frac{3 \pi}{2}\)</span> and <span class="process-math">\(\sin(\theta) = -0.6\text{,}\)</span> find <span class="process-math">\(\cot(\theta)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-3-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-3_Trig-Calculus-3-4-2">
+<div class="para" id="sec_6-3_Trig-Calculus-3-4-2-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \to -\frac{\pi}{2}} \sec(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Pythagorean Identity"><a href="#sec_6-2_Trig-Identities-3" title="Copy heading and permalink for Subsection: Pythagorean Identity" aria-label="Copy heading and permalink for Subsection: Pythagorean Identity">🔗</a></div></section><section class="subsection" id="sec_6-2_Trig-Identities-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sum Identities</span>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-3-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Continuity"><a href="#sec_6-3_Trig-Calculus-3" title="Copy heading and permalink for Subsection: Continuity" aria-label="Copy heading and permalink for Subsection: Continuity">🔗</a></div></section><section class="subsection" id="sec_6-3_Trig-Calculus-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Oscillation and Limits</span>
 </h3>
-<div class="para logical" id="sec_6-2_Trig-Identities-4-2">
-<div class="para">The unit circle interpretation of an angle is as a <dfn class="terminology">rotation</dfn> of the point <span class="process-math">\((1,0)\)</span> around the center of the circle. Adding angles corresponds to combining rotations. The sum identities tell us how to find the coordinates for a rotation formed by adding two rotations based on the known coordinates of the individual rotations.</div>
-<div class="displaymath process-math" id="sec_6-2_Trig-Identities-4-2-3">
-\begin{align*}
-\sin(A+B) \amp = \sin(A) \cos(B) + \cos(A) \sin(B) \\
-\amp = y_A x_B + x_A y_B \\
-\cos(A+B) \amp = \cos(A) \cos(B) - \sin(A) \sin(B) \\
-\amp = x_A x_B - y_A y_B 
-\end{align*}
+<div class="para" id="sec_6-3_Trig-Calculus-4-2">For a function <span class="process-math">\(f(x)\)</span> to have a limit, the value of <span class="process-math">\(f(x)\)</span> must become closer and closer to that limiting value. Oscillation (waves) means that a function keeps moving between different values. The only way we can have a limit with <em class="emphasis">infinitely many oscillations</em> is if the amplitude of the oscillation decays to 0.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec_6-2_Trig-Identities-4-3">
-<em class="emphasis">Example</em>: Suppose <span class="process-math">\(\beta\)</span> is the angle ending in Q2 with <span class="process-math">\(\sin \beta = \frac{2}{5}\text{.}\)</span> Find <span class="process-math">\(\sin(\beta + \frac{\pi}{4})\)</span> and <span class="process-math">\(\cos(\beta + \frac{\pi}{4})\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Subsection: Sum Identities"><a href="#sec_6-2_Trig-Identities-4" title="Copy heading and permalink for Subsection: Sum Identities" aria-label="Copy heading and permalink for Subsection: Sum Identities">🔗</a></div></section><section class="subsection" id="sec_6-2_Trig-Identities-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Even/Odd Symmetry</span>
-</h3>
-<div class="para" id="sec_6-2_Trig-Identities-5-2">If we compare angles <span class="process-math">\(\theta\)</span> and <span class="process-math">\(-\theta\)</span> on the unit circle, we can immediately recognize that their standard positions terminate with the <em class="emphasis">same</em> x-coordinates and <em class="emphasis">opposite</em> y-coordinates. This implies that <span class="process-math">\(\sin(-\theta) = - \sin(\theta)\)</span> (an <dfn class="terminology">odd function</dfn>) and that <span class="process-math">\(\cos(-\theta) = \cos(\theta)\)</span> (an <dfn class="terminology">even function</dfn>).<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="sec_6-2_Trig-Identities-5-3">
-<div class="para">Consequently, the sum identities also give us <dfn class="terminology">difference identities</dfn>:</div>
-<div class="displaymath process-math" id="sec_6-2_Trig-Identities-5-3-2">
-\begin{align*}
-\sin(A - B) \amp = \sin(A+-B)\\
-\amp = \sin(A) \cos(-B) + \cos(A) \sin(-B)\\
-\amp = \sin(A) \cos(B) - \cos(A) \sin(B)\\
-\cos(A - B) \amp = \cos(A+-B)\\
-\amp = \cos(A) \cos(-B) - \sin(A) \sin(-B)\\
-\amp = \cos(A) \cos(B) + \sin(A) \sin(B)
-\end{align*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Subsection: Even/Odd Symmetry"><a href="#sec_6-2_Trig-Identities-5" title="Copy heading and permalink for Subsection: Even/Odd Symmetry" aria-label="Copy heading and permalink for Subsection: Even/Odd Symmetry">🔗</a></div></section><section class="subsection" id="sec_6-2_Trig-Identities-6"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Visualizing the Graphs: Periodic Behavior</span>
-</h3>
-<div class="para logical" id="sec_6-2_Trig-Identities-6-2">
-<div class="para">For every full rotation by an angle <span class="process-math">\(2 \pi\text{,}\)</span> we return to the same point on the unit circle. This means that all of the trigonometric functions are <dfn class="terminology">periodic</dfn> because they satisfy</div>
-<div class="displaymath process-math" id="sec_6-2_Trig-Identities-6-2-3">
-\begin{equation*}
-f(\theta + 2 \pi) = f(\theta).
-\end{equation*}
-</div>
-<div class="para">The value <span class="process-math">\(2 \pi\)</span> is called a <dfn class="terminology">period</dfn>, the amount a function can be shifted horizontally and start over exactly again.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec_6-2_Trig-Identities-6-3">The tangent and cotangent functions actually repeat twice per full rotation and have period <span class="process-math">\(\pi\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;grid-template-columns:31.0344827586207% 31.0344827586207% 31.0344827586207%;column-gap:3.333333333333333%;">
-<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/sec_6-2_Trig-Identities-6-4-1.svg" role="img" class="contained" alt="Graphs of sine (red, solid) and cosine (blue, dashed) to show their periods of 2 pi."></div></div>
-<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/sec_6-2_Trig-Identities-6-4-2.svg" role="img" class="contained" alt="Graphs of tangent (red, solid) and cotangent (blue, dashed) to show their periods of 2 pi."></div></div>
-<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/sec_6-2_Trig-Identities-6-4-3.svg" role="img" class="contained" alt="Graphs of secant (red, solid) and cosecant (blue, dashed) to show their periods of 2 pi."></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="interactive-iframe-container"><iframe id="interactive-sine-reciprocal-no-limit" style="width:300px; height:300px; display: block; " src="interactive-sine-reciprocal-no-limit-if.html"></iframe></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="interactive-iframe-container"><iframe id="interactive-sine-reciprocal-has-limit" style="width:300px; height:300px; display: block; " src="interactive-sine-reciprocal-has-limit-if.html"></iframe></div></div>
 </div></div>
-<div class="autopermalink" data-description="Subsection: Visualizing the Graphs: Periodic Behavior"><a href="#sec_6-2_Trig-Identities-6" title="Copy heading and permalink for Subsection: Visualizing the Graphs: Periodic Behavior" aria-label="Copy heading and permalink for Subsection: Visualizing the Graphs: Periodic Behavior">🔗</a></div></section><section class="subsection" id="sec_6-2_Trig-Identities-7"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Double-Angle Identities</span>
+<div class="autopermalink" data-description="Subsection: Oscillation and Limits"><a href="#sec_6-3_Trig-Calculus-4" title="Copy heading and permalink for Subsection: Oscillation and Limits" aria-label="Copy heading and permalink for Subsection: Oscillation and Limits">🔗</a></div></section><section class="subsection" id="sec_6-3_Trig-Calculus-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Squeeze (Sandwich) Theorem</span>
 </h3>
-<div class="para logical" id="sec_6-2_Trig-Identities-7-2">
-<div class="para">Doubling an angle corresponds to adding it to itself. This gives us so-called <dfn class="terminology">double-angle identities</dfn>.</div>
-<div class="displaymath process-math" id="sec_6-2_Trig-Identities-7-2-2">
-\begin{align*}
-\sin(2 \theta) \amp = \sin(\theta + \theta) \\
-\amp = \sin(\theta) \cos(\theta) + \cos(\theta) \sin(\theta) \\
-\amp = 2 \sin(\theta) \cos(\theta) 
-\end{align*}
+<div class="para" id="sec_6-3_Trig-Calculus-5-2">If <span class="process-math">\(f(x)\)</span> is <em class="emphasis">squeezed</em> (sandwiched) between two functions <span class="process-math">\(L(x)\)</span> and <span class="process-math">\(U(x)\text{,}\)</span> so that <span class="process-math">\(L(x) \le f(x) \le U(x)\text{,}\)</span> and they have the same limit <span class="process-math">\(\displaystyle \lim_{x \to a} L(x) = \lim_{x \to a} U(x) = C\text{,}\)</span> then <span class="process-math">\(\displaystyle \lim_{x \to a} f(x) = C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="sec_6-2_Trig-Identities-7-2-3">
-\begin{align*}
-\cos(2 \theta) \amp = \cos(\theta + \theta) \\
-\amp = \cos(\theta) \cos(\theta) - \sin(\theta) \sin(\theta) \\
-\amp = \cos^2(\theta) - \sin^2(\theta) 
-\end{align*}
+<div class="para" id="sec_6-3_Trig-Calculus-5-3">For sine (and similarly for cosine), we can always start with <span class="process-math">\(-1 \le \sin(x) \le 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ul class="disc" id="sec_6-3_Trig-Calculus-5-4">
+<li id="sec_6-3_Trig-Calculus-5-4-1">
+<div class="para" id="sec_6-3_Trig-Calculus-5-4-1-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \to 0^+} x \sin(\frac{1}{x})\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sec_6-2_Trig-Identities-7-3">
-<div class="para">If we use the Pythagorean identity <span class="process-math">\(\sin^2(\theta) + \cos^2(\theta) = 1\)</span> and solve for <span class="process-math">\(\sin^2(\theta) = 1 - \cos^2(\theta)\)</span> or for <span class="process-math">\(\cos^2(\theta) = 1 - \sin^2(\theta)\text{,}\)</span> we arrive at two alternative representations of the cosine’s double-angle identity:</div>
-<div class="displaymath process-math" id="sec_6-2_Trig-Identities-7-3-4">
-\begin{align*}
-\cos(2\theta) \amp = 2 \cos^2(\theta) - 1\\
-\cos(2\theta) \amp = 1 - 2 \sin^2(\theta)
-\end{align*}
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-5-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-3_Trig-Calculus-5-4-2">
+<div class="para" id="sec_6-3_Trig-Calculus-5-4-2-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \to \infty} x^{-1} \sin(x^2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Subsection: Double-Angle Identities"><a href="#sec_6-2_Trig-Identities-7" title="Copy heading and permalink for Subsection: Double-Angle Identities" aria-label="Copy heading and permalink for Subsection: Double-Angle Identities">🔗</a></div></section><section class="subsection" id="sec_6-2_Trig-Identities-8"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Half-Angle Identities</span>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-5-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Squeeze (Sandwich) Theorem"><a href="#sec_6-3_Trig-Calculus-5" title="Copy heading and permalink for Subsection: Squeeze (Sandwich) Theorem" aria-label="Copy heading and permalink for Subsection: Squeeze (Sandwich) Theorem">🔗</a></div></section><section class="subsection" id="sec_6-3_Trig-Calculus-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivatives of Sine and Cosine (1)</span>
 </h3>
-<div class="para" id="sec_6-2_Trig-Identities-8-2">Using the double-angle identity and solving for <span class="process-math">\(\sin^2(\theta)\)</span> or <span class="process-math">\(\cos^2(\theta)\text{,}\)</span> we create what are called the <dfn class="terminology">half-angle identities</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sec_6-3_Trig-Calculus-6-2">
+<div class="para">As the most basic trigonometric functions, sine and cosine need their derivatives based on the limit definition. We use the sum identity in the process.</div>
+<div class="displaymath process-math" id="sec_6-3_Trig-Calculus-6-2-1">
+\begin{align*}
+\sin'(x) \amp = \lim_{h \to 0} \frac{\sin(x+h)-\sin(x)}{h} \\
+\amp = \lim_{h \to 0} \frac{ \sin(x) \cos(h) +\cos(x) \sin(h) - \sin(x)}{h}\\
+\amp = \lim_{h \to 0} \sin(x) \cdot \frac{\cos(h)-1}{h} +\cos(x) \frac{\sin(h)}{h}
+\end{align*}
 </div>
-<div class="para logical" id="sec_6-2_Trig-Identities-8-3">
-<div class="displaymath process-math" id="sec_6-2_Trig-Identities-8-3-1">
+<div class="displaymath process-math" id="sec_6-3_Trig-Calculus-6-2-2">
+\begin{align*}
+\cos'(x) \amp = \lim_{h \to 0} \frac{\cos(x+h)-\cos(x)}{h} \\
+\amp = \lim_{h \to 0} \frac{ \cos(x) \cos(h)  - \sin(x) \sin(h) - \cos(x)}{h}\\
+\amp = \lim_{h \to 0} \cos(x) \cdot \frac{\cos(h)-1}{h} - \sin(x) \frac{\sin(h)}{h}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Derivatives of Sine and Cosine (1)"><a href="#sec_6-3_Trig-Calculus-6" title="Copy heading and permalink for Subsection: Derivatives of Sine and Cosine (1)" aria-label="Copy heading and permalink for Subsection: Derivatives of Sine and Cosine (1)">🔗</a></div></section><section class="subsection" id="sec_6-3_Trig-Calculus-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivatives of Sine and Cosine (2)</span>
+</h3>
+<div class="para logical" id="sec_6-3_Trig-Calculus-7-2">
+<div class="para">There are two key limits that appear, similar to <span class="process-math">\(\displaystyle \lim_{h \to 0} \frac{b^h-1}{h}\)</span> that had appeared when learning about exponential derivatives. When we are working with angles defined in <em class="emphasis">radians</em>, we can show</div>
+<div class="displaymath process-math" id="sec_6-3_Trig-Calculus-7-2-3">
 \begin{gather*}
-\cos(2\theta) = 1 - 2 \sin^2(\theta)\\
-2 \sin^2(\theta) = 1 - \cos(2\theta)\\
-\sin^2(\theta) = \frac{1 - \cos(2\theta)}{2}
+\lim_{h \to 0} \frac{\sin(h)}{h} = 1\\
+\lim_{h \to 0} \frac{\cos(h)-1}{h} = 0
 \end{gather*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="sec_6-2_Trig-Identities-8-4">
-<div class="displaymath process-math" id="sec_6-2_Trig-Identities-8-4-1">
+<div class="para">Consequently, the derivatives (using <em class="emphasis">radians</em>) will be:</div>
+<div class="displaymath process-math" id="sec_6-3_Trig-Calculus-7-2-5">
 \begin{gather*}
-\cos(2\theta) = 2 \cos^2(\theta) - 1\\
-2 \cos^2(\theta) = 1 + \cos(2\theta)\\
-\cos^2(\theta) = \frac{1 + \cos(2\theta)}{2}
+\sin'(x) = \cos(x)\\
+\cos'(x) = -\sin(x)
 \end{gather*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-8-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec_6-2_Trig-Identities-8-5">Note that because <span class="process-math">\(\sin(\theta)\)</span> or <span class="process-math">\(\cos(\theta)\)</span> appears squared, there are actually two locations for a half-angle based on the unit circle location. The identities become useful in Calculus 2 (MATH 236) when learning about integration methods.<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-2_Trig-Identities-8-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Subsection: Derivatives of Sine and Cosine (2)"><a href="#sec_6-3_Trig-Calculus-7" title="Copy heading and permalink for Subsection: Derivatives of Sine and Cosine (2)" aria-label="Copy heading and permalink for Subsection: Derivatives of Sine and Cosine (2)">🔗</a></div></section><section class="subsection" id="sec_6-3_Trig-Calculus-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Other Trigonometric Derivatives</span>
+</h3>
+<div class="para logical" id="sec_6-3_Trig-Calculus-8-2">
+<div class="para">Once we know the derivatives of sine and cosine, all others can be found using the basic rules of calculus.</div>
+<ul class="disc" id="sec_6-3_Trig-Calculus-8-2-1">
+<li id="sec_6-3_Trig-Calculus-8-2-1-1">
+<div class="para logical" id="sec_6-3_Trig-Calculus-8-2-1-1-1">
+<div class="para">Chain Rule for Sine and Cosine:</div>
+<div class="displaymath process-math" id="sec_6-3_Trig-Calculus-8-2-1-1-1-1">
+\begin{align*}
+\frac{d}{dx}\Big[\sin(u)\Big] \amp = \sin'(u) \cdot u' = \cos(u) \cdot u'\\
+\frac{d}{dx}\Big[\cos(u)\Big] \amp = \cos'(u) \cdot u' = -\sin(u) \cdot u'
+\end{align*}
 </div>
-<div class="autopermalink" data-description="Subsection: Half-Angle Identities"><a href="#sec_6-2_Trig-Identities-8" title="Copy heading and permalink for Subsection: Half-Angle Identities" aria-label="Copy heading and permalink for Subsection: Half-Angle Identities">🔗</a></div></section><div class="autopermalink" data-description="Section: Section 6.2: Trigonometric Identities"><a href="#sec_6-2_Trig-Identities" title="Copy heading and permalink for Section: Section 6.2: Trigonometric Identities" aria-label="Copy heading and permalink for Section: Section 6.2: Trigonometric Identities">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-8-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-8-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-3_Trig-Calculus-8-2-1-2">
+<div class="para logical" id="sec_6-3_Trig-Calculus-8-2-1-2-1">
+<div class="para">Using Quotient Rule:</div>
+<div class="displaymath process-math" id="sec_6-3_Trig-Calculus-8-2-1-2-1-1">
+\begin{align*}
+\tan'(x) \amp = \frac{d}{dx}\Big[\frac{\sin(x)}{\cos(x)}
+\Big] = \frac{\cos(x) \sin'(x) - \sin(x) \cos'(x)}{\cos^2(x)}\\
+\amp = \frac{\cos^2(x) + \sin^2(x)}{\cos^2(x)}  = \frac{1}{\cos^2(x)}\\
+\amp = \sec^2(x) 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-8-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-8-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Other Trigonometric Derivatives"><a href="#sec_6-3_Trig-Calculus-8" title="Copy heading and permalink for Subsection: Other Trigonometric Derivatives" aria-label="Copy heading and permalink for Subsection: Other Trigonometric Derivatives">🔗</a></div></section><section class="subsection" id="sec_6-3_Trig-Calculus-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary of New Derivatives</span>
+</h3>
+<div class="para logical" id="sec_6-3_Trig-Calculus-9-2">
+<ul class="disc" id="sec_6-3_Trig-Calculus-9-2-1">
+<li id="sec_6-3_Trig-Calculus-9-2-1-1">
+<div class="para" id="sec_6-3_Trig-Calculus-9-2-1-1-1">
+<span class="process-math">\(\displaystyle \sin'(x) = \cos(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-9-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-9-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-3_Trig-Calculus-9-2-1-2">
+<div class="para" id="sec_6-3_Trig-Calculus-9-2-1-2-1">
+<span class="process-math">\(\displaystyle \cos'(x) = -\sin(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-9-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-9-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-3_Trig-Calculus-9-2-1-3">
+<div class="para" id="sec_6-3_Trig-Calculus-9-2-1-3-1">
+<span class="process-math">\(\displaystyle \tan'(x) = \sec^2(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-9-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-9-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-3_Trig-Calculus-9-2-1-4">
+<div class="para" id="sec_6-3_Trig-Calculus-9-2-1-4-1">
+<span class="process-math">\(\displaystyle \sec'(x) = \sec(x)\tan(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-9-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-9-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-3_Trig-Calculus-9-2-1-5">
+<div class="para" id="sec_6-3_Trig-Calculus-9-2-1-5-1">
+<span class="process-math">\(\displaystyle \cot'(x) = -\csc^2(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-9-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-9-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6-3_Trig-Calculus-9-2-1-6">
+<div class="para" id="sec_6-3_Trig-Calculus-9-2-1-6-1">
+<span class="process-math">\(\displaystyle \csc'(x) = -\csc(x)\cot(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-9-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-9-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Summary of New Derivatives"><a href="#sec_6-3_Trig-Calculus-9" title="Copy heading and permalink for Subsection: Summary of New Derivatives" aria-label="Copy heading and permalink for Subsection: Summary of New Derivatives">🔗</a></div></section><section class="subsection" id="sec_6-3_Trig-Calculus-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sign Analysis of Trigonometric Derivatives</span>
+</h3>
+<div class="para logical" id="sec_6-3_Trig-Calculus-10-2">
+<div class="para">Now that we know the formulas for derivatives, we can analyze the shape of graphs using sign analysis of derivatives. Also note that we can determine signs based on which quadrant an angle is in.</div>
+<ul class="disc" id="sec_6-3_Trig-Calculus-10-2-1"><li id="sec_6-3_Trig-Calculus-10-2-1-1">
+<div class="para" id="sec_6-3_Trig-Calculus-10-2-1-1-1">
+<span class="process-math">\(y=\sin(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-10-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_6-3_Trig-Calculus-10-2-1-1-2">
+<span class="process-math">\(y=\sec(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-10-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_6-3_Trig-Calculus-10-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_6-3_Trig-Calculus-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Sign Analysis of Trigonometric Derivatives"><a href="#sec_6-3_Trig-Calculus-10" title="Copy heading and permalink for Subsection: Sign Analysis of Trigonometric Derivatives" aria-label="Copy heading and permalink for Subsection: Sign Analysis of Trigonometric Derivatives">🔗</a></div></section><div class="autopermalink" data-description="Section: Section 6.3: Limits and Derivatives of Trigonometric Functions"><a href="#sec_6-3_Trig-Calculus" title="Copy heading and permalink for Section: Section 6.3: Limits and Derivatives of Trigonometric Functions" aria-label="Copy heading and permalink for Section: Section 6.3: Limits and Derivatives of Trigonometric Functions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="sec_6-1_Trigonometry.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_6-3_Trig-Calculus.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec_6-2_Trig-Identities.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
