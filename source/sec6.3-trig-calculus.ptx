@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_6-3_Trig-Calculus" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 6.3: Limits and Derivatives of Trigonometric Functions</title>
+
+  <slide>
+    <title>Learning Goals</title>
+
+    <ul>
+      <li>
+        <p>Except where they are undefined due to division by zero, trigonometric functions are continuous.</p>
+      </li>
+      <li>
+        <p>
+          Infinite oscillation that does not decay has no limit.
+          The squeeze theorem (sandwich theorem) gives us a method to deal with decay.
+        </p>
+      </li>
+      <li>
+        <p>The derivatives of sine and cosine cycle between one another.</p>
+      </li>
+      <li>
+        <p>All other derivatives derive from the quotient rule.</p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Continuity</title>
+    
+    <p>
+      Sine and cosine smoothly change to create continuous periodic waves.
+    </p>
+    <p>
+      The other four trigonometric functions all have vertical asymptotes at the points where the denominator equals zero,
+      but they are otherwise continuous.
+    </p>
+    <ul>
+      <li>
+        <p><m>\displaystyle \lim_{x \to \pi} \cot(x)</m></p>
+      </li>
+      <li>
+        <p><m>\displaystyle \lim_{x \to -\frac{\pi}{2}} \sec(x)</m></p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Oscillation and Limits</title>
+    
+    <p>
+      For a function <m>f(x)</m> to have a limit, the value of <m>f(x)</m> must become closer and closer to that limiting value.
+      Oscillation (waves) means that a function keeps moving between different values.
+      The only way we can have a limit with <em>infinitely many oscillations</em> is if the amplitude of the oscillation decays to 0.
+    </p>
+    <sidebyside>
+      <interactive xml:id="interactive-sine-reciprocal-no-limit" platform="jsxgraph" width="90%">
+        <slate xml:id="ch6-sine-no-limit" surface="jessiecode" source="code/jsx/sine-reciprocal-no-limit.jc" axis="true"/>
+      </interactive>
+      <interactive xml:id="interactive-sine-reciprocal-has-limit" platform="jsxgraph" width="90%">
+        <slate xml:id="ch6-sine-has-limit" surface="jessiecode" source="code/jsx/sine-reciprocal-has-limit.jc" axis="true"/>
+      </interactive>
+    </sidebyside>
+  </slide>
+
+  <slide>
+    <title>Squeeze (Sandwich) Theorem</title>
+    
+    <p>
+      If <m>f(x)</m> is <em>squeezed</em> (sandwiched) between two functions <m>L(x)</m> and <m>U(x)</m>, so that <m>L(x) \le f(x) \le U(x)</m>,
+      and they have the same limit <m>\displaystyle \lim_{x \to a} L(x) = \lim_{x \to a} U(x) = C</m>, then
+      <m>\displaystyle \lim_{x \to a} f(x) = C</m>.
+    </p>
+    <p>
+      For sine (and similarly for cosine), we can always start with <m>-1 \le \sin(x) \le 1</m>.
+    </p>
+
+    <ul>
+      <li>
+        <p><m>\displaystyle \lim_{x \to 0^+} x \sin(\frac{1}{x})</m></p>
+      </li>
+      <li>
+        <p><m>\displaystyle \lim_{x \to \infty} x^{-1} \sin(x^2)</m></p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Derivatives of Sine and Cosine (1)</title>
+    
+    <p>
+      As the most basic trigonometric functions, sine and cosine need their derivatives based on the limit definition.
+      We use the sum identity in the process.
+      <md>
+        <mrow>\sin'(x) \amp = \lim_{h \to 0} \frac{\sin(x+h)-\sin(x)}{h} </mrow>
+        <mrow> \amp = \lim_{h \to 0} \frac{ \sin(x) \cos(h) +\cos(x) \sin(h) - \sin(x)}{h}</mrow>
+        <mrow> \amp = \lim_{h \to 0} \sin(x) \cdot \frac{\cos(h)-1}{h} +\cos(x) \frac{\sin(h)}{h}</mrow>
+      </md>
+      <md>
+        <mrow>\cos'(x) \amp = \lim_{h \to 0} \frac{\cos(x+h)-\cos(x)}{h} </mrow>
+        <mrow> \amp = \lim_{h \to 0} \frac{ \cos(x) \cos(h)  - \sin(x) \sin(h) - \cos(x)}{h}</mrow>
+        <mrow> \amp = \lim_{h \to 0} \cos(x) \cdot \frac{\cos(h)-1}{h} - \sin(x) \frac{\sin(h)}{h}</mrow>
+      </md>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Derivatives of Sine and Cosine (2)</title>
+    
+    <p>
+      There are two key limits that appear, similar to <m>\displaystyle \lim_{h \to 0} \frac{b^h-1}{h}</m>
+      that had appeared when learning about exponential derivatives.
+      When we are working with angles defined in <em>radians</em>, we can show
+      <md>
+        <mrow>\lim_{h \to 0} \frac{\sin(h)}{h} = 1</mrow>
+        <mrow>\lim_{h \to 0} \frac{\cos(h)-1}{h} = 0</mrow>
+      </md>
+      Consequently, the derivatives (using <em>radians</em>) will be:
+      <md>
+        <mrow>\sin'(x) = \cos(x)</mrow>
+        <mrow>\cos'(x) = -\sin(x)</mrow>
+      </md>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Other Trigonometric Derivatives</title>
+    
+    <p>
+      Once we know the derivatives of sine and cosine, all others can be found using the basic rules of calculus.
+      <ul>
+        <li>
+          <p>Chain Rule for Sine and Cosine:
+            <md>
+              <mrow>\frac{d}{dx}\Big[\sin(u)\Big] \amp = \sin'(u) \cdot u' = \cos(u) \cdot u'</mrow>
+              <mrow>\frac{d}{dx}\Big[\cos(u)\Big] \amp = \cos'(u) \cdot u' = -\sin(u) \cdot u'</mrow>
+            </md>
+          </p>
+        </li>
+        <li>
+          <p>Using Quotient Rule:
+            <md>
+              <mrow>\tan'(x) \amp = \frac{d}{dx}\Big[\frac{\sin(x)}{\cos(x)}
+                \Big] = \frac{\cos(x) \sin'(x) - \sin(x) \cos'(x)}{\cos^2(x)}</mrow>
+              <mrow> \amp = \frac{\cos^2(x) + \sin^2(x)}{\cos^2(x)}  = \frac{1}{\cos^2(x)}</mrow>
+              <mrow> \amp = \sec^2(x) </mrow>
+            </md>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Summary of New Derivatives</title>
+    
+    <p>
+      <ul>
+        <li>
+          <p><m>\sin'(x) = \cos(x)</m></p>
+        </li>
+        <li>
+          <p><m>\cos'(x) = -\sin(x)</m></p>
+        </li>
+        <li>
+          <p><m>\tan'(x) = \sec^2(x)</m></p>
+        </li>
+        <li>
+          <p><m>\sec'(x) = \sec(x)\tan(x)</m></p>
+        </li>
+        <li>
+          <p><m>\cot'(x) = -\csc^2(x)</m></p>
+        </li>
+        <li>
+          <p><m>\csc'(x) = -\csc(x)\cot(x)</m></p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Sign Analysis of Trigonometric Derivatives</title>
+    
+    <p>
+      Now that we know the formulas for derivatives, we can analyze the shape of graphs using sign analysis of derivatives.
+      Also note that we can determine signs based on which quadrant an angle is in.
+      <ul>
+        <li>
+          <p>
+            <m>y=\sin(x)</m>
+          </p>
+          <p>
+            <m>y=\sec(x)</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+</section>

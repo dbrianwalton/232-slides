@@ -65,5 +65,6 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 
         <xi:include href="./sec6.1-trigonometry.ptx" />
         <xi:include href="./sec6.2-trig-identities.ptx" />
+        <xi:include href="./sec6.3-trig-calculus.ptx" />
     </slideshow>
 </pretext>
