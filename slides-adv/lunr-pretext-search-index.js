@@ -359,6 +359,24 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "Section 6.3: Limits and Derivatives of Trigonometric Functions",
   "body": " Section 6.3: Limits and Derivatives of Trigonometric Functions   Learning Goals    Except where they are undefined due to division by zero, trigonometric functions are continuous.    Infinite oscillation that does not decay has no limit. The squeeze theorem (sandwich theorem) gives us a method to deal with decay.    The derivatives of sine and cosine cycle between one another.    All other derivatives derive from the quotient rule.   >   Continuity  Sine and cosine smoothly change to create continuous periodic waves.  The other four trigonometric functions all have vertical asymptotes at the points where the denominator equals zero, but they are otherwise continuous.         >   Oscillation and Limits  For a function to have a limit, the value of must become closer and closer to that limiting value. Oscillation (waves) means that a function keeps moving between different values. The only way we can have a limit with infinitely many oscillations is if the amplitude of the oscillation decays to 0.     >   Squeeze (Sandwich) Theorem  If is squeezed (sandwiched) between two functions and , so that , and they have the same limit , then .  For sine (and similarly for cosine), we can always start with .         >   Derivatives of Sine and Cosine (1)  As the most basic trigonometric functions, sine and cosine need their derivatives based on the limit definition. We use the sum identity in the process.   >   Derivatives of Sine and Cosine (2)  There are two key limits that appear, similar to that had appeared when learning about exponential derivatives. When we are working with angles defined in radians , we can show Consequently, the derivatives (using radians ) will be:  >   Other Trigonometric Derivatives  Once we know the derivatives of sine and cosine, all others can be found using the basic rules of calculus.   Chain Rule for Sine and Cosine:     Using Quotient Rule:     >   Summary of New Derivatives                       >   Sign Analysis of Trigonometric Derivatives  Now that we know the formulas for derivatives, we can analyze the shape of graphs using sign analysis of derivatives. Also note that we can determine signs based on which quadrant an angle is in.           >  "
+},
+{
+  "id": "sec_6-4_Inverse-Trigonometry",
+  "level": "1",
+  "url": "sec_6-4_Inverse-Trigonometry.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 6.4: Inverse Trigonometric Functions and Their Derivatives",
+  "body": " Section 6.4: Inverse Trigonometric Functions and Their Derivatives   Learning Goals    Use inverse trigonometric functions to find multiple solutions to trigonometric equations.    Evaluate composition of trigonometric functions and inverse trigonometric functions.    Calculate derivatives of inverse trigonometric functions.   >   Restricted Domains  Inverse functions allow us to solve equations , . This only works if for a given value of there is only one value making true. Otherwise, wouldn't be a function.  Because trigonometric functions are periodic, they are not one-to-one unless we restrict the domain:    Unit circles emphasizing the restricted domains for trigonometric functions   >   Inverse Trigonometric Functions  Trigonometric functions have angles as input and values as output. Inverse trigonometric functions take values as input and angles as output.  Interpret the following:            >   Solving Trigonometric Equations  Solve the equations. Find multiple solutions.         >   Composition of Functions  When evaluating composition of trigonometric functions and inverse trigonometric functions, it is critical to think about what the input of a function represents an angle or a value and what interval is relevant.               >   Composition of Functions, continued  The Pythagorean identities help us when working with composition of inverse of paired functions.         >   Implicit Function Derivative  If we want to find the derivative of , use implicit differentiation on the inverse equation and get Now we use the Pythagorean identity to simplify:  >   All Implicit Function Derivatives   Find for the following functions:         >  "
+},
+{
+  "id": "sec_6-4_Inverse-Trigonometry-3-3",
+  "level": "2",
+  "url": "sec_6-4_Inverse-Trigonometry.html#sec_6-4_Inverse-Trigonometry-3-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "restrict "
 }
 ]
 
