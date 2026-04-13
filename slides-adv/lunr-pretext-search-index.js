@@ -377,6 +377,78 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "restrict "
+},
+{
+  "id": "sec_7-4_Indefinite-Integrals",
+  "level": "1",
+  "url": "sec_7-4_Indefinite-Integrals.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 7.4: Antiderivatives and Indefinite Integrals",
+  "body": " Section 7.4: Antiderivatives and Indefinite Integrals   Learning Goals    If we start with and use it to find , we call an antiderivative of . The process of finding antiderivatives is called antidifferentiation .    Different functions can have the same derivative. If so, then they by a constant on any interval on which they are continuous. If , then .    Antiderivatives are also called indefinite integrals . Suppose is the derivative of some unknown , then we write to represent the family of all possible antiderivatives, where is called the integration constant .    Find a particular antiderivative by solving for given some initial point.    Be able to recognize functions that are derivatives and work backwards to find antiderivatives.   >   Differ By a Constant  Adding a constant to a function graphically is represented by a vertical displacement , which does not change the slope: That is, if , then .  The converse is also true: Two functions with the same derivative are just shifted versions of one another.   Suppose and are differentiable functions so that .    If we were to define , then we know everywhere.    The Mean Value Theorem implies that for any two points , which implies .     must be some constant value, say , which means .    >   Antiderivative  Starting with and calculating is the process of differentiation . The inverse process of starting with a function and trying to find the function (different symbol!) so that is called antidifferentiation . is called an antiderivative of .  Antiderivatives are not unique. Once you find one , all others can be found by adding different constants.   Example : Find all possible antiderivatives of . >   Notation: Indefinite Integral  For a reason that will only become clear with the Fundamental Theorem of Calculus, antiderivatives are also called integrals , specifically what is called an indefinite integral . The symbol for an integral is an elongated S -like shape that is , which stands for sum .  A derivative is defined a difference quotient (subtract and then divide). The symbol should make us think about a change of divided by the small change . The inverse process of a derivative should invert these steps: multiply by the and then add (sum). This is the reason behind integral notation: a sum of (the rate of change or derivative) times  . >   Antiderivative Rules  Every derivative rule we learned, when read in reverse becomes an antiderivative rule.      >   Constant Multiple and Sum Rules  We get a constant multiple rule:   We also get a sum rule:   These two rules are often used together, which we call linearity . >   Practice Linearity             >   Product and Quotient: About the Antiderivative  The inverse of the product rule requires recognizing patterns :   Same thing for recognizing a quotient rule as a pattern:  >   Practice Recognizing Products or Quotients             >   More About Simple Powers  The power rule for derivatives shows that in a derivative the power of is always multiplied by a value that is one higher than the power of the variable in the derivative. That is, in a basic derivative that had , the natural derivative would have been coming from an antiderivative of . If we wanted only  in the derivative, a constant multiple would have worked: Similarly, suppose we want in a derivative, it would have to come from :  >   Power Rule for Antiderivatives  In general, for , we can always use the power rule for antiderivatives:   Practice:                  >  "
+},
+{
+  "id": "sec_7-4_Indefinite-Integrals-2-2-1-1",
+  "level": "2",
+  "url": "sec_7-4_Indefinite-Integrals.html#sec_7-4_Indefinite-Integrals-2-2-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "antiderivative antidifferentiation "
+},
+{
+  "id": "sec_7-4_Indefinite-Integrals-2-2-3-1",
+  "level": "2",
+  "url": "sec_7-4_Indefinite-Integrals.html#sec_7-4_Indefinite-Integrals-2-2-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "indefinite integrals derivative family integration constant "
+},
+{
+  "id": "sec_7-4_Indefinite-Integrals-2-2-4-1",
+  "level": "2",
+  "url": "sec_7-4_Indefinite-Integrals.html#sec_7-4_Indefinite-Integrals-2-2-4-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "particular antiderivative "
+},
+{
+  "id": "sec_7-4_Indefinite-Integrals-3-2",
+  "level": "2",
+  "url": "sec_7-4_Indefinite-Integrals.html#sec_7-4_Indefinite-Integrals-3-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "vertical displacement "
+},
+{
+  "id": "sec_7-4_Indefinite-Integrals-4-2",
+  "level": "2",
+  "url": "sec_7-4_Indefinite-Integrals.html#sec_7-4_Indefinite-Integrals-4-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "differentiation antidifferentiation antiderivative "
+},
+{
+  "id": "sec_7-4_Indefinite-Integrals-5-2",
+  "level": "2",
+  "url": "sec_7-4_Indefinite-Integrals.html#sec_7-4_Indefinite-Integrals-5-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "integrals indefinite integral "
+},
+{
+  "id": "sec_7-4_Indefinite-Integrals-7-4",
+  "level": "2",
+  "url": "sec_7-4_Indefinite-Integrals.html#sec_7-4_Indefinite-Integrals-7-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linearity "
 }
 ]
 

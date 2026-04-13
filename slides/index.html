@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2026-04-07T04:04:50Z       *-->
+<!--*       on 2026-04-13T21:05:35Z       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -36,7 +36,7 @@
 <tr><td align="center" style="border-bottom: 0px;">James Madison University</td></tr>
 <tr><td align="center"></td></tr>
 </table>
-<h4><div class="date">as of April 7, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
+<h4><div class="date">as of April 13, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
 <div align="left"><p><span class="process-math">\(\displaystyle f(x) = \frac{x}{x^2+4}\)</span> and <span class="process-math">\(\displaystyle f'(x) = \frac{-x^2+4}{(x^2+4)^2}\)</span></p></div></section><section><h3>Graph Analysis 2</h3>
 <div align="left"><p><span class="process-math">\(f(x) = x \cdot (x^2-9)^{1/3}\)</span></p></div></section></section><section><section><h1>Section 4.1: Algebraic Functions</h1></section><section><h3>Learning Goals</h3>
 <div align="left"><ul class="disc" id="sec_4-1_algebraic_functions-2-2">
@@ -846,6 +846,124 @@ x = \sin(y)
 <li><p><span class="process-math">\(\displaystyle f(x) = \mathrm{asin}(x^2)\)</span></p></li>
 <li><p><span class="process-math">\(\displaystyle f(x) = \tan^{-1}(e^{2x})\)</span></p></li>
 </ul></p>
+</div></section></section><section><section><h1>Section 7.4: Antiderivatives and Indefinite Integrals</h1></section><section><h3>Learning Goals</h3>
+<div align="left"><ul class="disc" id="sec_7-4_Indefinite-Integrals-2-2">
+<li><p>If we start with <span class="process-math">\(f'(x)\)</span> and use it to find <span class="process-math">\(f(x)\text{,}\)</span> we call <span class="process-math">\(f(x)\)</span> an <dfn class="terminology">antiderivative</dfn> of <span class="process-math">\(f'(x)\text{.}\)</span> The <em class="emphasis">process</em> of finding antiderivatives is called <dfn class="terminology">antidifferentiation</dfn>.</p></li>
+<li><p>Different functions can have the same derivative. If so, then they by a constant on any interval on which they are continuous. If <span class="process-math">\(F'(x)=G'(x)\text{,}\)</span> then <span class="process-math">\(F(x) = G(x) + C\text{.}\)</span></p></li>
+<li><p>Antiderivatives are also called <dfn class="terminology">indefinite integrals</dfn>. Suppose <span class="process-math">\(g(x)\)</span> is the <dfn class="terminology">derivative</dfn> of some unknown <span class="process-math">\(G(x)\text{,}\)</span> then we write<div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-2-2-3-1-5">
+\begin{equation*}
+\int g(x) \, dx = G(x) + C
+\end{equation*}
+</div>to represent the <dfn class="terminology">family</dfn> of all possible antiderivatives, where <span class="process-math">\(C\)</span> is called the <dfn class="terminology">integration constant</dfn>.</p></li>
+<li><p>Find a <dfn class="terminology">particular antiderivative</dfn> by solving for <span class="process-math">\(C\)</span> given some initial point.</p></li>
+<li><p>Be able to recognize functions that are derivatives and work backwards to find antiderivatives.</p></li>
+</ul></div></section><section><h3>Differ By a Constant</h3>
+<div align="left">
+<p>Adding a constant to a function graphically is represented by a <dfn class="terminology">vertical displacement</dfn>, which does not change the slope:<div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-3-2-2">
+\begin{equation*}
+\frac{d}{dx}\Big[F(x) + C\Big] = F'(x) + 0 = F'(x).
+\end{equation*}
+</div>That is, if <span class="process-math">\(G(x) = F(x) + C\text{,}\)</span> then <span class="process-math">\(G'(x) = F'(x)\text{.}\)</span></p>
+<p>The converse is also true: Two functions with the same derivative are just shifted versions of one another.<ul class="disc" id="sec_7-4_Indefinite-Integrals-3-3-1">
+<li><p>Suppose <span class="process-math">\(F(x)\)</span> and <span class="process-math">\(G(x)\)</span> are differentiable functions so that <span class="process-math">\(F'(x) = G'(x)\text{.}\)</span></p></li>
+<li><p>If we were to define <span class="process-math">\(H(x) = F(x) - G(x)\text{,}\)</span> then we know <span class="process-math">\(H'(x) = 0\)</span> everywhere.</p></li>
+<li><p>The Mean Value Theorem implies that for any two points <span class="process-math">\(H(b) - H(a) = H'(c) \cdot (b-a) = 0\text{,}\)</span> which implies <span class="process-math">\(H(b) = H(a)\text{.}\)</span></p></li>
+<li><p><span class="process-math">\(H(x)\)</span> must be some constant value, say <span class="process-math">\(H(x) = K\text{,}\)</span> which means <span class="process-math">\(F(x) = G(x) + K\text{.}\)</span></p></li>
+</ul></p>
+</div></section><section><h3>Antiderivative</h3>
+<div align="left">
+<p>Starting with <span class="process-math">\(f(x)\)</span> and calculating <span class="process-math">\(f'(x)\)</span> is the process of <dfn class="terminology">differentiation</dfn>. The <em class="emphasis">inverse process</em> of starting with a function <span class="process-math">\(f(x)\)</span> and trying to find the function <span class="process-math">\(F(x)\)</span> (different symbol!) so that <span class="process-math">\(F'(x) = f(x)\)</span> is called <dfn class="terminology">antidifferentiation</dfn>. <span class="process-math">\(F(x)\)</span> is called an <dfn class="terminology">antiderivative</dfn> of <span class="process-math">\(f(x)\text{.}\)</span></p>
+<p>Antiderivatives are not unique. Once you find <em class="emphasis">one</em>, all others can be found by adding different constants.</p>
+<p><em class="emphasis">Example</em>: Find all possible antiderivatives of <span class="process-math">\(f(x) = 2x\text{.}\)</span></p>
+</div></section><section><h3>Notation: Indefinite Integral</h3>
+<div align="left">
+<p>For a reason that will only become clear with the Fundamental Theorem of Calculus, antiderivatives are also called <dfn class="terminology">integrals</dfn>, specifically what is called an <dfn class="terminology">indefinite integral</dfn>. The symbol for an integral is an elongated “S”-like shape that is <span class="process-math">\(\int\text{,}\)</span> which stands for “sum”.</p>
+<p>A derivative is defined a <em class="emphasis">difference quotient</em> (subtract and then divide). The symbol <span class="process-math">\(\frac{dy}{dx}\)</span> should make us think about a <em class="emphasis">change</em> of <span class="process-math">\(y\)</span> divided by the small change <span class="process-math">\(dx\text{.}\)</span> The <em class="emphasis">inverse process</em> of a derivative should invert these steps: <em class="emphasis">multiply</em> by the <span class="process-math">\(dx\)</span> and then <em class="emphasis">add</em> (sum). This is the reason behind integral notation:<div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-5-3-10">
+\begin{equation*}
+\int f(x) dx
+\end{equation*}
+</div>a <em class="emphasis">sum</em> of <span class="process-math">\(f(x)\)</span> (the rate of change or derivative) <em class="emphasis">times</em> <span class="process-math">\(dx\text{.}\)</span></p>
+</div></section><section><h3>Antiderivative Rules</h3>
+<div align="left"><p>Every derivative rule we learned, when read in reverse becomes an antiderivative rule.<div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-6-2-1">
+\begin{align*}
+\frac{d}{dx}[x] = 1 \amp \quad \Leftrightarrow \quad  \int [1] \, dx = x + C 
+\end{align*}
+</div><div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-6-2-2">
+\begin{align*}
+\frac{d}{dx}[x^2] = 2x \amp \quad \Leftrightarrow \quad \int [2x] \, dx = x^2 + C 
+\end{align*}
+</div><div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-6-2-3">
+\begin{align*}
+\frac{d}{dx}[\sin(x)] = \cos(x) \amp \quad \Leftrightarrow \quad \int [\cos(x)] \, dx = \sin(x) + C 
+\end{align*}
+</div><div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-6-2-4">
+\begin{align*}
+\frac{d}{dx}[e^{2x}] = 2e^{2x} \amp \quad \Leftrightarrow \quad \int [2e^{2x}] \, dx = e^{2x} + C 
+\end{align*}
+</div><div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-6-2-5">
+\begin{align*}
+\frac{d}{dx}[\ln(|x|)] = \frac{1}{x} \amp \quad \Leftrightarrow \quad \int [\frac{1}{x}] \, dx = \ln(|x|) + C 
+\end{align*}
+</div></p></div></section><section><h3>Constant Multiple and Sum Rules</h3>
+<div align="left">
+<p>We get a constant multiple rule:<div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-7-2-1">
+\begin{align*}
+\amp \frac{d}{dx}\Big[k \cdot F(x) \Big] = k \cdot F'(x) \\
+\amp \quad \Leftrightarrow \quad \int [k \cdot f(x)] \, dx = k \cdot \int f(x)\, dx 
+\end{align*}
+</div></p>
+<p>We also get a sum rule:<div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-7-3-1">
+\begin{align*}
+\amp \frac{d}{dx}\Big[F(x) + G(x)\Big] = F'(x) + G'(x) \\
+\amp \quad \Leftrightarrow \quad \int [f(x) + g(x)] \, dx = \int f(x)\, dx + \int g(x) \, dx 
+\end{align*}
+</div></p>
+<p>These two rules are often used together, which we call <dfn class="terminology">linearity</dfn>.</p>
+</div></section><section><h3>Practice Linearity</h3>
+<div align="left"><ol class="decimal" id="sec_7-4_Indefinite-Integrals-8-2">
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int 5x^2 + 4 \sin(x) \, dx\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int 10e^{2x} + \frac{6}{x} \, dx\)</span></p></li>
+</ol></div></section><section><h3>Product and Quotient: About the Antiderivative</h3>
+<div align="left">
+<p>The inverse of the product rule requires <em class="emphasis">recognizing patterns</em>:<div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-9-2-2">
+\begin{align*}
+\amp \frac{d}{dx}\Big[F(x) \cdot G(x) \Big] = F'(x) G(x) + F(x) G'(x) \\
+\amp \quad \Leftrightarrow \quad \int [F'(x) G(x) + F(x) G'(x)] \, dx = F(x) G(x) + C 
+\end{align*}
+</div></p>
+<p>Same thing for recognizing a quotient rule as a pattern:<div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-9-3-1">
+\begin{align*}
+\amp \frac{d}{dx}\Big[\frac{F(x)}{G(x)}\Big] = \frac{G(x) F'(x) - F(x) G'(x)}{G^2(x)} \\
+\amp \quad \Leftrightarrow \quad \int [\frac{G(x) F'(x) - F(x) G'(x)}{G^2(x)}] \, dx = \frac{F(x)}{G(x)} + C 
+\end{align*}
+</div></p>
+</div></section><section><h3>Practice Recognizing Products or Quotients</h3>
+<div align="left"><ol class="decimal" id="sec_7-4_Indefinite-Integrals-10-2">
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int x \cos(x) + \sin(x) \, dx\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int \frac{x \sin(x) + \cos(x)}{x^2} \, dx\)</span></p></li>
+</ol></div></section><section><h3>More About Simple Powers</h3>
+<div align="left"><p>The power rule for derivatives <span class="process-math">\(\frac{d}{dx}[x^n] = nx^{n-1}\)</span> shows that in a <em class="emphasis">derivative</em> the power of <span class="process-math">\(x\)</span> is always multiplied by a value that is one <em class="emphasis">higher than</em> the power of the variable in the derivative. That is, in a basic derivative that had <span class="process-math">\(x^4\text{,}\)</span> the natural derivative would have been <span class="process-math">\(5x^4\)</span> coming from an <em class="emphasis">antiderivative</em> of <span class="process-math">\(x^5\text{.}\)</span> If we wanted <em class="emphasis">only</em> <span class="process-math">\(x^4\)</span> in the derivative, a constant multiple would have worked:<div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-11-2-11">
+\begin{align*}
+\int [5x^4] \, dx \amp = x^5 + C \\
+\int [x^4] \, dx \amp = \int [\frac{1}{5} \cdot 5x^4] \, dx = \frac{1}{5} x^5 + C 
+\end{align*}
+</div>Similarly, suppose we want <span class="process-math">\(x^{-3}\)</span> in a derivative, it would have to come from <span class="process-math">\(x^{-2}\text{:}\)</span><div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-11-2-14">
+\begin{align*}
+\int [-2x^{-3}] \, dx \amp = x^{-2} + C \\
+\int [x^{-3}] \, dx \amp = \int [\frac{1}{-2} \cdot -2x^{-3}] \, dx = \frac{-1}{2} x^{-2} + C 
+\end{align*}
+</div></p></div></section><section><h3>Power Rule for Antiderivatives</h3>
+<div align="left">
+<p>In general, for <span class="process-math">\(n \ne -1\text{,}\)</span> we can <em class="emphasis">always</em> use the power rule for antiderivatives:<div class="displaymath process-math" id="sec_7-4_Indefinite-Integrals-12-2-3">
+\begin{equation*}
+\int x^n \, dx = \frac{1}{n+1} x^{n+1} + C
+\end{equation*}
+</div></p>
+<p>Practice:<ol class="decimal" id="sec_7-4_Indefinite-Integrals-12-3-1">
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int x^{10} \, dx\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int 4x^2 - 5x^{-4} \, dx\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int \frac{4}{x^3} \, dx\)</span></p></li>
+</ol></p>
 </div></section></section>
 </div>
 </div></body>
