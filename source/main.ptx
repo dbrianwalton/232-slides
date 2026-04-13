@@ -67,5 +67,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <xi:include href="./sec6.2-trig-identities.ptx" />
         <xi:include href="./sec6.3-trig-calculus.ptx" />
         <xi:include href="./sec6.4-inverse-trigonometry.ptx" />
+
+        <xi:include href="./sec7.4-indefinite-integrals.ptx" />
     </slideshow>
 </pretext>

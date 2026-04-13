@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_7-4_Indefinite-Integrals" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 7.4: Antiderivatives and Indefinite Integrals</title>
+
+  <slide>
+    <title>Learning Goals</title>
+
+    <ul>
+      <li>
+        <p>
+          If we start with <m>f'(x)</m> and use it to find <m>f(x)</m>, we call <m>f(x)</m> an <term>antiderivative</term> of <m>f'(x)</m>.
+          The <em>process</em> of finding antiderivatives is called <term>antidifferentiation</term>.
+        </p>
+      </li>
+      <li>
+        <p>Different functions can have the same derivative. If so, then they by a constant on any interval on which they are continuous.
+          If <m>F'(x)=G'(x)</m>, then <m>F(x) = G(x) + C</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Antiderivatives are also called <term>indefinite integrals</term>.
+          Suppose <m>g(x)</m> is the <term>derivative</term> of some unknown <m>G(x)</m>,
+          then we write
+          <md>
+            \int g(x) \, dx = G(x) + C
+          </md>
+          to represent the <term>family</term> of all possible antiderivatives, where <m>C</m> is called the <term>integration constant</term>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Find a <term>particular antiderivative</term> by solving for <m>C</m> given some initial point.
+        </p>
+      </li>
+      <li>
+        <p>
+          Be able to recognize functions that are derivatives and work backwards to find antiderivatives.
+        </p>
+      </li>
+    </ul>
+  </slide>
+
+  <slide>
+    <title>Differ By a Constant</title>
+    
+    <p>
+      Adding a constant to a function graphically is represented by a <term>vertical displacement</term>,
+      which does not change the slope:
+      <md>
+        \frac{d}{dx}\Big[F(x) + C\Big] = F'(x) + 0 = F'(x).
+      </md>
+      That is, if <m>G(x) = F(x) + C</m>, then <m>G'(x) = F'(x)</m>.
+    </p>
+    <p>
+      The converse is also true: Two functions with the same derivative are just shifted versions of one another.
+      <ul>
+        <li>
+          <p>
+            Suppose <m>F(x)</m> and <m>G(x)</m> are differentiable functions so that <m>F'(x) = G'(x)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            If we were to define <m>H(x) = F(x) - G(x)</m>, then we know <m>H'(x) = 0</m> everywhere.
+          </p>
+        </li>
+        <li>
+          <p>
+            The Mean Value Theorem implies that for any two points <m>H(b) - H(a) = H'(c) \cdot (b-a) = 0</m>,
+            which implies <m>H(b) = H(a)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>H(x)</m> must be some constant value, say <m>H(x) = K</m>, which means <m>F(x) = G(x) + K</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Antiderivative</title>
+    
+    <p>
+      Starting with <m>f(x)</m> and calculating <m>f'(x)</m> is the process of <term>differentiation</term>.
+      The <em>inverse process</em> of starting with a function <m>f(x)</m> and trying to find the function <m>F(x)</m> (different symbol!)
+      so that <m>F'(x) = f(x)</m> is called <term>antidifferentiation</term>.
+      <m>F(x)</m> is called an <term>antiderivative</term> of <m>f(x)</m>.
+    </p>
+    <p>
+      Antiderivatives are not unique. Once you find <em>one</em>, all others can be found by adding different constants.
+    </p>
+    <p>
+      <em>Example</em>: Find all possible antiderivatives of <m>f(x) = 2x</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Notation: Indefinite Integral</title>
+    
+    <p>
+      For a reason that will only become clear with the Fundamental Theorem of Calculus, antiderivatives are also called <term>integrals</term>,
+      specifically what is called an <term>indefinite integral</term>.
+      The symbol for an integral is an elongated <q>S</q>-like shape that is <m>\int</m>, which stands for <q>sum</q>.
+    </p>
+    <p>
+      A derivative is defined a <em>difference quotient</em> (subtract and then divide).
+      The symbol <m>\frac{dy}{dx}</m> should make us think about a <em>change</em> of <m>y</m> divided by the small change <m>dx</m>.
+      The <em>inverse process</em> of a derivative should invert these steps: <em>multiply</em> by the <m>dx</m> and then <em>add</em> (sum).
+      This is the reason behind integral notation:
+      <md>
+        \int f(x) dx
+      </md>
+      a <em>sum</em> of <m>f(x)</m> (the rate of change or derivative) <em>times</em> <m>dx</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Antiderivative Rules</title>
+    
+    <p>
+      Every derivative rule we learned, when read in reverse becomes an antiderivative rule.
+      <md>
+        <mrow> \frac{d}{dx}[x] = 1 \amp \quad \Leftrightarrow \quad  \int [1] \, dx = x + C </mrow>
+      </md>
+      <md>
+        <mrow> \frac{d}{dx}[x^2] = 2x \amp \quad \Leftrightarrow \quad \int [2x] \, dx = x^2 + C </mrow>
+      </md>
+      <md>
+        <mrow> \frac{d}{dx}[\sin(x)] = \cos(x) \amp \quad \Leftrightarrow \quad \int [\cos(x)] \, dx = \sin(x) + C </mrow>
+      </md>
+      <md>
+        <mrow> \frac{d}{dx}[e^{2x}] = 2e^{2x} \amp \quad \Leftrightarrow \quad \int [2e^{2x}] \, dx = e^{2x} + C </mrow>
+      </md>
+      <md>
+        <mrow> \frac{d}{dx}[\ln(|x|)] = \frac{1}{x} \amp \quad \Leftrightarrow \quad \int [\frac{1}{x}] \, dx = \ln(|x|) + C </mrow>
+      </md>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Constant Multiple and Sum Rules</title>
+    
+    <p>
+      We get a constant multiple rule:
+      <md>
+        <mrow> \amp \frac{d}{dx}\Big[k \cdot F(x) \Big] = k \cdot F'(x) </mrow>
+        <mrow> \amp \quad \Leftrightarrow \quad \int [k \cdot f(x)] \, dx = k \cdot \int f(x)\, dx </mrow>
+      </md>
+    </p>
+    <p>
+      We also get a sum rule:
+      <md>
+        <mrow> \amp \frac{d}{dx}\Big[F(x) + G(x)\Big] = F'(x) + G'(x) </mrow>
+        <mrow> \amp \quad \Leftrightarrow \quad \int [f(x) + g(x)] \, dx = \int f(x)\, dx + \int g(x) \, dx </mrow>
+      </md>
+    </p>
+    <p>
+      These two rules are often used together, which we call <term>linearity</term>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Practice Linearity</title>
+    
+    <ol>
+      <li>
+        <p>
+          <m>\displaystyle \int 5x^2 + 4 \sin(x) \, dx</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\displaystyle \int 10e^{2x} + \frac{6}{x} \, dx</m>
+        </p>
+      </li>
+    </ol>
+  </slide>
+
+  <slide>
+    <title>Product and Quotient: About the Antiderivative</title>
+    
+    <p>
+      The inverse of the product rule requires <em>recognizing patterns</em>:
+      <md>
+        <mrow> \amp \frac{d}{dx}\Big[F(x) \cdot G(x) \Big] = F'(x) G(x) + F(x) G'(x) </mrow>
+        <mrow> \amp \quad \Leftrightarrow \quad \int [F'(x) G(x) + F(x) G'(x)] \, dx = F(x) G(x) + C </mrow>
+      </md>
+    </p>
+    <p>
+      Same thing for recognizing a quotient rule as a pattern:
+      <md>
+        <mrow> \amp \frac{d}{dx}\Big[\frac{F(x)}{G(x)}\Big] = \frac{G(x) F'(x) - F(x) G'(x)}{G^2(x)} </mrow>
+        <mrow> \amp \quad \Leftrightarrow \quad \int [\frac{G(x) F'(x) - F(x) G'(x)}{G^2(x)}] \, dx = \frac{F(x)}{G(x)} + C </mrow>
+      </md>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Practice Recognizing Products or Quotients</title>
+    
+    <ol>
+      <li>
+        <p>
+          <m>\displaystyle \int x \cos(x) + \sin(x) \, dx</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\displaystyle \int \frac{x \sin(x) + \cos(x)}{x^2} \, dx</m>
+        </p>
+      </li>
+    </ol>
+  </slide>
+
+  <slide>
+    <title>More About Simple Powers</title>
+
+    <p>
+      The power rule for derivatives <m>\frac{d}{dx}[x^n] = nx^{n-1}</m> shows that in a <em>derivative</em> the power of <m>x</m> is always multiplied by a value that is one <em>higher than</em> the power of the variable in the derivative.
+      That is, in a basic derivative that had <m>x^4</m>, the natural derivative would have been <m>5x^4</m> coming from an <em>antiderivative</em> of <m>x^5</m>.
+      If we wanted <em>only</em> <m>x^4</m> in the derivative, a constant multiple would have worked:
+      <md>
+        <mrow>\int [5x^4] \, dx \amp = x^5 + C </mrow>
+        <mrow>\int [x^4] \, dx \amp = \int [\frac{1}{5} \cdot 5x^4] \, dx = \frac{1}{5} x^5 + C </mrow>
+      </md>
+      Similarly, suppose we want <m>x^{-3}</m> in a derivative, it would have to come from <m>x^{-2}</m>:
+      <md>
+        <mrow>\int [-2x^{-3}] \, dx \amp = x^{-2} + C </mrow>
+        <mrow>\int [x^{-3}] \, dx \amp = \int [\frac{1}{-2} \cdot -2x^{-3}] \, dx = \frac{-1}{2} x^{-2} + C </mrow>
+      </md>
+    </p>
+  </slide>
+  <slide>
+    <title>Power Rule for Antiderivatives</title>
+    
+    <p>
+      In general, for <m>n \ne -1</m>, we can <em>always</em> use the power rule for antiderivatives:
+      <md>
+        \int x^n \, dx = \frac{1}{n+1} x^{n+1} + C
+      </md>
+    </p>
+    <p>
+      Practice:
+      <ol>
+        <li>
+          <p>
+            <m>\displaystyle \int x^{10} \, dx</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\displaystyle \int 4x^2 - 5x^{-4} \, dx</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\displaystyle \int \frac{4}{x^3} \, dx</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+</section>
