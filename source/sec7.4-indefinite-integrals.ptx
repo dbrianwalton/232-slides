@@ -102,7 +102,7 @@
     <title>Notation: Indefinite Integral</title>
     
     <p>
-      For a reason that will only become clear with the Fundamental Theorem of Calculus, antiderivatives are also called <term>integrals</term>,
+      (Start of Day 23) For a reason that will only become clear with the Fundamental Theorem of Calculus, antiderivatives are also called <term>integrals</term>,
       specifically what is called an <term>indefinite integral</term>.
       The symbol for an integral is an elongated <q>S</q>-like shape that is <m>\int</m>, which stands for <q>sum</q>.
     </p>
@@ -262,6 +262,28 @@
           </p>
         </li>
       </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Particular Antiderivatives</title>
+    
+    <p>
+      The value of the constant of integration changes the vertical position of the function.
+      If we know the function is supposed to pass through a specific point, then it is possible to choose the constant to succeed.
+      The point is called the <term>initial condition</term>.
+      The resulting antiderivative is called the <term>particular antiderivative</term>.
+    </p>
+    <p>
+      Try the following examples:
+      <ul>
+        <li>
+          <p>Find the function <m>f(x)</m> so that <m>f'(x) = x^2-4x</m> and <m>f(1)=2</m>.</p>
+        </li>
+        <li>
+          <p>Find the function <m>g(x)</m> so that <m>g'(x) = 2e^{-x} + \sin(2x)</m> and <m>g(0)=5</m>.</p>
+        </li>
+      </ul>
     </p>
   </slide>
 </section>
