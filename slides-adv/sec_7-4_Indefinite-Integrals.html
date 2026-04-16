@@ -100,7 +100,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.3';
+eBookConfig.runestone_version = '7.13.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -310,6 +310,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7-4_Indefinite-Integrals.html#sec_7-4_Indefinite-Integrals-10" class="internal"><span class="title">Practice Recognizing Products or Quotients</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7-4_Indefinite-Integrals.html#sec_7-4_Indefinite-Integrals-11" class="internal"><span class="title">More About Simple Powers</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7-4_Indefinite-Integrals.html#sec_7-4_Indefinite-Integrals-12" class="internal"><span class="title">Power Rule for Antiderivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7-4_Indefinite-Integrals.html#sec_7-4_Indefinite-Integrals-13" class="internal"><span class="title">Particular Antiderivatives</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
@@ -408,7 +409,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Subsection: Antiderivative"><a href="#sec_7-4_Indefinite-Integrals-4" title="Copy heading and permalink for Subsection: Antiderivative" aria-label="Copy heading and permalink for Subsection: Antiderivative">🔗</a></div></section><section class="subsection" id="sec_7-4_Indefinite-Integrals-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Notation: Indefinite Integral</span>
 </h3>
-<div class="para" id="sec_7-4_Indefinite-Integrals-5-2">For a reason that will only become clear with the Fundamental Theorem of Calculus, antiderivatives are also called <dfn class="terminology">integrals</dfn>, specifically what is called an <dfn class="terminology">indefinite integral</dfn>. The symbol for an integral is an elongated “S”-like shape that is <span class="process-math">\(\int\text{,}\)</span> which stands for “sum”.<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-4_Indefinite-Integrals-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_7-4_Indefinite-Integrals-5-2">(Start of Day 23) For a reason that will only become clear with the Fundamental Theorem of Calculus, antiderivatives are also called <dfn class="terminology">integrals</dfn>, specifically what is called an <dfn class="terminology">indefinite integral</dfn>. The symbol for an integral is an elongated “S”-like shape that is <span class="process-math">\(\int\text{,}\)</span> which stands for “sum”.<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-4_Indefinite-Integrals-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec_7-4_Indefinite-Integrals-5-3">
 <div class="para">A derivative is defined a <em class="emphasis">difference quotient</em> (subtract and then divide). The symbol <span class="process-math">\(\frac{dy}{dx}\)</span> should make us think about a <em class="emphasis">change</em> of <span class="process-math">\(y\)</span> divided by the small change <span class="process-math">\(dx\text{.}\)</span> The <em class="emphasis">inverse process</em> of a derivative should invert these steps: <em class="emphasis">multiply</em> by the <span class="process-math">\(dx\)</span> and then <em class="emphasis">add</em> (sum). This is the reason behind integral notation:</div>
@@ -592,7 +593,28 @@ eBookConfig.enable_chatcodes =  false;
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec_7-4_Indefinite-Integrals-12-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Power Rule for Antiderivatives"><a href="#sec_7-4_Indefinite-Integrals-12" title="Copy heading and permalink for Subsection: Power Rule for Antiderivatives" aria-label="Copy heading and permalink for Subsection: Power Rule for Antiderivatives">🔗</a></div></section><div class="autopermalink" data-description="Section: Section 7.4: Antiderivatives and Indefinite Integrals"><a href="#sec_7-4_Indefinite-Integrals" title="Copy heading and permalink for Section: Section 7.4: Antiderivatives and Indefinite Integrals" aria-label="Copy heading and permalink for Section: Section 7.4: Antiderivatives and Indefinite Integrals">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Subsection: Power Rule for Antiderivatives"><a href="#sec_7-4_Indefinite-Integrals-12" title="Copy heading and permalink for Subsection: Power Rule for Antiderivatives" aria-label="Copy heading and permalink for Subsection: Power Rule for Antiderivatives">🔗</a></div></section><section class="subsection" id="sec_7-4_Indefinite-Integrals-13"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Particular Antiderivatives</span>
+</h3>
+<div class="para" id="sec_7-4_Indefinite-Integrals-13-2">The value of the constant of integration changes the vertical position of the function. If we know the function is supposed to pass through a specific point, then it is possible to choose the constant to succeed. The point is called the <dfn class="terminology">initial condition</dfn>. The resulting antiderivative is called the <dfn class="terminology">particular antiderivative</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-4_Indefinite-Integrals-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_7-4_Indefinite-Integrals-13-3">
+<div class="para">Try the following examples:</div>
+<ul class="disc" id="sec_7-4_Indefinite-Integrals-13-3-1">
+<li id="sec_7-4_Indefinite-Integrals-13-3-1-1">
+<div class="para" id="sec_7-4_Indefinite-Integrals-13-3-1-1-1">Find the function <span class="process-math">\(f(x)\)</span> so that <span class="process-math">\(f'(x) = x^2-4x\)</span> and <span class="process-math">\(f(1)=2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_7-4_Indefinite-Integrals-13-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_7-4_Indefinite-Integrals-13-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_7-4_Indefinite-Integrals-13-3-1-2">
+<div class="para" id="sec_7-4_Indefinite-Integrals-13-3-1-2-1">Find the function <span class="process-math">\(g(x)\)</span> so that <span class="process-math">\(g'(x) = 2e^{-x} + \sin(2x)\)</span> and <span class="process-math">\(g(0)=5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_7-4_Indefinite-Integrals-13-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec_7-4_Indefinite-Integrals-13-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-4_Indefinite-Integrals-13-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Particular Antiderivatives"><a href="#sec_7-4_Indefinite-Integrals-13" title="Copy heading and permalink for Subsection: Particular Antiderivatives" aria-label="Copy heading and permalink for Subsection: Particular Antiderivatives">🔗</a></div></section><div class="autopermalink" data-description="Section: Section 7.4: Antiderivatives and Indefinite Integrals"><a href="#sec_7-4_Indefinite-Integrals" title="Copy heading and permalink for Section: Section 7.4: Antiderivatives and Indefinite Integrals" aria-label="Copy heading and permalink for Section: Section 7.4: Antiderivatives and Indefinite Integrals">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec_6-4_Inverse-Trigonometry.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
 </div></main>
