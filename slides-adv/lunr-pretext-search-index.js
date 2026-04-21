@@ -385,7 +385,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Section 7.4: Antiderivatives and Indefinite Integrals",
-  "body": " Section 7.4: Antiderivatives and Indefinite Integrals   Learning Goals    If we start with and use it to find , we call an antiderivative of . The process of finding antiderivatives is called antidifferentiation .    Different functions can have the same derivative. If so, then they by a constant on any interval on which they are continuous. If , then .    Antiderivatives are also called indefinite integrals . Suppose is the derivative of some unknown , then we write to represent the family of all possible antiderivatives, where is called the integration constant .    Find a particular antiderivative by solving for given some initial point.    Be able to recognize functions that are derivatives and work backwards to find antiderivatives.   >   Differ By a Constant  Adding a constant to a function graphically is represented by a vertical displacement , which does not change the slope: That is, if , then .  The converse is also true: Two functions with the same derivative are just shifted versions of one another.   Suppose and are differentiable functions so that .    If we were to define , then we know everywhere.    The Mean Value Theorem implies that for any two points , which implies .     must be some constant value, say , which means .    >   Antiderivative  Starting with and calculating is the process of differentiation . The inverse process of starting with a function and trying to find the function (different symbol!) so that is called antidifferentiation . is called an antiderivative of .  Antiderivatives are not unique. Once you find one , all others can be found by adding different constants.   Example : Find all possible antiderivatives of . >   Notation: Indefinite Integral  (Start of Day 23) For a reason that will only become clear with the Fundamental Theorem of Calculus, antiderivatives are also called integrals , specifically what is called an indefinite integral . The symbol for an integral is an elongated S -like shape that is , which stands for sum .  A derivative is defined a difference quotient (subtract and then divide). The symbol should make us think about a change of divided by the small change . The inverse process of a derivative should invert these steps: multiply by the and then add (sum). This is the reason behind integral notation: a sum of (the rate of change or derivative) times  . >   Antiderivative Rules  Every derivative rule we learned, when read in reverse becomes an antiderivative rule.      >   Constant Multiple and Sum Rules  We get a constant multiple rule:   We also get a sum rule:   These two rules are often used together, which we call linearity . >   Practice Linearity             >   Product and Quotient: About the Antiderivative  The inverse of the product rule requires recognizing patterns :   Same thing for recognizing a quotient rule as a pattern:  >   Practice Recognizing Products or Quotients             >   More About Simple Powers  The power rule for derivatives shows that in a derivative the power of is always multiplied by a value that is one higher than the power of the variable in the derivative. That is, in a basic derivative that had , the natural derivative would have been coming from an antiderivative of . If we wanted only  in the derivative, a constant multiple would have worked: Similarly, suppose we want in a derivative, it would have to come from :  >   Power Rule for Antiderivatives  In general, for , we can always use the power rule for antiderivatives:   Practice:                  >   Particular Antiderivatives  The value of the constant of integration changes the vertical position of the function. If we know the function is supposed to pass through a specific point, then it is possible to choose the constant to succeed. The point is called the initial condition . The resulting antiderivative is called the particular antiderivative .  Try the following examples:   Find the function so that and .    Find the function so that and .    >  "
+  "body": " Section 7.4: Antiderivatives and Indefinite Integrals   Learning Goals    If we start with and use it to find , we call an antiderivative of . The process of finding antiderivatives is called antidifferentiation .    Different functions can have the same derivative. If so, then they by a constant on any interval on which they are continuous. If , then .    Antiderivatives are also called indefinite integrals . Suppose is the derivative of some unknown , then we write to represent the family of all possible antiderivatives, where is called the integration constant .    Find a particular antiderivative by solving for given some initial point.    Be able to recognize functions that are derivatives and work backwards to find antiderivatives.   >   Differ By a Constant  Adding a constant to a function graphically is represented by a vertical displacement , which does not change the slope: That is, if , then .  The converse is also true: Two functions with the same derivative are just shifted versions of one another.   Suppose and are differentiable functions so that .    If we were to define , then we know everywhere.    The Mean Value Theorem implies that for any two points , which implies .     must be some constant value, say , which means .    >   Antiderivative  Starting with and calculating is the process of differentiation . The inverse process of starting with a function and trying to find the function (different symbol!) so that is called antidifferentiation . is called an antiderivative of .  Antiderivatives are not unique. Once you find one , all others can be found by adding different constants.   Example : Find all possible antiderivatives of . >   Notation: Indefinite Integral  (Start of Day 23) For a reason that will only become clear with the Fundamental Theorem of Calculus, antiderivatives are also called integrals , specifically what is called an indefinite integral . The symbol for an integral is an elongated S -like shape that is , which stands for sum .  A derivative is defined a difference quotient (subtract and then divide). The symbol should make us think about a change of divided by the small change . The inverse process of a derivative should invert these steps: multiply by the and then add (sum). This is the reason behind integral notation: a sum of (the rate of change or derivative) times  . >   Antiderivative Rules  Every derivative rule we learned, when read in reverse becomes an antiderivative rule.      >   Constant Multiple and Sum Rules  We get a constant multiple rule:   We also get a sum rule:   These two rules are often used together, which we call linearity . >   Practice Linearity             >   Product and Quotient: About the Antiderivative  The inverse of the product rule requires recognizing patterns :   Same thing for recognizing a quotient rule as a pattern:  >   Practice Recognizing Products or Quotients             >   More About Simple Powers  The power rule for derivatives shows that in a derivative the power of is always multiplied by a value that is one higher than the power of the variable in the derivative. That is, in a basic derivative that had , the natural derivative would have been coming from an antiderivative of . If we wanted only  in the derivative, a constant multiple would have worked: Similarly, suppose we want in a derivative, it would have to come from :  >   Power Rule for Antiderivatives  In general, for , we can always use the power rule for antiderivatives:   Practice:                  >   Particular Antiderivatives  (Start Day 24) The value of the constant of integration changes the vertical position of the function. If we know the function is supposed to pass through a specific point, then it is possible to choose the constant to succeed. The point is called the initial condition . The resulting antiderivative is called the particular antiderivative .  Try the following examples:   Find the function so that and .    Find the function so that and .    >  "
 },
 {
   "id": "sec_7-4_Indefinite-Integrals-2-2-1-1",
@@ -458,6 +458,60 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "initial condition particular antiderivative "
+},
+{
+  "id": "sec_7-2_Riemann-Sums",
+  "level": "1",
+  "url": "sec_7-2_Riemann-Sums.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 7.2: Area and Riemann Sums",
+  "body": " Section 7.2: Area and Riemann Sums   The Goal: Definite Integrals  We want to define a mathematical operation that will calculate the area between and going from to . This object will be called the definite integral of from to .   We need to have a method that will define this object. >   Motivation: Simple Functions  There is a special class of functions for which it is easy to compute the definite integral. They are functions such that the function is constant on intervals except for a finite number of jump points. We call these simple functions .  The total area for simple functions is just the sum of areas of rectangles. Find . >   Big Calculus Idea: Rectangle Approximations  So what do we do with a non-simple function ?  Approximate it with a simple function:   Choose a partition the set of points where the function will jump to create intervals. For convenience, we always start with and . The widths of the intervals will be .    Choose heights for the simple function on each resulting interval. To connect to the original function, we require crosses the value. There will be one location per interval, .   The resulting approximation is named a Riemann Sum   >   Uniform Partitions and Left vs Right  Rather than use arbitrary partitions, it is usually most convenient to use a uniform partition where every interval gets the same width The partition starts at and we just repeatedly add to get the remaining break points.   Rather than use arbitrary points in the interval, it is customary to illustrate ideas using either the left or right endpoint of each interval for the evaluation positions. Other options might be to use the mid-point of the interval. >   Practice  Draw a picture and create a table to illustrate Riemann sum approximations for the areas of the following functions.   using intervals and left endpoints.    using intervals and right endpoints.    >   Formulas in Approximations  Instead of calculating all of the values in a table, we will create formulas for the values of and also , and then use function composition to get a formula-defined Riemann sum.   Define in terms of the symbol :    Define abstractly in terms of both and using (prior):     Use right end-point for function composition, :     Use these substitutions in the Riemann sum formula, expanding and simplifying where possible:     >   Rules for Summation  Summations have the constant multiple rule and sum rule. Suppose and are two formulas involving the index and and are two constants. There are no simple rules for dealing with multiplying or dividing by formulas in summation.  There are some remarkable substitutions available for special summations involving , so long as the patterns match exactly.  >   Practice Summation  Calculate each summation in two ways: once by directly listing values and adding them up, and then again using the summation rules.             >   Riemann Sum Formulas  For simple polynomials, we can get formula answers for Riemann sums. We'll only focus on doing this using right end-points with .  Approximate the following definite integrals using a Riemann sum with (not specified) intervals and using right end-points.         >  "
+},
+{
+  "id": "sec_7-2_Riemann-Sums-2-2",
+  "level": "2",
+  "url": "sec_7-2_Riemann-Sums.html#sec_7-2_Riemann-Sums-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "definite integral "
+},
+{
+  "id": "sec_7-2_Riemann-Sums-3-2",
+  "level": "2",
+  "url": "sec_7-2_Riemann-Sums.html#sec_7-2_Riemann-Sums-3-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "simple functions "
+},
+{
+  "id": "sec_7-2_Riemann-Sums-4-3",
+  "level": "2",
+  "url": "sec_7-2_Riemann-Sums.html#sec_7-2_Riemann-Sums-4-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "partition heights Riemann Sum "
+},
+{
+  "id": "sec_7-2_Riemann-Sums-5-2",
+  "level": "2",
+  "url": "sec_7-2_Riemann-Sums.html#sec_7-2_Riemann-Sums-5-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "uniform partition "
+},
+{
+  "id": "sec_7-2_Riemann-Sums-7-2",
+  "level": "2",
+  "url": "sec_7-2_Riemann-Sums.html#sec_7-2_Riemann-Sums-7-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "function composition "
 }
 ]
 
