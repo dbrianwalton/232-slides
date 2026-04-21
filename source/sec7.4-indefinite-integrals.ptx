@@ -269,7 +269,7 @@
     <title>Particular Antiderivatives</title>
     
     <p>
-      The value of the constant of integration changes the vertical position of the function.
+      (Start Day 24) The value of the constant of integration changes the vertical position of the function.
       If we know the function is supposed to pass through a specific point, then it is possible to choose the constant to succeed.
       The point is called the <term>initial condition</term>.
       The resulting antiderivative is called the <term>particular antiderivative</term>.

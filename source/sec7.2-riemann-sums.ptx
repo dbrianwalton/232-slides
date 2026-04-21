@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_7-2_Riemann-Sums" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 7.2: Area and Riemann Sums</title>
+
+  <slide>
+    <title>The Goal: Definite Integrals</title>
+    
+    <p>
+      We <em>want</em> to define a mathematical operation that will calculate the area between <m>y=f(x)</m> and <m>y=0</m> going from <m>x=a</m> to <m>x=b</m>. This object will be called the <term>definite integral</term> of <m>f(x)</m> from <m>x=a</m> to <m>x=b</m>.
+      <md>
+        \int_{a}^{b} f(x) \, dx
+      </md>
+    </p>
+    <p>
+      We need to have a method that will define this object.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Motivation: Simple Functions</title>
+    
+    <p>
+      There is a special class of functions for which it is easy to compute the definite integral.
+      They are functions such that the function is constant on intervals except for a finite number of jump points.
+      We call these <term>simple functions</term>.
+    </p>
+    <p>
+      The total area for simple functions is just the sum of areas of rectangles.
+      <md>
+        f(x) = \begin{cases}
+        1, &amp; x \lt -2, \\
+        2, &amp; -2 \le x \lt 0, \\
+        3, &amp; 0 \le x \lt 3, \\
+        4, &amp; x \ge 3
+        \end{cases}
+      </md>
+      Find <m>\displaystyle \int_{-4}^{4} f(x) \, dx</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Big Calculus Idea: Rectangle Approximations</title>
+    
+    <p>
+      So what do we do with a non-simple function <m>f(x)</m>?
+    </p>
+    <p>
+      Approximate it with a simple function:
+      <ul>
+        <li>
+          <p>
+            Choose a <term>partition</term><mdash/>the set of points where the function will jump to create <m>n</m> intervals.
+            For convenience, we always start with <m>x_0 = a</m> and <m>x_n = b</m>.
+            The <em>widths</em> of the intervals will be <m>\Delta x_k = x_k - x_{k-1}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Choose <term>heights</term> for the simple function on each resulting interval.
+            To connect to the original function, we require <m>f(x)</m> crosses the value.
+            There will be one location per interval, <m>x=x_k^*</m>.
+          </p>
+        </li>
+      </ul>
+      The resulting approximation is named a <term>Riemann Sum</term>
+      <md>
+        \int_a^b f(x) \,dx \approx \sum_{k=1}^{n} f(x_k^*) \cdot \Delta x_k
+      </md>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Uniform Partitions and Left vs Right</title>
+    
+    <p>
+      Rather than use arbitrary partitions, it is usually most convenient to use a <term>uniform partition</term>
+      where every interval gets the same width
+      <md>
+        \Delta x = \frac{b-a}{n}.
+      </md>
+      The partition starts at <m>x_0 = a</m> and we just repeatedly add <m>\Delta x</m> to get the remaining break points.
+      <md>
+        x_k = a + k \cdot \Delta x
+      </md>
+    </p>
+    <p>
+      Rather than use arbitrary points in the interval, it is customary to illustrate ideas using either the left or right endpoint of each interval for the evaluation positions. Other options might be to use the mid-point of the interval.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Practice</title>
+    
+    <p>
+      Draw a picture and create a table to illustrate Riemann sum approximations for the areas of the following functions.
+      <ol>
+        <li>
+          <p><m>\displaystyle \int_0^2 2x+1 \, dx</m> using <m>n=4</m> intervals and left endpoints.</p>
+        </li>
+        <li>
+          <p><m>\displaystyle \int_{-1}^1 x^2 \, dx</m> using <m>n=5</m> intervals and right endpoints.</p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Formulas in Approximations</title>
+    
+    <p>
+      Instead of calculating all of the values in a table, we will create <em>formulas</em> for the values of <m>\Delta x</m> and also <m>x_k</m>, and then use <term>function composition</term> to get a formula-defined Riemann sum.
+      <ul>
+        <li>
+          <p>Define <m>\Delta x</m> in terms of the symbol <m>n</m>: <m>\displaystyle \Delta x = \frac{b-a}{n}</m></p>
+        </li>
+        <li>
+          <p>
+            Define <m>x_k</m> abstractly in terms of both <m>k</m> and <m>n</m> using <m>\Delta x</m> (prior):
+            <md>
+              x_k = a + k \cdot \Delta x = a + {\textstyle \frac{(b-a)k}{n}}
+            </md>
+          </p>
+        </li>
+        <li>
+          <p>
+            Use right end-point for function composition, <m>x_k^* = x_k</m>:
+            <md>
+              f(x_k^*) = {\textstyle f(a + \frac{(b-a)k}{n})}
+            </md>
+          </p>
+        </li>
+        <li>
+          <p>
+            Use these substitutions in the Riemann sum formula, expanding and simplifying where possible:
+            <md>
+              \int_a^b f(x) \, dx \approx \sum_{k=1}^{n} f(x_k^*) \cdot \Delta x
+            </md>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Rules for Summation</title>
+    
+    <p>
+      Summations have the constant multiple rule and sum rule. Suppose <m>u_k</m> and <m>w_k</m> are two formulas involving the index <m>k</m> and <m>A</m> and <m>B</m> are two constants.
+      <md>
+        \sum_{k} \Big( A \cdot u_k + B \cdot w_k \Big) = \Big(A \sum_{k} u_k\Big) + \Big(B \sum_{k} w_k\Big)
+      </md>
+      There are no simple rules for dealing with multiplying or dividing by formulas in summation.
+    </p>
+    <p>
+      There are some remarkable substitutions available for special summations involving <m>k</m>, so long as the patterns match exactly.
+      <md>
+        <mrow> \sum_{k=1}^{N} 1 &amp;= N \qquad &amp; \qquad  \sum_{k=1}^{N} k &amp;= \frac{N(N+1)}{2}</mrow>
+        <mrow> \sum_{k=1}^{N} k^2 &amp;= \frac{N(N+1)(2N+1)}{6} \qquad &amp; \qquad \sum_{k=1}^{N} k^3 &amp;= \frac{N^2(N+1)^2}{4}</mrow>
+      </md>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Practice Summation</title>
+    
+    <p>
+      Calculate each summation in two ways: once by directly listing values and adding them up, and then again using the summation rules.
+      <ol>
+        <li>
+          <p>
+            <m>\displaystyle \sum_{k=1}^{4} (k(k+1))</m> 
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\displaystyle \sum_{k=1}^{5} 2k^2-5k+3</m> 
+          </p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Riemann Sum Formulas</title>
+    
+    <p>
+      For simple polynomials, we can get formula answers for Riemann sums. We'll only focus on doing this using right end-points with <m>x_k^* = x_k</m>.
+    </p>
+    <p>
+      Approximate the following definite integrals using a Riemann sum with <m>n</m> (not specified) intervals and using right end-points.
+      <ol>
+        <li>
+          <p><m>\displaystyle \int_0^2 2x+1 \, dx</m></p>
+        </li>
+        <li>
+          <p><m>\displaystyle \int_{-1}^1 x^2 \, dx</m></p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+</section>

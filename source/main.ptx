@@ -69,5 +69,6 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <xi:include href="./sec6.4-inverse-trigonometry.ptx" />
 
         <xi:include href="./sec7.4-indefinite-integrals.ptx" />
+        <xi:include href="./sec7.2-riemann-sums.ptx" />
     </slideshow>
 </pretext>
