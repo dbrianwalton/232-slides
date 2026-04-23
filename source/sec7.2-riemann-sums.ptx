@@ -109,7 +109,7 @@
     <title>Formulas in Approximations</title>
     
     <p>
-      Instead of calculating all of the values in a table, we will create <em>formulas</em> for the values of <m>\Delta x</m> and also <m>x_k</m>, and then use <term>function composition</term> to get a formula-defined Riemann sum.
+      (Start of Day 25) Instead of calculating all of the values in a table, we will create <em>formulas</em> for the values of <m>\Delta x</m> and also <m>x_k</m>, and then use <term>function composition</term> to get a formula-defined Riemann sum.
       <ul>
         <li>
           <p>Define <m>\Delta x</m> in terms of the symbol <m>n</m>: <m>\displaystyle \Delta x = \frac{b-a}{n}</m></p>
@@ -197,6 +197,25 @@
           <p><m>\displaystyle \int_{-1}^1 x^2 \, dx</m></p>
         </li>
       </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>The Definite Integral Defined</title>
+    
+    <p>
+      Because a definite integral can be approximated by a Riemann sum,
+      and the Riemann sum gets better if <m>n</m> (the number of subintervals) gets larger,
+      we <em>define</em> the value of the definite integral as a <term>limit</term> of the Riemann sum.
+      <md>
+        \int_a^b f(x) \, dx = \lim_{n \to \infty} \sum_{k=1}^{n} f(x_k^*) \Delta x
+      </md>
+      (Calculate the Riemann sum first as a formula in <m>n</m>, then take the limit.)
+    </p>
+    <p>
+      If <m>f(x)</m> is <term>continuous</term> on <m>[a,b]</m> (or only has a finite number of jump discontinuities),
+      then the resulting limit <em>does not depend</em> on the choice of the partition or the evaluation points.
+      In this case, we say that <m>f(x)</m> is <term>integrable</term> on <m>[a,b]</m>.
     </p>
   </slide>
 </section>

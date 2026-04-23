@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_7-3_Definite-Integrals" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 7.3: Definite Integrals</title>
+
+  <slide>
+    <title>Properties of Definite Integrals</title>
+    
+    <p>
+      We need to know basic properties about definite integrals.
+      <ul>
+        <li>
+          <p>
+            <term>Splitting</term>: Adding consecutive integrals must be equal to the single integral from start to finish.
+            <md>
+              \int_a^b f(x) \, dx + \int_b^c f(x) \, dx = \int_a^c f(x) \, dx.
+            </md>
+            Note: Be careful that the common number is the start of one and the end of the other integral.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Going Nowhere</term>: If an integral starts and ends at the same point, it must be zero.
+            <md>
+              \int_a^a f(x) \, dx = 0.
+            </md>
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Reverse Direction</term>: Integrating over the same interval backwards changes the sign of the result.
+            <md>
+              \int_b^a f(x) \, dx = - \int_a^b f(x) \, dx.
+            </md>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Linearity (Sum and Constant Multiples)</title>
+    
+    <p>
+      Suppose we know <m>\displaystyle \int_a^b f(x) \, dx</m> and <m>\displaystyle \int_a^b g(x) \, dx</m> (same limits of integration).
+    </p>
+    <p>
+      Sum Rule:
+      <md>
+        \int_a^b [f(x)+g(x)] \, dx = \int_a^b f(x) \, dx + \int_a^b g(x) \, dx
+      </md>
+    </p>
+    <p>
+      Constant Multiple Rule (Scaling):
+      <md>
+        \int_a^b [k \cdot f(x)] \, dx = k \cdot \int_a^b f(x) \, dx
+      </md>
+    </p>
+  </slide>
+
+
+  <slide>
+    <title>Accumulation Functions</title>
+    
+    <p>
+      Once we know that definite integrals exist, we can define a function using integration.
+    </p>
+    <p>
+      Given an integrable function <m>f(x)</m> as our rate function. Let <m>c</m> be a <em>fixed</em> starting point, and for each <m>x</m>, calculate
+      <md>
+        A(x) = \int_c^{x} f(z) \, dz.
+      </md>
+      Note that we had to use a <em>different</em> variable in the integration. I <em>chose</em> to use <m>z</m>, but all that really matters is that we do NOT choose <m>x</m>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Evaluation Using Accumulation Functions</title>
+    
+    <p>
+      Suppose we know an accumulation function
+      <md>
+        A(x) = \int_c^{x} f(z) \, dz.
+      </md>
+      We can use this to compute <em>any</em> definite integral of <m>f(x)</m>.
+      <md>
+        <mrow> \int_a^b f(z) \, dz \amp = \int_a^c f(z) \, dz + \int_c^b f(z) \, dz</mrow>
+        <mrow> \amp = \int_c^b f(z) \, dz + \int_a^c f(z) \, dz </mrow>
+        <mrow> \amp = \int_c^b f(z) \, dz - \int_c^a f(z) \, dz </mrow>
+        <mrow> \amp = A(b) - A(a) </mrow>
+      </md>
+    </p>
+  </slide>
+
+  <slide>
+    <title>The Fundamental Theorem of Calculus</title>
+    
+    <p>
+      (PART 1): If <m>f(x)</m> is <term>continuous</term>, then the accumulation function
+      <md>
+        A(x) = \int_c^{x} f(z) \, dz
+      </md>
+      is differentiable <em>and</em> <m>A'(x) = f(x)</m>.
+    </p>
+    <p>
+      That is, <m>A(x)</m> is an <term>antiderivative</term> of <m>f(x)</m>, even if we don't know how to find its formula.
+    </p>
+    <p>
+      (PART 2): Now, suppose that we know how to find some <em>other</em> antiderivative of <m>f(x)</m>, say <m>F(x)</m>.
+      We know there must be some constant <m>K</m> so that <m>A(x) = F(x) + K</m>.
+      Then for <em>any</em> definite integral
+      <md>
+        <mrow> \int_a^b f(x) \, dx \amp = A(b) - A(a) </mrow>
+        <mrow> \amp = (F(b) + K) - (F(a)+K) </mrow>
+        <mrow> \amp = F(b) - F(a) </mrow>
+      </md>
+      That is, <em>any</em> convenient antiderivative can be used to evaluate a definite integral.
+    </p>
+  </slide>
+</section>
