@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2026-04-21T04:36:50Z       *-->
+<!--*       on 2026-04-23T00:27:22Z       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -36,7 +36,7 @@
 <tr><td align="center" style="border-bottom: 0px;">James Madison University</td></tr>
 <tr><td align="center"></td></tr>
 </table>
-<h4><div class="date">as of April 21, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
+<h4><div class="date">as of April 23, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
 <div align="left"><p><span class="process-math">\(\displaystyle f(x) = \frac{x}{x^2+4}\)</span> and <span class="process-math">\(\displaystyle f'(x) = \frac{-x^2+4}{(x^2+4)^2}\)</span></p></div></section><section><h3>Graph Analysis 2</h3>
 <div align="left"><p><span class="process-math">\(f(x) = x \cdot (x^2-9)^{1/3}\)</span></p></div></section></section><section><section><h1>Section 4.1: Algebraic Functions</h1></section><section><h3>Learning Goals</h3>
 <div align="left"><ul class="disc" id="sec_4-1_algebraic_functions-2-2">
@@ -1020,7 +1020,7 @@ x_k = a + k \cdot \Delta x
 <li><p><span class="process-math">\(\displaystyle \int_0^2 2x+1 \, dx\)</span> using <span class="process-math">\(n=4\)</span> intervals and left endpoints.</p></li>
 <li><p><span class="process-math">\(\displaystyle \int_{-1}^1 x^2 \, dx\)</span> using <span class="process-math">\(n=5\)</span> intervals and right endpoints.</p></li>
 </ol></p></div></section><section><h3>Formulas in Approximations</h3>
-<div align="left"><p>Instead of calculating all of the values in a table, we will create <em class="emphasis">formulas</em> for the values of <span class="process-math">\(\Delta x\)</span> and also <span class="process-math">\(x_k\text{,}\)</span> and then use <dfn class="terminology">function composition</dfn> to get a formula-defined Riemann sum.<ul class="disc" id="sec_7-2_Riemann-Sums-7-2-5">
+<div align="left"><p>(Start of Day 25) Instead of calculating all of the values in a table, we will create <em class="emphasis">formulas</em> for the values of <span class="process-math">\(\Delta x\)</span> and also <span class="process-math">\(x_k\text{,}\)</span> and then use <dfn class="terminology">function composition</dfn> to get a formula-defined Riemann sum.<ul class="disc" id="sec_7-2_Riemann-Sums-7-2-5">
 <li><p>Define <span class="process-math">\(\Delta x\)</span> in terms of the symbol <span class="process-math">\(n\text{:}\)</span> <span class="process-math">\(\displaystyle \Delta x = \frac{b-a}{n}\)</span></p></li>
 <li><p>Define <span class="process-math">\(x_k\)</span> abstractly in terms of both <span class="process-math">\(k\)</span> and <span class="process-math">\(n\)</span> using <span class="process-math">\(\Delta x\)</span> (prior):<div class="displaymath process-math" id="sec_7-2_Riemann-Sums-7-2-5-2-1-5">
 \begin{equation*}
@@ -1061,6 +1061,79 @@ f(x_k^*) = {\textstyle f(a + \frac{(b-a)k}{n})}
 <li><p><span class="process-math">\(\displaystyle \displaystyle \int_0^2 2x+1 \, dx\)</span></p></li>
 <li><p><span class="process-math">\(\displaystyle \displaystyle \int_{-1}^1 x^2 \, dx\)</span></p></li>
 </ol></p>
+</div></section><section><h3>The Definite Integral Defined</h3>
+<div align="left">
+<p>Because a definite integral can be approximated by a Riemann sum, and the Riemann sum gets better if <span class="process-math">\(n\)</span> (the number of subintervals) gets larger, we <em class="emphasis">define</em> the value of the definite integral as a <dfn class="terminology">limit</dfn> of the Riemann sum.<div class="displaymath process-math" id="sec_7-2_Riemann-Sums-11-2-4">
+\begin{equation*}
+\int_a^b f(x) \, dx = \lim_{n \to \infty} \sum_{k=1}^{n} f(x_k^*) \Delta x
+\end{equation*}
+</div>(Calculate the Riemann sum first as a formula in <span class="process-math">\(n\text{,}\)</span> then take the limit.)</p>
+<p>If <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous</dfn> on <span class="process-math">\([a,b]\)</span> (or only has a finite number of jump discontinuities), then the resulting limit <em class="emphasis">does not depend</em> on the choice of the partition or the evaluation points. In this case, we say that <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">integrable</dfn> on <span class="process-math">\([a,b]\text{.}\)</span></p>
+</div></section></section><section><section><h1>Section 7.3: Definite Integrals</h1></section><section><h3>Properties of Definite Integrals</h3>
+<div align="left"><p>We need to know basic properties about definite integrals.<ul class="disc" id="sec_7-3_Definite-Integrals-2-2-1">
+<li><p><dfn class="terminology">Splitting</dfn>: Adding consecutive integrals must be equal to the single integral from start to finish.<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-2-2-1-1-1-2">
+\begin{equation*}
+\int_a^b f(x) \, dx + \int_b^c f(x) \, dx = \int_a^c f(x) \, dx.
+\end{equation*}
+</div>Note: Be careful that the common number is the start of one and the end of the other integral.</p></li>
+<li><p><dfn class="terminology">Going Nowhere</dfn>: If an integral starts and ends at the same point, it must be zero.<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-2-2-1-2-1-2">
+\begin{equation*}
+\int_a^a f(x) \, dx = 0.
+\end{equation*}
+</div></p></li>
+<li><p><dfn class="terminology">Reverse Direction</dfn>: Integrating over the same interval backwards changes the sign of the result.<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-2-2-1-3-1-2">
+\begin{equation*}
+\int_b^a f(x) \, dx = - \int_a^b f(x) \, dx.
+\end{equation*}
+</div></p></li>
+</ul></p></div></section><section><h3>Linearity (Sum and Constant Multiples)</h3>
+<div align="left">
+<p>Suppose we know <span class="process-math">\(\displaystyle \int_a^b f(x) \, dx\)</span> and <span class="process-math">\(\displaystyle \int_a^b g(x) \, dx\)</span> (same limits of integration).</p>
+<p>Sum Rule:<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-3-3-1">
+\begin{equation*}
+\int_a^b [f(x)+g(x)] \, dx = \int_a^b f(x) \, dx + \int_a^b g(x) \, dx
+\end{equation*}
+</div></p>
+<p>Constant Multiple Rule (Scaling):<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-3-4-1">
+\begin{equation*}
+\int_a^b [k \cdot f(x)] \, dx = k \cdot \int_a^b f(x) \, dx
+\end{equation*}
+</div></p>
+</div></section><section><h3>Accumulation Functions</h3>
+<div align="left">
+<p>Once we know that definite integrals exist, we can define a function using integration.</p>
+<p>Given an integrable function <span class="process-math">\(f(x)\)</span> as our rate function. Let <span class="process-math">\(c\)</span> be a <em class="emphasis">fixed</em> starting point, and for each <span class="process-math">\(x\text{,}\)</span> calculate<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-4-3-5">
+\begin{equation*}
+A(x) = \int_c^{x} f(z) \, dz.
+\end{equation*}
+</div>Note that we had to use a <em class="emphasis">different</em> variable in the integration. I <em class="emphasis">chose</em> to use <span class="process-math">\(z\text{,}\)</span> but all that really matters is that we do NOT choose <span class="process-math">\(x\text{.}\)</span></p>
+</div></section><section><h3>Evaluation Using Accumulation Functions</h3>
+<div align="left"><p>Suppose we know an accumulation function<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-5-2-1">
+\begin{equation*}
+A(x) = \int_c^{x} f(z) \, dz.
+\end{equation*}
+</div>We can use this to compute <em class="emphasis">any</em> definite integral of <span class="process-math">\(f(x)\text{.}\)</span><div class="displaymath process-math" id="sec_7-3_Definite-Integrals-5-2-4">
+\begin{align*}
+\int_a^b f(z) \, dz \amp = \int_a^c f(z) \, dz + \int_c^b f(z) \, dz\\
+\amp = \int_c^b f(z) \, dz + \int_a^c f(z) \, dz \\
+\amp = \int_c^b f(z) \, dz - \int_c^a f(z) \, dz \\
+\amp = A(b) - A(a) 
+\end{align*}
+</div></p></div></section><section><h3>The Fundamental Theorem of Calculus</h3>
+<div align="left">
+<p>(PART 1): If <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous</dfn>, then the accumulation function<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-2-3">
+\begin{equation*}
+A(x) = \int_c^{x} f(z) \, dz
+\end{equation*}
+</div>is differentiable <em class="emphasis">and</em> <span class="process-math">\(A'(x) = f(x)\text{.}\)</span></p>
+<p>That is, <span class="process-math">\(A(x)\)</span> is an <dfn class="terminology">antiderivative</dfn> of <span class="process-math">\(f(x)\text{,}\)</span> even if we don’t know how to find its formula.</p>
+<p>(PART 2): Now, suppose that we know how to find some <em class="emphasis">other</em> antiderivative of <span class="process-math">\(f(x)\text{,}\)</span> say <span class="process-math">\(F(x)\text{.}\)</span> We know there must be some constant <span class="process-math">\(K\)</span> so that <span class="process-math">\(A(x) = F(x) + K\text{.}\)</span> Then for <em class="emphasis">any</em> definite integral<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-4-7">
+\begin{align*}
+\int_a^b f(x) \, dx \amp = A(b) - A(a) \\
+\amp = (F(b) + K) - (F(a)+K) \\
+\amp = F(b) - F(a) 
+\end{align*}
+</div>That is, <em class="emphasis">any</em> convenient antiderivative can be used to evaluate a definite integral.</p>
 </div></section></section>
 </div>
 </div></body>

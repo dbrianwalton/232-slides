@@ -466,7 +466,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Section 7.2: Area and Riemann Sums",
-  "body": " Section 7.2: Area and Riemann Sums   The Goal: Definite Integrals  We want to define a mathematical operation that will calculate the area between and going from to . This object will be called the definite integral of from to .   We need to have a method that will define this object. >   Motivation: Simple Functions  There is a special class of functions for which it is easy to compute the definite integral. They are functions such that the function is constant on intervals except for a finite number of jump points. We call these simple functions .  The total area for simple functions is just the sum of areas of rectangles. Find . >   Big Calculus Idea: Rectangle Approximations  So what do we do with a non-simple function ?  Approximate it with a simple function:   Choose a partition the set of points where the function will jump to create intervals. For convenience, we always start with and . The widths of the intervals will be .    Choose heights for the simple function on each resulting interval. To connect to the original function, we require crosses the value. There will be one location per interval, .   The resulting approximation is named a Riemann Sum   >   Uniform Partitions and Left vs Right  Rather than use arbitrary partitions, it is usually most convenient to use a uniform partition where every interval gets the same width The partition starts at and we just repeatedly add to get the remaining break points.   Rather than use arbitrary points in the interval, it is customary to illustrate ideas using either the left or right endpoint of each interval for the evaluation positions. Other options might be to use the mid-point of the interval. >   Practice  Draw a picture and create a table to illustrate Riemann sum approximations for the areas of the following functions.   using intervals and left endpoints.    using intervals and right endpoints.    >   Formulas in Approximations  Instead of calculating all of the values in a table, we will create formulas for the values of and also , and then use function composition to get a formula-defined Riemann sum.   Define in terms of the symbol :    Define abstractly in terms of both and using (prior):     Use right end-point for function composition, :     Use these substitutions in the Riemann sum formula, expanding and simplifying where possible:     >   Rules for Summation  Summations have the constant multiple rule and sum rule. Suppose and are two formulas involving the index and and are two constants. There are no simple rules for dealing with multiplying or dividing by formulas in summation.  There are some remarkable substitutions available for special summations involving , so long as the patterns match exactly.  >   Practice Summation  Calculate each summation in two ways: once by directly listing values and adding them up, and then again using the summation rules.             >   Riemann Sum Formulas  For simple polynomials, we can get formula answers for Riemann sums. We'll only focus on doing this using right end-points with .  Approximate the following definite integrals using a Riemann sum with (not specified) intervals and using right end-points.         >  "
+  "body": " Section 7.2: Area and Riemann Sums   The Goal: Definite Integrals  We want to define a mathematical operation that will calculate the area between and going from to . This object will be called the definite integral of from to .   We need to have a method that will define this object. >   Motivation: Simple Functions  There is a special class of functions for which it is easy to compute the definite integral. They are functions such that the function is constant on intervals except for a finite number of jump points. We call these simple functions .  The total area for simple functions is just the sum of areas of rectangles. Find . >   Big Calculus Idea: Rectangle Approximations  So what do we do with a non-simple function ?  Approximate it with a simple function:   Choose a partition the set of points where the function will jump to create intervals. For convenience, we always start with and . The widths of the intervals will be .    Choose heights for the simple function on each resulting interval. To connect to the original function, we require crosses the value. There will be one location per interval, .   The resulting approximation is named a Riemann Sum   >   Uniform Partitions and Left vs Right  Rather than use arbitrary partitions, it is usually most convenient to use a uniform partition where every interval gets the same width The partition starts at and we just repeatedly add to get the remaining break points.   Rather than use arbitrary points in the interval, it is customary to illustrate ideas using either the left or right endpoint of each interval for the evaluation positions. Other options might be to use the mid-point of the interval. >   Practice  Draw a picture and create a table to illustrate Riemann sum approximations for the areas of the following functions.   using intervals and left endpoints.    using intervals and right endpoints.    >   Formulas in Approximations  (Start of Day 25) Instead of calculating all of the values in a table, we will create formulas for the values of and also , and then use function composition to get a formula-defined Riemann sum.   Define in terms of the symbol :    Define abstractly in terms of both and using (prior):     Use right end-point for function composition, :     Use these substitutions in the Riemann sum formula, expanding and simplifying where possible:     >   Rules for Summation  Summations have the constant multiple rule and sum rule. Suppose and are two formulas involving the index and and are two constants. There are no simple rules for dealing with multiplying or dividing by formulas in summation.  There are some remarkable substitutions available for special summations involving , so long as the patterns match exactly.  >   Practice Summation  Calculate each summation in two ways: once by directly listing values and adding them up, and then again using the summation rules.             >   Riemann Sum Formulas  For simple polynomials, we can get formula answers for Riemann sums. We'll only focus on doing this using right end-points with .  Approximate the following definite integrals using a Riemann sum with (not specified) intervals and using right end-points.         >   The Definite Integral Defined  Because a definite integral can be approximated by a Riemann sum, and the Riemann sum gets better if (the number of subintervals) gets larger, we define the value of the definite integral as a limit of the Riemann sum. (Calculate the Riemann sum first as a formula in , then take the limit.)  If is continuous on (or only has a finite number of jump discontinuities), then the resulting limit does not depend on the choice of the partition or the evaluation points. In this case, we say that is integrable on . >  "
 },
 {
   "id": "sec_7-2_Riemann-Sums-2-2",
@@ -512,6 +512,60 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "function composition "
+},
+{
+  "id": "sec_7-2_Riemann-Sums-11-2",
+  "level": "2",
+  "url": "sec_7-2_Riemann-Sums.html#sec_7-2_Riemann-Sums-11-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "limit "
+},
+{
+  "id": "sec_7-2_Riemann-Sums-11-3",
+  "level": "2",
+  "url": "sec_7-2_Riemann-Sums.html#sec_7-2_Riemann-Sums-11-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "continuous integrable "
+},
+{
+  "id": "sec_7-3_Definite-Integrals",
+  "level": "1",
+  "url": "sec_7-3_Definite-Integrals.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 7.3: Definite Integrals",
+  "body": " Section 7.3: Definite Integrals   Properties of Definite Integrals  We need to know basic properties about definite integrals.    Splitting : Adding consecutive integrals must be equal to the single integral from start to finish. Note: Be careful that the common number is the start of one and the end of the other integral.     Going Nowhere : If an integral starts and ends at the same point, it must be zero.      Reverse Direction : Integrating over the same interval backwards changes the sign of the result.     >   Linearity (Sum and Constant Multiples)  Suppose we know and (same limits of integration).  Sum Rule:   Constant Multiple Rule (Scaling):  >   Accumulation Functions  Once we know that definite integrals exist, we can define a function using integration.  Given an integrable function as our rate function. Let be a fixed starting point, and for each , calculate Note that we had to use a different variable in the integration. I chose to use , but all that really matters is that we do NOT choose . >   Evaluation Using Accumulation Functions  Suppose we know an accumulation function We can use this to compute any definite integral of .  >   The Fundamental Theorem of Calculus  (PART 1): If is continuous , then the accumulation function is differentiable and  .  That is, is an antiderivative of , even if we don't know how to find its formula.  (PART 2): Now, suppose that we know how to find some other antiderivative of , say . We know there must be some constant so that . Then for any definite integral That is, any convenient antiderivative can be used to evaluate a definite integral. >  "
+},
+{
+  "id": "sec_7-3_Definite-Integrals-2-2",
+  "level": "2",
+  "url": "sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Splitting Going Nowhere Reverse Direction "
+},
+{
+  "id": "sec_7-3_Definite-Integrals-6-2",
+  "level": "2",
+  "url": "sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-6-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "continuous "
+},
+{
+  "id": "sec_7-3_Definite-Integrals-6-3",
+  "level": "2",
+  "url": "sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-6-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "antiderivative "
 }
 ]
 
