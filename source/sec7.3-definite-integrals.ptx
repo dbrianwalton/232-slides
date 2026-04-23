@@ -93,6 +93,44 @@
   </slide>
 
   <slide>
+    <title>Power Accumulation Function Setup</title>
+    
+    <p>
+      Consider the elementary accumulation functions for powers of <m>x</m>,
+      <md>
+        A_p(x) = \int_0^x z^p \, dz.
+      </md>
+      Setup the Riemann sum with <m>n</m> intervals so that <m>\Delta z = \frac{x}{n}</m> and <m>z_k = 0 + \frac{kx}{n}</m> so that
+      <md>
+        <mrow> A_p(x) = \int_0^x z^p \, dz \amp = \lim_{n \to \infty} \sum_{k=1}^{n} \Big( \frac{kx}{n} \Big)^p \cdot \Big( \frac{x}{n} \Big) </mrow>
+        <mrow> \amp = \lim_{n \to \infty} \frac{x^{p+1}}{n^{p+1}} \sum_{k=1}^{n} k^p </mrow>
+      </md>
+      <md>
+        \sum_{k=1}^{n} k^0 = n \qquad \sum_{k=1}^{n} k^1 = \frac{n(n+1)}{2} \qquad \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6} \qquad \sum_{k=1}^{n} k^3 = \frac{n^2(n+1)^2}{4}
+      </md>
+      
+    </p>
+  </slide>
+
+  <slide>
+    <title>Power Accumulation Function Results</title>
+    
+    <p>
+      And the results are in...
+      <md>
+        <mrow> \int_0^x 1 \, dz \amp = x</mrow>
+        <mrow> \int_0^x z \, dz \amp = \frac{x^2}{2}</mrow>
+        <mrow> \int_0^x z^2 \, dz \amp = \frac{x^3}{3}</mrow>
+        <mrow> \int_0^x z^3 \, dz \amp = \frac{x^4}{4}</mrow>
+      </md>
+      These rules together with the linearity properties and evaluation using accumulation allow us to evaluate definite integrals of simple polynomials without Riemann sums.
+    </p>
+    <p>
+      What do you notice about these formulas?
+    </p>
+  </slide>
+
+  <slide>
     <title>The Fundamental Theorem of Calculus</title>
     
     <p>
