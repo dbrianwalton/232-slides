@@ -335,7 +335,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-3" class="internal"><span class="title">Linearity (Sum and Constant Multiples)</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-4" class="internal"><span class="title">Accumulation Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-5" class="internal"><span class="title">Evaluation Using Accumulation Functions</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-6" class="internal"><span class="title">The Fundamental Theorem of Calculus</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-6" class="internal"><span class="title">Power Accumulation Function Setup</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-7" class="internal"><span class="title">Power Accumulation Function Results</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-8" class="internal"><span class="title">The Fundamental Theorem of Calculus</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
@@ -453,24 +455,67 @@ A(x) = \int_c^{x} f(z) \, dz.
 <div class="autopermalink" data-description="Paragraph"><a href="#sec_7-3_Definite-Integrals-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection: Evaluation Using Accumulation Functions"><a href="#sec_7-3_Definite-Integrals-5" title="Copy heading and permalink for Subsection: Evaluation Using Accumulation Functions" aria-label="Copy heading and permalink for Subsection: Evaluation Using Accumulation Functions">🔗</a></div></section><section class="subsection" id="sec_7-3_Definite-Integrals-6"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Fundamental Theorem of Calculus</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Power Accumulation Function Setup</span>
 </h3>
 <div class="para logical" id="sec_7-3_Definite-Integrals-6-2">
+<div class="para">Consider the elementary accumulation functions for powers of <span class="process-math">\(x\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-2-2">
+\begin{equation*}
+A_p(x) = \int_0^x z^p \, dz.
+\end{equation*}
+</div>
+<div class="para">Setup the Riemann sum with <span class="process-math">\(n\)</span> intervals so that <span class="process-math">\(\Delta z = \frac{x}{n}\)</span> and <span class="process-math">\(z_k = 0 + \frac{kx}{n}\)</span> so that</div>
+<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-2-6">
+\begin{align*}
+A_p(x) = \int_0^x z^p \, dz \amp = \lim_{n \to \infty} \sum_{k=1}^{n} \Big( \frac{kx}{n} \Big)^p \cdot \Big( \frac{x}{n} \Big) \\
+\amp = \lim_{n \to \infty} \frac{x^{p+1}}{n^{p+1}} \sum_{k=1}^{n} k^p 
+\end{align*}
+</div>
+<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-2-7">
+\begin{equation*}
+\sum_{k=1}^{n} k^0 = n \qquad \sum_{k=1}^{n} k^1 = \frac{n(n+1)}{2} \qquad \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6} \qquad \sum_{k=1}^{n} k^3 = \frac{n^2(n+1)^2}{4}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-3_Definite-Integrals-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Power Accumulation Function Setup"><a href="#sec_7-3_Definite-Integrals-6" title="Copy heading and permalink for Subsection: Power Accumulation Function Setup" aria-label="Copy heading and permalink for Subsection: Power Accumulation Function Setup">🔗</a></div></section><section class="subsection" id="sec_7-3_Definite-Integrals-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Power Accumulation Function Results</span>
+</h3>
+<div class="para logical" id="sec_7-3_Definite-Integrals-7-2">
+<div class="para">And the results are in...</div>
+<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-7-2-1">
+\begin{align*}
+\int_0^x 1 \, dz \amp = x\\
+\int_0^x z \, dz \amp = \frac{x^2}{2}\\
+\int_0^x z^2 \, dz \amp = \frac{x^3}{3}\\
+\int_0^x z^3 \, dz \amp = \frac{x^4}{4}
+\end{align*}
+</div>
+<div class="para">These rules together with the linearity properties and evaluation using accumulation allow us to evaluate definite integrals of simple polynomials without Riemann sums.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-3_Definite-Integrals-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_7-3_Definite-Integrals-7-3">What do you notice about these formulas?<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-3_Definite-Integrals-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Power Accumulation Function Results"><a href="#sec_7-3_Definite-Integrals-7" title="Copy heading and permalink for Subsection: Power Accumulation Function Results" aria-label="Copy heading and permalink for Subsection: Power Accumulation Function Results">🔗</a></div></section><section class="subsection" id="sec_7-3_Definite-Integrals-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Fundamental Theorem of Calculus</span>
+</h3>
+<div class="para logical" id="sec_7-3_Definite-Integrals-8-2">
 <div class="para">(PART 1): If <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous</dfn>, then the accumulation function</div>
-<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-2-3">
+<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-8-2-3">
 \begin{equation*}
 A(x) = \int_c^{x} f(z) \, dz
 \end{equation*}
 </div>
 <div class="para">is differentiable <em class="emphasis">and</em> <span class="process-math">\(A'(x) = f(x)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-3_Definite-Integrals-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-3_Definite-Integrals-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec_7-3_Definite-Integrals-6-3">That is, <span class="process-math">\(A(x)\)</span> is an <dfn class="terminology">antiderivative</dfn> of <span class="process-math">\(f(x)\text{,}\)</span> even if we don’t know how to find its formula.<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-3_Definite-Integrals-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_7-3_Definite-Integrals-8-3">That is, <span class="process-math">\(A(x)\)</span> is an <dfn class="terminology">antiderivative</dfn> of <span class="process-math">\(f(x)\text{,}\)</span> even if we don’t know how to find its formula.<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-3_Definite-Integrals-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sec_7-3_Definite-Integrals-6-4">
+<div class="para logical" id="sec_7-3_Definite-Integrals-8-4">
 <div class="para">(PART 2): Now, suppose that we know how to find some <em class="emphasis">other</em> antiderivative of <span class="process-math">\(f(x)\text{,}\)</span> say <span class="process-math">\(F(x)\text{.}\)</span> We know there must be some constant <span class="process-math">\(K\)</span> so that <span class="process-math">\(A(x) = F(x) + K\text{.}\)</span> Then for <em class="emphasis">any</em> definite integral</div>
-<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-4-7">
+<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-8-4-7">
 \begin{align*}
 \int_a^b f(x) \, dx \amp = A(b) - A(a) \\
 \amp = (F(b) + K) - (F(a)+K) \\
@@ -478,9 +523,9 @@ A(x) = \int_c^{x} f(z) \, dz
 \end{align*}
 </div>
 <div class="para">That is, <em class="emphasis">any</em> convenient antiderivative can be used to evaluate a definite integral.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-3_Definite-Integrals-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_7-3_Definite-Integrals-8-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: The Fundamental Theorem of Calculus"><a href="#sec_7-3_Definite-Integrals-6" title="Copy heading and permalink for Subsection: The Fundamental Theorem of Calculus" aria-label="Copy heading and permalink for Subsection: The Fundamental Theorem of Calculus">🔗</a></div></section><div class="autopermalink" data-description="Section: Section 7.3: Definite Integrals"><a href="#sec_7-3_Definite-Integrals" title="Copy heading and permalink for Section: Section 7.3: Definite Integrals" aria-label="Copy heading and permalink for Section: Section 7.3: Definite Integrals">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Subsection: The Fundamental Theorem of Calculus"><a href="#sec_7-3_Definite-Integrals-8" title="Copy heading and permalink for Subsection: The Fundamental Theorem of Calculus" aria-label="Copy heading and permalink for Subsection: The Fundamental Theorem of Calculus">🔗</a></div></section><div class="autopermalink" data-description="Section: Section 7.3: Definite Integrals"><a href="#sec_7-3_Definite-Integrals" title="Copy heading and permalink for Section: Section 7.3: Definite Integrals" aria-label="Copy heading and permalink for Section: Section 7.3: Definite Integrals">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec_7-2_Riemann-Sums.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
 </div></main>

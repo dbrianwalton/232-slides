@@ -538,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Section 7.3: Definite Integrals",
-  "body": " Section 7.3: Definite Integrals   Properties of Definite Integrals  We need to know basic properties about definite integrals.    Splitting : Adding consecutive integrals must be equal to the single integral from start to finish. Note: Be careful that the common number is the start of one and the end of the other integral.     Going Nowhere : If an integral starts and ends at the same point, it must be zero.      Reverse Direction : Integrating over the same interval backwards changes the sign of the result.     >   Linearity (Sum and Constant Multiples)  Suppose we know and (same limits of integration).  Sum Rule:   Constant Multiple Rule (Scaling):  >   Accumulation Functions  Once we know that definite integrals exist, we can define a function using integration.  Given an integrable function as our rate function. Let be a fixed starting point, and for each , calculate Note that we had to use a different variable in the integration. I chose to use , but all that really matters is that we do NOT choose . >   Evaluation Using Accumulation Functions  Suppose we know an accumulation function We can use this to compute any definite integral of .  >   The Fundamental Theorem of Calculus  (PART 1): If is continuous , then the accumulation function is differentiable and  .  That is, is an antiderivative of , even if we don't know how to find its formula.  (PART 2): Now, suppose that we know how to find some other antiderivative of , say . We know there must be some constant so that . Then for any definite integral That is, any convenient antiderivative can be used to evaluate a definite integral. >  "
+  "body": " Section 7.3: Definite Integrals   Properties of Definite Integrals  We need to know basic properties about definite integrals.    Splitting : Adding consecutive integrals must be equal to the single integral from start to finish. Note: Be careful that the common number is the start of one and the end of the other integral.     Going Nowhere : If an integral starts and ends at the same point, it must be zero.      Reverse Direction : Integrating over the same interval backwards changes the sign of the result.     >   Linearity (Sum and Constant Multiples)  Suppose we know and (same limits of integration).  Sum Rule:   Constant Multiple Rule (Scaling):  >   Accumulation Functions  Once we know that definite integrals exist, we can define a function using integration.  Given an integrable function as our rate function. Let be a fixed starting point, and for each , calculate Note that we had to use a different variable in the integration. I chose to use , but all that really matters is that we do NOT choose . >   Evaluation Using Accumulation Functions  Suppose we know an accumulation function We can use this to compute any definite integral of .  >   Power Accumulation Function Setup  Consider the elementary accumulation functions for powers of , Setup the Riemann sum with intervals so that and so that   >   Power Accumulation Function Results  And the results are in... These rules together with the linearity properties and evaluation using accumulation allow us to evaluate definite integrals of simple polynomials without Riemann sums.  What do you notice about these formulas? >   The Fundamental Theorem of Calculus  (PART 1): If is continuous , then the accumulation function is differentiable and  .  That is, is an antiderivative of , even if we don't know how to find its formula.  (PART 2): Now, suppose that we know how to find some other antiderivative of , say . We know there must be some constant so that . Then for any definite integral That is, any convenient antiderivative can be used to evaluate a definite integral. >  "
 },
 {
   "id": "sec_7-3_Definite-Integrals-2-2",
@@ -550,18 +550,18 @@ var ptx_lunr_docs = [
   "body": "Splitting Going Nowhere Reverse Direction "
 },
 {
-  "id": "sec_7-3_Definite-Integrals-6-2",
+  "id": "sec_7-3_Definite-Integrals-8-2",
   "level": "2",
-  "url": "sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-6-2",
+  "url": "sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-8-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "continuous "
 },
 {
-  "id": "sec_7-3_Definite-Integrals-6-3",
+  "id": "sec_7-3_Definite-Integrals-8-3",
   "level": "2",
-  "url": "sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-6-3",
+  "url": "sec_7-3_Definite-Integrals.html#sec_7-3_Definite-Integrals-8-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2026-04-23T00:27:22Z       *-->
+<!--*       on 2026-04-23T00:58:45Z       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -1119,15 +1119,40 @@ A(x) = \int_c^{x} f(z) \, dz.
 \amp = \int_c^b f(z) \, dz - \int_c^a f(z) \, dz \\
 \amp = A(b) - A(a) 
 \end{align*}
-</div></p></div></section><section><h3>The Fundamental Theorem of Calculus</h3>
+</div></p></div></section><section><h3>Power Accumulation Function Setup</h3>
+<div align="left"><p>Consider the elementary accumulation functions for powers of <span class="process-math">\(x\text{,}\)</span><div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-2-2">
+\begin{equation*}
+A_p(x) = \int_0^x z^p \, dz.
+\end{equation*}
+</div>Setup the Riemann sum with <span class="process-math">\(n\)</span> intervals so that <span class="process-math">\(\Delta z = \frac{x}{n}\)</span> and <span class="process-math">\(z_k = 0 + \frac{kx}{n}\)</span> so that<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-2-6">
+\begin{align*}
+A_p(x) = \int_0^x z^p \, dz \amp = \lim_{n \to \infty} \sum_{k=1}^{n} \Big( \frac{kx}{n} \Big)^p \cdot \Big( \frac{x}{n} \Big) \\
+\amp = \lim_{n \to \infty} \frac{x^{p+1}}{n^{p+1}} \sum_{k=1}^{n} k^p 
+\end{align*}
+</div><div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-2-7">
+\begin{equation*}
+\sum_{k=1}^{n} k^0 = n \qquad \sum_{k=1}^{n} k^1 = \frac{n(n+1)}{2} \qquad \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6} \qquad \sum_{k=1}^{n} k^3 = \frac{n^2(n+1)^2}{4}
+\end{equation*}
+</div></p></div></section><section><h3>Power Accumulation Function Results</h3>
 <div align="left">
-<p>(PART 1): If <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous</dfn>, then the accumulation function<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-2-3">
+<p>And the results are in...<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-7-2-1">
+\begin{align*}
+\int_0^x 1 \, dz \amp = x\\
+\int_0^x z \, dz \amp = \frac{x^2}{2}\\
+\int_0^x z^2 \, dz \amp = \frac{x^3}{3}\\
+\int_0^x z^3 \, dz \amp = \frac{x^4}{4}
+\end{align*}
+</div>These rules together with the linearity properties and evaluation using accumulation allow us to evaluate definite integrals of simple polynomials without Riemann sums.</p>
+<p>What do you notice about these formulas?</p>
+</div></section><section><h3>The Fundamental Theorem of Calculus</h3>
+<div align="left">
+<p>(PART 1): If <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous</dfn>, then the accumulation function<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-8-2-3">
 \begin{equation*}
 A(x) = \int_c^{x} f(z) \, dz
 \end{equation*}
 </div>is differentiable <em class="emphasis">and</em> <span class="process-math">\(A'(x) = f(x)\text{.}\)</span></p>
 <p>That is, <span class="process-math">\(A(x)\)</span> is an <dfn class="terminology">antiderivative</dfn> of <span class="process-math">\(f(x)\text{,}\)</span> even if we don’t know how to find its formula.</p>
-<p>(PART 2): Now, suppose that we know how to find some <em class="emphasis">other</em> antiderivative of <span class="process-math">\(f(x)\text{,}\)</span> say <span class="process-math">\(F(x)\text{.}\)</span> We know there must be some constant <span class="process-math">\(K\)</span> so that <span class="process-math">\(A(x) = F(x) + K\text{.}\)</span> Then for <em class="emphasis">any</em> definite integral<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-6-4-7">
+<p>(PART 2): Now, suppose that we know how to find some <em class="emphasis">other</em> antiderivative of <span class="process-math">\(f(x)\text{,}\)</span> say <span class="process-math">\(F(x)\text{.}\)</span> We know there must be some constant <span class="process-math">\(K\)</span> so that <span class="process-math">\(A(x) = F(x) + K\text{.}\)</span> Then for <em class="emphasis">any</em> definite integral<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-8-4-7">
 \begin{align*}
 \int_a^b f(x) \, dx \amp = A(b) - A(a) \\
 \amp = (F(b) + K) - (F(a)+K) \\
