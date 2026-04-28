@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2026-04-23T00:58:45Z       *-->
+<!--*       on 2026-04-28T02:59:58Z       *-->
 <!--*   A recent stable commit (2022-07-01):   *-->
 <!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
 <!--*                                          *-->
@@ -36,7 +36,7 @@
 <tr><td align="center" style="border-bottom: 0px;">James Madison University</td></tr>
 <tr><td align="center"></td></tr>
 </table>
-<h4><div class="date">as of April 23, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
+<h4><div class="date">as of April 28, 2026</div></h4></section></section><section><section><h1>Introductory Examples</h1></section><section><h3>Graph Analysis 1 (Begin Day 2)</h3>
 <div align="left"><p><span class="process-math">\(\displaystyle f(x) = \frac{x}{x^2+4}\)</span> and <span class="process-math">\(\displaystyle f'(x) = \frac{-x^2+4}{(x^2+4)^2}\)</span></p></div></section><section><h3>Graph Analysis 2</h3>
 <div align="left"><p><span class="process-math">\(f(x) = x \cdot (x^2-9)^{1/3}\)</span></p></div></section></section><section><section><h1>Section 4.1: Algebraic Functions</h1></section><section><h3>Learning Goals</h3>
 <div align="left"><ul class="disc" id="sec_4-1_algebraic_functions-2-2">
@@ -1144,7 +1144,7 @@ A_p(x) = \int_0^x z^p \, dz \amp = \lim_{n \to \infty} \sum_{k=1}^{n} \Big( \fra
 \end{align*}
 </div>These rules together with the linearity properties and evaluation using accumulation allow us to evaluate definite integrals of simple polynomials without Riemann sums.</p>
 <p>What do you notice about these formulas?</p>
-</div></section><section><h3>The Fundamental Theorem of Calculus</h3>
+</div></section><section><h3>Section 7.5: The Fundamental Theorem of Calculus</h3>
 <div align="left">
 <p>(PART 1): If <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous</dfn>, then the accumulation function<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-8-2-3">
 \begin{equation*}
@@ -1159,7 +1159,70 @@ A(x) = \int_c^{x} f(z) \, dz
 \amp = F(b) - F(a) 
 \end{align*}
 </div>That is, <em class="emphasis">any</em> convenient antiderivative can be used to evaluate a definite integral.</p>
-</div></section></section>
+</div></section><section><h3>Practicing Definite Integrals</h3>
+<div align="left">
+<p>(Begin Day 26) Now that we know about the connection between antiderivatives and accumulation functions, we can compute definite integrals for any function <span class="process-math">\(f(x)\)</span> for which we know how to find an antiderivative <span class="process-math">\(F(x)\text{.}\)</span></p>
+<p>You should verify the following:<ul class="disc" id="sec_7-3_Definite-Integrals-9-3-1">
+<li><p>The function <span class="process-math">\(f(x)\)</span> must be continuous everywhere between <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span></p></li>
+<li><p>The function <span class="process-math">\(F(x)\)</span> is an antiderivative so that <span class="process-math">\(F'(x) = f(x)\)</span></p></li>
+</ul>You should then <em class="emphasis">cite</em> the Fundamental Theorem of Calculus (FTC) in allowing us to <em class="emphasis">replace</em> the definite integral by the evaluated difference:<div class="displaymath process-math" id="sec_7-3_Definite-Integrals-9-3-4">
+\begin{equation*}
+\int_a^b f(x) \, dx \overset{\mathrm{FTC}} = \Big[ F(x) \Big|_a^b = F(b) - F(a).
+\end{equation*}
+</div></p>
+</div></section><section><h3>Practice</h3>
+<div align="left"><p><ol class="decimal" id="sec_7-3_Definite-Integrals-10-2-1">
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int_{-1}^2 e^{2x}-3 \, dx\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int_1^2 \frac{t^2-1}{2t} \, dt\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int_0^\pi \cos(\theta) \, d\theta\)</span></p></li>
+</ol></p></div></section></section><section><section><h1>Section 8.1: Integration by Substitution</h1></section><section><h3>Integration by Substitution</h3>
+<div align="left">
+<p>One of the most common issues with finding antiderivatives deals with undoing the chain rule. We saw previously a pattern when dealing with integrals like:<div class="displaymath process-math" id="sec_8-1_Integrate_by_Substitution-2-2-1">
+\begin{equation*}
+\int e^{3x} \,dx \qquad \int \sin(2x) \, dx
+\end{equation*}
+</div>that we needed to <em class="emphasis">divide</em> by the <span class="process-math">\(u'\)</span> in combination with simple antiderivatives.<div class="displaymath process-math" id="sec_8-1_Integrate_by_Substitution-2-2-4">
+\begin{align*}
+\int e^{3x} \, dx \amp = \frac{1}{3} e^{3x} + C \\
+\int \sin(2x) \, dx \amp = -\frac{1}{2} \cos(2x) + C 
+\end{align*}
+</div>But this strategy really only worked because <span class="process-math">\(u'\)</span> happened to be a constant.</p>
+<p>The generalization of this strategy is required if <span class="process-math">\(u'\)</span> is a formula and is called <dfn class="terminology">integration by substitution</dfn>.</p>
+</div></section><section><h3>Recognizing the Chain Rule</h3>
+<div align="left"><p>Computing integrals involving <dfn class="terminology">compositions</dfn> requires first being proficient in calculating derivatives involving the <dfn class="terminology">chain rule</dfn>.<div class="displaymath process-math" id="sec_8-1_Integrate_by_Substitution-3-2-3">
+\begin{gather*}
+\frac{d}{dx}\Big[ e^{x^2} \Big]\\
+\frac{d}{dx}\Big[ \ln(x^2+4) \Big]
+\end{gather*}
+</div>The derivative of <span class="process-math">\(F(u)\)</span> will always be a <dfn class="terminology">product</dfn> <span class="process-math">\(F'(u) \cdot u'\text{.}\)</span></p></div></section><section><h3>Steps of the Method of Substitution</h3>
+<div align="left"><p>Integration by substitution is a tool to <em class="emphasis">recognize</em> and <em class="emphasis">simplify</em> this multiplication. Identify in the integrand the presence of a composition <span class="process-math">\(f(u)\)</span> with a function <span class="process-math">\(u\text{.}\)</span> This function normally should be <em class="emphasis">multiplied</em> by a constant multiple of <span class="process-math">\(u'\text{.}\)</span><ul class="disc" id="sec_8-1_Integrate_by_Substitution-4-2-7">
+<li><p>Identify <span class="process-math">\(u\)</span> and calculate <span class="process-math">\(u'\text{.}\)</span></p></li>
+<li><p>Substitute the formula <span class="process-math">\(u\)</span> by the symbol <span class="process-math">\(u\)</span> (or something else convenient).</p></li>
+<li><p>Use <span class="process-math">\(du = u' \cdot dx\)</span> to substitute the differential <span class="process-math">\(dx\)</span> by the formula <span class="process-math">\(\frac{1}{u'} \cdot du\text{.}\)</span> Ideally this will cancel any remaining formulas.</p></li>
+<li><p>This transforms the integral to a new variable with a simpler formula. Find the antiderivative and back-substitute.</p></li>
+</ul></p></div></section><section><h3>Examples</h3>
+<div align="left"><p><ol class="decimal" id="sec_8-1_Integrate_by_Substitution-5-2-1">
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int xe^{-x^2} \, dx \)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int (2x+4)^8 \, dx \)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int \frac{4t}{(t^2+3)^7} \, dt \)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \displaystyle \int \frac{w^2}{w^3+1} \, dw \)</span></p></li>
+</ol></p></div></section><section><h3>Definite Integrals with Substitution</h3>
+<div align="left">
+<p>Although it is possible to find an antiderivative using substitution and then evaluate the change, it is sometimes faster or beneficial to rewrite the definite integral in the new variable.</p>
+<p>Suppose that an indefinite integral using substitution would transform<div class="displaymath process-math" id="sec_8-1_Integrate_by_Substitution-6-3-1">
+\begin{equation*}
+\int f(x) \,dx = \int g(u) \, du
+\end{equation*}
+</div>Then a definite integral can similarly be transformed<div class="displaymath process-math" id="sec_8-1_Integrate_by_Substitution-6-3-2">
+\begin{equation*}
+\int_a^b f(x) \,dx = \int_{u(a)}^{u(b)} g(u) \, du
+\end{equation*}
+</div>It is essential that you maintain the order of the limits of integration, even if they seem to have been reversed.</p>
+</div></section><section><h3>Examples of Definite Integrals Using Substitution</h3>
+<div align="left"><p>Rewrite and then evaluate the definite integrals using substitution:<ul class="disc" id="sec_8-1_Integrate_by_Substitution-7-2-1">
+<li><p><span class="process-math">\(\displaystyle \int_1^3 4x(x^2-1)^2 \, dx\text{,}\)</span> <span class="process-math">\(u=x^2-1\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \int_0^1 x \sqrt{1-x} \, dx\text{,}\)</span> <span class="process-math">\(u=1-x\)</span></p></li>
+</ul></p></div></section></section>
 </div>
 </div></body>
 <script>

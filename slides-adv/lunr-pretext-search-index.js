@@ -538,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Section 7.3: Definite Integrals",
-  "body": " Section 7.3: Definite Integrals   Properties of Definite Integrals  We need to know basic properties about definite integrals.    Splitting : Adding consecutive integrals must be equal to the single integral from start to finish. Note: Be careful that the common number is the start of one and the end of the other integral.     Going Nowhere : If an integral starts and ends at the same point, it must be zero.      Reverse Direction : Integrating over the same interval backwards changes the sign of the result.     >   Linearity (Sum and Constant Multiples)  Suppose we know and (same limits of integration).  Sum Rule:   Constant Multiple Rule (Scaling):  >   Accumulation Functions  Once we know that definite integrals exist, we can define a function using integration.  Given an integrable function as our rate function. Let be a fixed starting point, and for each , calculate Note that we had to use a different variable in the integration. I chose to use , but all that really matters is that we do NOT choose . >   Evaluation Using Accumulation Functions  Suppose we know an accumulation function We can use this to compute any definite integral of .  >   Power Accumulation Function Setup  Consider the elementary accumulation functions for powers of , Setup the Riemann sum with intervals so that and so that   >   Power Accumulation Function Results  And the results are in... These rules together with the linearity properties and evaluation using accumulation allow us to evaluate definite integrals of simple polynomials without Riemann sums.  What do you notice about these formulas? >   The Fundamental Theorem of Calculus  (PART 1): If is continuous , then the accumulation function is differentiable and  .  That is, is an antiderivative of , even if we don't know how to find its formula.  (PART 2): Now, suppose that we know how to find some other antiderivative of , say . We know there must be some constant so that . Then for any definite integral That is, any convenient antiderivative can be used to evaluate a definite integral. >  "
+  "body": " Section 7.3: Definite Integrals   Properties of Definite Integrals  We need to know basic properties about definite integrals.    Splitting : Adding consecutive integrals must be equal to the single integral from start to finish. Note: Be careful that the common number is the start of one and the end of the other integral.     Going Nowhere : If an integral starts and ends at the same point, it must be zero.      Reverse Direction : Integrating over the same interval backwards changes the sign of the result.     >   Linearity (Sum and Constant Multiples)  Suppose we know and (same limits of integration).  Sum Rule:   Constant Multiple Rule (Scaling):  >   Accumulation Functions  Once we know that definite integrals exist, we can define a function using integration.  Given an integrable function as our rate function. Let be a fixed starting point, and for each , calculate Note that we had to use a different variable in the integration. I chose to use , but all that really matters is that we do NOT choose . >   Evaluation Using Accumulation Functions  Suppose we know an accumulation function We can use this to compute any definite integral of .  >   Power Accumulation Function Setup  Consider the elementary accumulation functions for powers of , Setup the Riemann sum with intervals so that and so that   >   Power Accumulation Function Results  And the results are in... These rules together with the linearity properties and evaluation using accumulation allow us to evaluate definite integrals of simple polynomials without Riemann sums.  What do you notice about these formulas? >   Section 7.5: The Fundamental Theorem of Calculus  (PART 1): If is continuous , then the accumulation function is differentiable and  .  That is, is an antiderivative of , even if we don't know how to find its formula.  (PART 2): Now, suppose that we know how to find some other antiderivative of , say . We know there must be some constant so that . Then for any definite integral That is, any convenient antiderivative can be used to evaluate a definite integral. >   Practicing Definite Integrals  (Begin Day 26) Now that we know about the connection between antiderivatives and accumulation functions, we can compute definite integrals for any function for which we know how to find an antiderivative .  You should verify the following:   The function must be continuous everywhere between and .    The function is an antiderivative so that   You should then cite the Fundamental Theorem of Calculus (FTC) in allowing us to replace the definite integral by the evaluated difference:  >   Practice              >  "
 },
 {
   "id": "sec_7-3_Definite-Integrals-2-2",
@@ -566,6 +566,33 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "antiderivative "
+},
+{
+  "id": "sec_8-1_Integrate_by_Substitution",
+  "level": "1",
+  "url": "sec_8-1_Integrate_by_Substitution.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 8.1: Integration by Substitution",
+  "body": " Section 8.1: Integration by Substitution   Integration by Substitution  One of the most common issues with finding antiderivatives deals with undoing the chain rule. We saw previously a pattern when dealing with integrals like: that we needed to divide by the in combination with simple antiderivatives. But this strategy really only worked because happened to be a constant.  The generalization of this strategy is required if is a formula and is called integration by substitution . >   Recognizing the Chain Rule  Computing integrals involving compositions requires first being proficient in calculating derivatives involving the chain rule . The derivative of will always be a product  . >   Steps of the Method of Substitution  Integration by substitution is a tool to recognize and simplify this multiplication. Identify in the integrand the presence of a composition with a function . This function normally should be multiplied by a constant multiple of .   Identify and calculate .    Substitute the formula by the symbol (or something else convenient).    Use to substitute the differential by the formula . Ideally this will cancel any remaining formulas.    This transforms the integral to a new variable with a simpler formula. Find the antiderivative and back-substitute.    >   Examples                 >   Definite Integrals with Substitution  Although it is possible to find an antiderivative using substitution and then evaluate the change, it is sometimes faster or beneficial to rewrite the definite integral in the new variable.  Suppose that an indefinite integral using substitution would transform Then a definite integral can similarly be transformed It is essential that you maintain the order of the limits of integration, even if they seem to have been reversed. >   Examples of Definite Integrals Using Substitution  Rewrite and then evaluate the definite integrals using substitution:   ,    ,    >  "
+},
+{
+  "id": "sec_8-1_Integrate_by_Substitution-2-3",
+  "level": "2",
+  "url": "sec_8-1_Integrate_by_Substitution.html#sec_8-1_Integrate_by_Substitution-2-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "integration by substitution "
+},
+{
+  "id": "sec_8-1_Integrate_by_Substitution-3-2",
+  "level": "2",
+  "url": "sec_8-1_Integrate_by_Substitution.html#sec_8-1_Integrate_by_Substitution-3-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "compositions chain rule product "
 }
 ]
 
