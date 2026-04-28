@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_8-1_Integrate_by_Substitution" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 8.1: Integration by Substitution</title>
+
+  <slide>
+    <title>Integration by Substitution</title>
+    
+    <p>
+      One of the most common issues with finding antiderivatives deals with undoing the chain rule.
+      We saw previously a pattern when dealing with integrals like:
+      <md>
+        \int e^{3x} \,dx \qquad \int \sin(2x) \, dx
+      </md>
+      that we needed to <em>divide</em> by the <m>u'</m> in combination with simple antiderivatives.
+      <md>
+        <mrow> \int e^{3x} \, dx \amp = \frac{1}{3} e^{3x} + C </mrow>
+        <mrow> \int \sin(2x) \, dx \amp = -\frac{1}{2} \cos(2x) + C </mrow>
+      </md>
+      But this strategy really only worked because <m>u'</m> happened to be a constant.
+    </p>
+    <p>
+      The generalization of this strategy is required if <m>u'</m> is a formula and is called
+      <term>integration by substitution</term>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Recognizing the Chain Rule</title>
+    
+    <p>
+      Computing integrals involving <term>compositions</term> requires first being proficient in calculating derivatives involving the <term>chain rule</term>.
+      <md>
+        <mrow>\frac{d}{dx}\Big[ e^{x^2} \Big]</mrow>
+        <mrow>\frac{d}{dx}\Big[ \ln(x^2+4) \Big]</mrow>
+      </md>
+      The derivative of <m>F(u)</m> will always be a <term>product</term> <m>F'(u) \cdot u'</m>.
+    </p>
+  </slide>
+  <slide>
+    <title>Steps of the Method of Substitution</title>
+    
+    <p>
+      Integration by substitution is a tool to <em>recognize</em> and <em>simplify</em> this multiplication.
+      Identify in the integrand the presence of a composition <m>f(u)</m> with a function <m>u</m>.
+      This function normally should be <em>multiplied</em> by a constant multiple of <m>u'</m>.
+      <ul>
+        <li>
+          <p>Identify <m>u</m> and calculate <m>u'</m>.</p>
+        </li>
+        <li>
+          <p>Substitute the formula <m>u</m> by the symbol <m>u</m> (or something else convenient).</p>
+        </li>
+        <li>
+          <p>
+            Use <m>du = u' \cdot dx</m> to substitute the differential <m>dx</m> by the formula <m>\frac{1}{u'} \cdot du</m>.
+            Ideally this will cancel any remaining formulas.
+          </p>
+        </li>
+        <li>
+          <p>This transforms the integral to a new variable with a simpler formula. Find the antiderivative and back-substitute.</p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Examples</title>
+    
+    <p>
+      <ol>
+        <li>
+          <p><m>\displaystyle \int xe^{-x^2} \, dx </m></p>
+        </li>
+        <li>
+          <p><m>\displaystyle \int (2x+4)^8 \, dx </m></p>
+        </li>
+        <li>
+          <p><m>\displaystyle \int \frac{4t}{(t^2+3)^7} \, dt </m></p>
+        </li>
+        <li>
+          <p><m>\displaystyle \int \frac{w^2}{w^3+1} \, dw </m></p>
+        </li>
+      </ol>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Definite Integrals with Substitution</title>
+    
+    <p>
+      Although it is possible to find an antiderivative using substitution and then evaluate the change,
+      it is sometimes faster or beneficial to rewrite the definite integral in the new variable.
+    </p>
+    <p>
+      Suppose that an indefinite integral using substitution would transform
+      <md>
+        \int f(x) \,dx = \int g(u) \, du
+      </md>
+      Then a definite integral can similarly be transformed
+      <md>
+        \int_a^b f(x) \,dx = \int_{u(a)}^{u(b)} g(u) \, du
+      </md>
+      It is essential that you maintain the order of the limits of integration, even if they seem to have been reversed.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Examples of Definite Integrals Using Substitution</title>
+    
+    <p>
+      Rewrite and then evaluate the definite integrals using substitution:
+      <ul>
+        <li>
+          <p><m>\displaystyle \int_1^3 4x(x^2-1)^2 \, dx</m>, <m>u=x^2-1</m></p>
+        </li>
+        <li>
+          <p><m>\displaystyle \int_0^1 x \sqrt{1-x} \, dx</m>, <m>u=1-x</m></p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+</section>

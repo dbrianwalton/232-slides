@@ -131,7 +131,7 @@
   </slide>
 
   <slide>
-    <title>The Fundamental Theorem of Calculus</title>
+    <title>Section 7.5: The Fundamental Theorem of Calculus</title>
     
     <p>
       (PART 1): If <m>f(x)</m> is <term>continuous</term>, then the accumulation function
@@ -153,6 +153,48 @@
         <mrow> \amp = F(b) - F(a) </mrow>
       </md>
       That is, <em>any</em> convenient antiderivative can be used to evaluate a definite integral.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Practicing Definite Integrals</title>
+    
+    <p>
+      (Begin Day 26) Now that we know about the connection between antiderivatives and accumulation functions,
+      we can compute definite integrals for any function <m>f(x)</m> for which we know how to find an antiderivative <m>F(x)</m>.
+    </p>
+    <p>
+      You should verify the following:
+      <ul>
+        <li>
+          <p>The function <m>f(x)</m> must be continuous everywhere between <m>a</m> and <m>b</m>.</p>
+        </li>
+        <li>
+          <p>The function <m>F(x)</m> is an antiderivative so that <m>F'(x) = f(x)</m></p>
+        </li>
+      </ul>
+      You should then <em>cite</em> the Fundamental Theorem of Calculus (FTC) in allowing us to <em>replace</em> the definite integral by the evaluated difference:
+      <md>
+        \int_a^b f(x) \, dx \overset{\mathrm{FTC}} = \Big[ F(x) \Big|_a^b = F(b) - F(a).
+      </md>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Practice</title>
+    
+    <p>
+      <ol>
+        <li>
+          <p><m>\displaystyle \int_{-1}^2 e^{2x}-3 \, dx</m></p>
+        </li>
+        <li>
+          <p><m>\displaystyle \int_1^2 \frac{t^2-1}{2t} \, dt</m></p>
+        </li>
+        <li>
+          <p><m>\displaystyle \int_0^\pi \cos(\theta) \, d\theta</m></p>
+        </li>
+      </ol>
     </p>
   </slide>
 </section>
