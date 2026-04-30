@@ -574,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Section 8.1: Integration by Substitution",
-  "body": " Section 8.1: Integration by Substitution   Integration by Substitution  One of the most common issues with finding antiderivatives deals with undoing the chain rule. We saw previously a pattern when dealing with integrals like: that we needed to divide by the in combination with simple antiderivatives. But this strategy really only worked because happened to be a constant.  The generalization of this strategy is required if is a formula and is called integration by substitution . >   Recognizing the Chain Rule  Computing integrals involving compositions requires first being proficient in calculating derivatives involving the chain rule . The derivative of will always be a product  . >   Steps of the Method of Substitution  Integration by substitution is a tool to recognize and simplify this multiplication. Identify in the integrand the presence of a composition with a function . This function normally should be multiplied by a constant multiple of .   Identify and calculate .    Substitute the formula by the symbol (or something else convenient).    Use to substitute the differential by the formula . Ideally this will cancel any remaining formulas.    This transforms the integral to a new variable with a simpler formula. Find the antiderivative and back-substitute.    >   Examples                 >   Definite Integrals with Substitution  Although it is possible to find an antiderivative using substitution and then evaluate the change, it is sometimes faster or beneficial to rewrite the definite integral in the new variable.  Suppose that an indefinite integral using substitution would transform Then a definite integral can similarly be transformed It is essential that you maintain the order of the limits of integration, even if they seem to have been reversed. >   Examples of Definite Integrals Using Substitution  Rewrite and then evaluate the definite integrals using substitution:   ,    ,    >  "
+  "body": " Section 8.1: Integration by Substitution   Integration by Substitution  One of the most common issues with finding antiderivatives deals with undoing the chain rule. We saw previously a pattern when dealing with integrals like: that we needed to divide by the in combination with simple antiderivatives. But this strategy really only worked because happened to be a constant.  The generalization of this strategy is required if is a formula and is called integration by substitution . >   Recognizing the Chain Rule  Computing integrals involving compositions requires first being proficient in calculating derivatives involving the chain rule . The derivative of will always be a product  . >   Steps of the Method of Substitution  Integration by substitution is a tool to recognize and simplify this multiplication. Identify in the integrand the presence of a composition with a function . This function normally should be multiplied by a constant multiple of .   Identify and calculate .    Substitute the formula by the symbol (or something else convenient).    Use to substitute the differential by the formula . Ideally this will cancel any remaining formulas.    This transforms the integral to a new variable with a simpler formula. Find the antiderivative and back-substitute.    >   Examples  (Start of Day 27)               >   Definite Integrals with Substitution  Although it is possible to find an antiderivative using substitution and then evaluate the change, it is sometimes faster or beneficial to rewrite the definite integral in the new variable.  Suppose that an indefinite integral using substitution would transform Then a definite integral can similarly be transformed It is essential that you maintain the order of the limits of integration, even if they seem to have been reversed. >   Examples of Definite Integrals Using Substitution  Rewrite and then evaluate the definite integrals using substitution:   ,    ,    >  "
 },
 {
   "id": "sec_8-1_Integrate_by_Substitution-2-3",
@@ -593,6 +593,60 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "compositions chain rule product "
+},
+{
+  "id": "sec_7-7_Accumulation_Functions",
+  "level": "1",
+  "url": "sec_7-7_Accumulation_Functions.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 7.7: Functions Defined by Integrals",
+  "body": " Section 7.7: Functions Defined by Integrals   Functions Defined By Integrals  The Fundamental Theorem of Calculus was based on the idea of a function defined by an integral: As long as is continuous, the FTC tells us that is differentiable and that .  What are these functions? They are called accumulation functions . >   Accumulation of Change  Recall that the derivative is a function that gives us a rate of change .  When we multiply a rate of change times an increment of time, we get an increment of change . A definite integral is effectively adding increments of change, and so it gives us the total accumulated change over the interval in question.  Example: If represents the velocity of an object (meters per second) as a function of time (seconds), how far does the object move from to ?    >   Example of Volume  A tank of water has 20 liters of water at time (minutes). The function illustrated represents the rate of change for the volume (in liters per minute) as a function of time . How much water is in the tank at ?   Graph of the flow rate in\/out of a tank of water   >   Accumulation Functions  An accumulation function therefore has a literal interpretation as the function that accumulates the amount of change in a quantity whose rate is given by going from to .  As long as is continuous, any definite integral of can be written be written as the change in accumulation: (That doesn't even require the FTC because of how is defined.) >   Derivatives of Integrals with Variable Limits  We can define more complicated functions by integrating from and to endpoints that depend on the variable: We rewrite this in terms of and discover we are just using composition: Thus we can calculate the derivative using the chain rule: But the FTC guarantees so that we actually get:  >   Practice  For each of the following, first rewrite the definite integral in terms of an accumulation function, then use the FTC and the chain rule to find the requested derivative.         >  "
+},
+{
+  "id": "sec_7-7_Accumulation_Functions-2-2",
+  "level": "2",
+  "url": "sec_7-7_Accumulation_Functions.html#sec_7-7_Accumulation_Functions-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "differentiable "
+},
+{
+  "id": "sec_7-7_Accumulation_Functions-2-3",
+  "level": "2",
+  "url": "sec_7-7_Accumulation_Functions.html#sec_7-7_Accumulation_Functions-2-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "accumulation functions "
+},
+{
+  "id": "sec_7-7_Accumulation_Functions-3-2",
+  "level": "2",
+  "url": "sec_7-7_Accumulation_Functions.html#sec_7-7_Accumulation_Functions-3-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "derivative rate of change "
+},
+{
+  "id": "sec_7-7_Accumulation_Functions-3-3",
+  "level": "2",
+  "url": "sec_7-7_Accumulation_Functions.html#sec_7-7_Accumulation_Functions-3-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "increment of change total accumulated change "
+},
+{
+  "id": "sec_7-7_Accumulation_Functions-3-4",
+  "level": "2",
+  "url": "sec_7-7_Accumulation_Functions.html#sec_7-7_Accumulation_Functions-3-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "velocity "
 }
 ]
 
