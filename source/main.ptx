@@ -72,5 +72,6 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <xi:include href="./sec7.2-riemann-sums.ptx" />
         <xi:include href="./sec7.3-definite-integrals.ptx" />
         <xi:include href="./sec8.1-integration-substitution.ptx" />
+        <xi:include href="./sec7.7-accumulation-functions.ptx" />
     </slideshow>
 </pretext>

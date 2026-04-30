@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec_7-7_Accumulation_Functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>Section 7.7: Functions Defined by Integrals</title>
+
+  <slide>
+    <title>Functions Defined By Integrals</title>
+    
+    <p>
+      The Fundamental Theorem of Calculus was based on the idea of a function defined by an integral:
+      <md>A(x) = \int_c^x f(z) \, dz.</md>
+      As long as <m>f(x)</m> is continuous, the FTC tells us that <m>A(x)</m> is <term>differentiable</term>
+      and that <m>A'(x)= f(x)</m>.
+    </p>
+    <p>
+      What are these functions? They are called <term>accumulation functions</term>.
+    </p>
+  </slide>
+
+  <slide>
+    <title>Accumulation of Change</title>
+    
+    <p>
+      Recall that the <term>derivative</term> is a function that gives us a <term>rate of change</term>.
+    </p>
+
+    <p>
+      When we multiply a rate of change times an increment of time, we get an <term>increment of change</term>.
+      A definite integral is effectively adding increments of change, and so it gives us the <term>total accumulated change</term> over the interval in question.
+    </p>
+
+    <p>
+      Example: If <m>v(t) = t(4-t)</m> represents the <term>velocity</term> of an object (meters per second) as a function of time <m>t</m> (seconds), how <em>far</em> does the object move from <m>t=0</m> to <m>t=4</m>?
+    </p>
+    <p>
+      <m>\displaystyle \int_0^4 v(t) \, dt</m>
+    </p>
+  </slide>
+
+  <slide>
+    <title>Example of Volume</title>
+    
+    <p>
+      A tank of water has 20 liters of water at time <m>t=0</m> (minutes). The function illustrated represents the <em>rate of change</em> for the volume (in liters per minute) as a function of time <m>t</m>. How much water is in the tank at <m>t=5</m>?
+    </p>
+
+    <image width="35%">
+      <shortdescription>Graph of the flow rate in/out of a tank of water</shortdescription>
+      <latex-image>
+ \begin{tikzpicture}
+            \begin{axis} [
+            xmin=-1, xmax=6,
+            grid=both, minor tick num={1},
+            ]
+            \addplot[no marks, black] coordinates {
+            (-1,0)
+            (6,0)
+            };
+            \addplot[no marks, blue, thick] coordinates {
+            (-1,4)
+            (1,4)
+            (4,-2)
+            (6, 0)
+            };
+            \draw [thick, black] (axis cs: 0,0) -- (axis cs: 0,4);
+            \draw [thick, dashed, black] (axis cs: 1,0) -- (axis cs: 1,4);
+            \draw [thick, black] (axis cs: 5,0) -- (axis cs: 5,-1);
+            \draw [thick, dashed, black] (axis cs: 4,0) -- (axis cs: 4,-2);
+            \fill [opacity=0.25, blue] (axis cs:0,4) -- (axis cs:1,4)
+            -- (axis cs:3,0) -- (axis cs:0,0) -- cycle;
+            \fill [opacity=0.25, red] (axis cs:3,0) -- (axis cs:4,-2)
+            -- (axis cs: 5,-1) -- (axis cs: 5,0) -- cycle;
+            \end{axis}
+            \end{tikzpicture}      </latex-image>
+    </image>
+  </slide>
+  
+  <slide>
+    <title>Accumulation Functions</title>
+    
+    <p>
+      An accumulation function <m>\displaystyle A(x) = \int_c^x f(t) \, dt</m> therefore has a literal interpretation 
+      as the function that accumulates the amount of change in a quantity whose rate is given by <m>f(t)</m> going from <m>t=c</m> to <m>t=x</m>.
+    </p>
+    <p>
+      As long as <m>f(t)</m> is continuous, any definite integral of <m>f</m> can be written be written as the change in accumulation:
+      <md>
+        \int_a^b f(t) \, dt = A(b) - A(a).
+      </md>
+      (That doesn't even require the FTC because of how <m>A</m> is defined.)
+    </p>
+  </slide>
+
+  <slide>
+    <title>Derivatives of Integrals with Variable Limits</title>
+    
+    <p>
+      We can define more complicated functions by integrating from and to endpoints that depend on the variable:
+      <md>G(x) = \int_{u(x)}^{w(x)} f(t) \, dt</md>
+      We rewrite this in terms of <m>A</m> and discover we are just using composition:
+      <md>
+        G(x) = A(w(x)) - A(u(x))
+      </md>
+      Thus we can calculate the derivative using the chain rule:
+      <md>
+        G'(x) = A'(w(x)) \cdot w'(x) - A'(u(x)) \cdot u'(x)
+      </md>
+      But the FTC guarantees <m>A'(x) = f(x)</m> so that we actually get:
+       <md>
+        G'(x) = f(w(x)) \cdot w'(x) - f(u(x)) \cdot u'(x)
+      </md>
+   </p>
+  </slide>
+
+  <slide>
+    <title>Practice</title>
+    
+    <p>
+      For each of the following, first rewrite the definite integral in terms of an accumulation function, then use the FTC and the chain rule to find the requested derivative.
+      <ul>
+        <li>
+          <p><m>\displaystyle \frac{d}{dx} \int_2^{x^2} t e^{-t} \, dt</m></p>
+        </li>
+        <li>
+          <p><m>\displaystyle \frac{d}{dx} \int_{x}^{x^2} \frac{t}{t^3+1} \, dt</m></p>
+        </li>
+      </ul>
+    </p>
+  </slide>
+</section>
